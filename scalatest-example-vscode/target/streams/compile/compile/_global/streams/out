@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E040] Syntax Error: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala:5:0 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[35m@main[0m [33mdef[0m [36mrunCube[0m() =[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0man identifier expected, but '@' found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

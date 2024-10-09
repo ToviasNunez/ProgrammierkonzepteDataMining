@@ -1,0 +1,484 @@
+2024.10.09 13:41:28 INFO  Started: Metals version 1.3.5 in folders 'D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode' for client Visual Studio Code 1.85.2.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@587b1186]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@7c8b771b]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@587b1186]
+2024.10.09 13:41:28 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.09 13:41:29 INFO  no build target found for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\test\scala\com\example\CubeCalculatorTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.09 13:41:32 INFO  restarted 1 presentation compiler
+2024.10.09 13:41:34 INFO  running 'C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\NUNEZT~1\AppData\Local\Temp\metals18012662991763417944\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.10.09 13:41:38 INFO  [info] welcome to sbt 1.10.2 (OpenLogic Java 17.0.7)
+2024.10.09 13:41:41 INFO  [info] loading global plugins from C:\Users\nunezt_admin\.sbt\1.0\plugins
+2024.10.09 13:41:46 INFO  [info] loading settings for project scalatest-example-vscode-build-build from metals.sbt ...
+2024.10.09 13:41:46 INFO  [info] loading project definition from D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\project\project
+2024.10.09 13:41:46 INFO  no build target found for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\test\scala\com\example\CubeCalculatorTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.09 13:41:47 INFO  no build target found for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\CubeCalculator.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.09 13:41:48 INFO  [info] loading settings for project scalatest-example-vscode-build from metals.sbt ...
+2024.10.09 13:41:48 INFO  [info] loading project definition from D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\project
+2024.10.09 13:41:51 INFO  [success] Generated .bloop\scalatest-example-vscode-build.json
+2024.10.09 13:41:51 INFO  [success] Total time: 3 s, completed Oct 9, 2024, 1:41:51 PM
+2024.10.09 13:41:54 INFO  [info] loading settings for project root from build.sbt ...
+2024.10.09 13:41:54 INFO  [info] set current project to scalatest-example-vscode (in build file:/D:/GitHub/ProgrammierkonzepteDataMining/scalatest-example-vscode/)
+2024.10.09 13:42:03 INFO  [success] Generated .bloop\root.json
+2024.10.09 13:42:03 INFO  [success] Generated .bloop\root-test.json
+2024.10.09 13:42:03 INFO  [success] Total time: 8 s, completed Oct 9, 2024, 1:42:03 PM
+2024.10.09 13:42:03 INFO  time: ran 'sbt bloopInstall' in 28s
+2024.10.09 13:42:03 INFO  Attempting to connect to the build server...
+2024.10.09 13:42:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\bsp.trace.json or C:\Users\nunezt_admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.09 13:42:05 INFO  Attempting to connect to the build server...
+2024.10.09 13:42:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\project\.metals\bsp.trace.json or C:\Users\nunezt_admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.09 13:42:05 INFO  time: Connected to build server in 2.24s
+2024.10.09 13:42:05 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.09 13:42:05 INFO  running doctor check
+2024.10.09 13:42:05 INFO  java targets: root-test, root, scalatest-example-vscode-build
+2024.10.09 13:42:09 WARN  Could not find java sources in C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip. Java symbols will not be available.
+2024.10.09 13:42:17 WARN  Could not find java sources in C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip. Java symbols will not be available.
+2024.10.09 13:42:17 INFO  time: indexed workspace in 11s
+2024.10.09 13:42:35 INFO  compiling root (1 scala source)
+2024.10.09 13:42:39 INFO  compiling root-test (1 scala source)
+2024.10.09 13:42:39 INFO  time: compiled root in 3.57s
+2024.10.09 13:42:40 INFO  time: compiled root-test in 1.62s
+2024.10.09 13:42:51 INFO  Disconnecting from Bloop session...
+2024.10.09 13:42:51 INFO  Shut down connection with build server.
+2024.10.09 13:42:51 INFO  Shut down connection with build server.
+2024.10.09 13:42:51 INFO  Attempting to connect to the build server...
+2024.10.09 13:42:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\bsp.trace.json or C:\Users\nunezt_admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.09 13:42:51 INFO  Attempting to connect to the build server...
+2024.10.09 13:42:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\project\.metals\bsp.trace.json or C:\Users\nunezt_admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.09 13:42:51 INFO  time: Connected to build server in 82ms
+2024.10.09 13:42:51 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.09 13:42:51 INFO  running doctor check
+2024.10.09 13:42:51 INFO  java targets: root-test, root, scalatest-example-vscode-build
+2024.10.09 13:42:52 WARN  Could not find java sources in C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip. Java symbols will not be available.
+2024.10.09 13:42:52 WARN  Could not find java sources in C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip. Java symbols will not be available.
+2024.10.09 13:42:52 INFO  time: indexed workspace in 2.17s
+Oct 09, 2024 1:43:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 40
+Oct 09, 2024 1:43:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.10.09 13:44:21 INFO  time: code lens generation in 3.01s
+2024.10.09 13:45:28 INFO  compiling root (1 scala source)
+2024.10.09 13:45:28 INFO  time: compiled root in 0.57s
+2024.10.09 13:45:42 INFO  compiling root (1 scala source)
+2024.10.09 13:45:42 INFO  time: compiled root in 0.77s
+2024.10.09 13:46:02 INFO  compiling root (1 scala source)
+2024.10.09 13:46:02 INFO  time: compiled root in 0.53s
+Oct 09, 2024 1:46:41 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 09, 2024 1:46:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.reports\metals-full\2024-10-09\r_compiler-error_(root)_13-46-41-658.md
+Oct 09, 2024 1:47:15 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 09, 2024 1:47:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.reports\metals-full\2024-10-09\r_compiler-error_(root)_13-47-15-646.md
+2024.10.09 13:47:47 INFO  compiling root (1 scala source)
+2024.10.09 13:47:47 INFO  time: compiled root in 0.56s
+2024.10.09 13:49:17 INFO  running 'C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\NUNEZT~1\AppData\Local\Temp\metals15381720241750662507\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.10.09 13:49:19 INFO  [info] welcome to sbt 1.10.2 (OpenLogic Java 17.0.7)
+2024.10.09 13:49:21 INFO  [info] loading global plugins from C:\Users\nunezt_admin\.sbt\1.0\plugins
+2024.10.09 13:49:23 INFO  [info] loading settings for project scalatest-example-vscode-build-build from metals.sbt ...
+2024.10.09 13:49:23 INFO  [info] loading project definition from D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\project\project
+2024.10.09 13:49:23 INFO  [info] loading settings for project scalatest-example-vscode-build from metals.sbt ...
+2024.10.09 13:49:23 INFO  [info] loading project definition from D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\project
+2024.10.09 13:49:26 INFO  [success] Generated .bloop\scalatest-example-vscode-build.json
+2024.10.09 13:49:26 INFO  [success] Total time: 3 s, completed Oct 9, 2024, 1:49:27 PM
+2024.10.09 13:49:32 INFO  [info] loading settings for project root from build.sbt ...
+2024.10.09 13:49:32 INFO  [info] set current project to scalatest-example-vscode (in build file:/D:/GitHub/ProgrammierkonzepteDataMining/scalatest-example-vscode/)
+2024.10.09 13:49:33 INFO  [success] Generated .bloop\root.json
+2024.10.09 13:49:33 INFO  [success] Generated .bloop\root-test.json
+2024.10.09 13:49:33 INFO  [success] Total time: 1 s, completed Oct 9, 2024, 1:49:33 PM
+2024.10.09 13:49:33 INFO  time: ran 'sbt bloopInstall' in 16s
+2024.10.09 13:49:33 INFO  Disconnecting from Bloop session...
+2024.10.09 13:49:33 INFO  Shut down connection with build server.
+2024.10.09 13:49:33 INFO  Shut down connection with build server.
+2024.10.09 13:49:33 INFO  Attempting to connect to the build server...
+2024.10.09 13:49:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\bsp.trace.json or C:\Users\nunezt_admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.09 13:49:33 INFO  Attempting to connect to the build server...
+2024.10.09 13:49:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\project\.metals\bsp.trace.json or C:\Users\nunezt_admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.09 13:49:33 INFO  time: Connected to build server in 73ms
+2024.10.09 13:49:33 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.09 13:49:33 INFO  running doctor check
+2024.10.09 13:49:33 INFO  java targets: root-test, root, scalatest-example-vscode-build
+2024.10.09 13:49:36 INFO  Required scalafmt dialect rewrite to 'scala3'. Directories:
+- src\main\scala
+- src\test\scala
+2024.10.09 13:49:37 WARN  Could not find java sources in C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip. Java symbols will not be available.
+2024.10.09 13:49:37 WARN  org.h2.jdbc.JdbcBatchUpdateException: Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_3 ON PUBLIC.TOPLEVEL_SYMBOL(JAR, PATH, SYMBOL) VALUES ( /* key:19980 */ 105, '/org/scalatest/enablers/TableAsserting.scala', 'org/scalatest/enablers/ForResult#')"; SQL statement:
+insert into toplevel_symbol (symbol, path, jar) values (?, ?, ?) [23505-230]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1277)
+	at scala.meta.internal.metals.JarTopLevels.putToplevels(JarTopLevels.scala:139)
+	at scala.meta.internal.metals.JarTopLevels.$anonfun$putJarIndexingInfo$1(JarTopLevels.scala:85)
+	at scala.runtime.java8.JFunction1$mcII$sp.apply(JFunction1$mcII$sp.scala:17)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.JarTopLevels.putJarIndexingInfo(JarTopLevels.scala:84)
+	at scala.meta.internal.metals.Indexer.addSourceJarSymbols(Indexer.scala:666)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexDependencySources$5(Indexer.scala:491)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at scala.collection.IterableOps$WithFilter.foreach(Iterable.scala:905)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexDependencySources$1(Indexer.scala:482)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexDependencySources$1$adapted(Indexer.scala:481)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at scala.meta.internal.metals.Indexer.indexDependencySources(Indexer.scala:481)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexWorkspace$17(Indexer.scala:302)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexWorkspace$16(Indexer.scala:295)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexWorkspace$16$adapted(Indexer.scala:291)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at scala.meta.internal.metals.Indexer.indexWorkspace(Indexer.scala:291)
+	at scala.meta.internal.metals.Indexer.$anonfun$profiledIndexWorkspace$2(Indexer.scala:167)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.Indexer.$anonfun$profiledIndexWorkspace$1(Indexer.scala:167)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+
+2024.10.09 13:49:39 WARN  Could not find java sources in C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip. Java symbols will not be available.
+2024.10.09 13:49:39 INFO  time: indexed workspace in 5.11s
+2024.10.09 13:49:50 INFO  compiling root (2 scala sources)
+2024.10.09 13:49:53 INFO  time: compiled root in 3.22s
+2024.10.09 13:49:53 INFO  compiling root-test (1 scala source)
+2024.10.09 13:49:55 INFO  time: compiled root-test in 1.97s
+Oct 09, 2024 1:50:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 380
+2024.10.09 13:50:11 INFO  compiling root (1 scala source)
+2024.10.09 13:50:12 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 13:50:11 INFO  time: compiled root in 0.45s
+2024.10.09 13:50:24 INFO  compiling root (1 scala source)
+2024.10.09 13:50:24 INFO  time: compiled root in 0.41s
+2024.10.09 13:54:24 ERROR D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$runScalafixRules$2(ScalafixProvider.scala:130)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+
+Oct 09, 2024 1:54:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+java.util.concurrent.CompletionException: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$runScalafixRules$2(ScalafixProvider.scala:130)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	... 3 more
+
+2024.10.09 13:54:24 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala:4: error: [dialect scala213] . expected but \n\n found
+
+^
+2024.10.09 13:54:24 INFO  compiling root (1 scala source)
+2024.10.09 13:54:24 INFO  time: compiled root in 0.29s
+2024.10.09 13:54:35 INFO  Can not organize imports if file has error
+2024.10.09 13:54:35 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala:4: error: [dialect scala213] . expected but \n\n found
+
+^
+2024.10.09 13:54:35 INFO  compiling root (1 scala source)
+2024.10.09 13:54:35 INFO  time: compiled root in 0.19s
+2024.10.09 13:54:49 WARN  Could not find semantic tokens for: file:///D:/GitHub/ProgrammierkonzepteDataMining/scalatest-example-vscode/src/main/scala/com/example/CubeCalculator.scala
+2024.10.09 13:54:49 WARN  Could not find semantic tokens for: file:///D:/GitHub/ProgrammierkonzepteDataMining/scalatest-example-vscode/src/main/scala/com/example/CubeCalculator.scala
+2024.10.09 13:54:51 WARN  Could not find semantic tokens for: file:///D:/GitHub/ProgrammierkonzepteDataMining/scalatest-example-vscode/src/main/scala/com/example/CubeCalculator.scala
+2024.10.09 13:54:59 INFO  compiling root (2 scala sources)
+2024.10.09 13:54:59 INFO  time: compiled root in 0.21s
+2024.10.09 13:55:15 INFO  Can not organize imports if file has error
+2024.10.09 13:55:15 INFO  compiling root (1 scala source)
+2024.10.09 13:55:15 INFO  time: compiled root in 0.24s
+2024.10.09 13:56:11 INFO  compiling root (1 scala source)
+2024.10.09 13:56:11 INFO  time: compiled root in 0.25s
+2024.10.09 13:57:29 ERROR D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\CubeCalculator.scala:2: error: `identifier` expected but `=` found
+  def cube(x:Int): = {
+                   ^
+scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\CubeCalculator.scala:2: error: `identifier` expected but `=` found
+  def cube(x:Int): = {
+                   ^
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$runScalafixRules$2(ScalafixProvider.scala:130)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+
+Oct 09, 2024 1:57:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\CubeCalculator.scala:2: error: `identifier` expected but `=` found
+  def cube(x:Int): = {
+                   ^
+java.util.concurrent.CompletionException: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\CubeCalculator.scala:2: error: `identifier` expected but `=` found
+  def cube(x:Int): = {
+                   ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\CubeCalculator.scala:2: error: `identifier` expected but `=` found
+  def cube(x:Int): = {
+                   ^
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$runScalafixRules$2(ScalafixProvider.scala:130)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	... 3 more
+
+2024.10.09 13:57:29 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\CubeCalculator.scala:2: error: [dialect scala213] identifier expected but = found
+  def cube(x:Int): = {
+                   ^
+2024.10.09 13:57:29 INFO  compiling root (1 scala source)
+2024.10.09 13:57:29 INFO  time: compiled root in 98ms
+2024.10.09 13:58:08 INFO  Can not organize imports if file has error
+Oct 09, 2024 1:58:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1190
+2024.10.09 13:59:01 ERROR D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$runScalafixRules$2(ScalafixProvider.scala:130)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+
+Oct 09, 2024 1:59:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+java.util.concurrent.CompletionException: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$runScalafixRules$2(ScalafixProvider.scala:130)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	... 3 more
+
+2024.10.09 13:59:01 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala:4: error: [dialect scala213] . expected but \n\n found
+
+^
+2024.10.09 13:59:01 INFO  compiling root (1 scala source)
+2024.10.09 13:59:01 INFO  time: compiled root in 0.16s
+2024.10.09 14:00:01 INFO  Can not organize imports if file has error
+2024.10.09 14:00:01 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala:4: error: [dialect scala213] . expected but \n\n found
+
+^
+2024.10.09 14:00:01 INFO  compiling root (1 scala source)
+2024.10.09 14:00:01 INFO  time: compiled root in 0.16s
+2024.10.09 14:00:13 INFO  Can not organize imports if file has error
+2024.10.09 14:00:13 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala:4: error: [dialect scala213] . expected but \n\n found
+
+^
+2024.10.09 14:00:13 INFO  compiling root (1 scala source)
+2024.10.09 14:00:13 INFO  time: compiled root in 0.16s
+2024.10.09 14:00:37 INFO  Can not organize imports if file has error
+2024.10.09 14:00:37 INFO  compiling root (1 scala source)
+2024.10.09 14:00:37 INFO  time: compiled root in 0.14s
+Oct 09, 2024 2:01:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1495
+2024.10.09 14:01:39 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\CubeCalculator.scala:1: error: [dialect scala213] ; expected but : found
+class CubeCalculator(x: Int):
+                            ^
+2024.10.09 14:01:39 INFO  compiling root (2 scala sources)
+2024.10.09 14:01:39 INFO  time: compiled root in 0.16s
+Oct 09, 2024 2:02:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.reports\metals-full\2024-10-09\r_compiler-error_(root)_14-02-03-430.md
+Oct 09, 2024 2:02:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.reports\metals-full\2024-10-09\r_compiler-error_(root)_14-02-03-485.md
+2024.10.09 14:02:10 INFO  Can not organize imports if file has error
+2024.10.09 14:02:10 INFO  compiling root (1 scala source)
+2024.10.09 14:02:10 INFO  time: compiled root in 0.2s
+2024.10.09 14:03:48 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\CubeCalculator.scala:1: error: [dialect scala213] ; expected but : found
+class CubeCalculator(x: Int):
+                            ^
+2024.10.09 14:03:48 INFO  compiling root (1 scala source)
+2024.10.09 14:03:48 INFO  time: compiled root in 0.28s
+2024.10.09 14:04:22 ERROR D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$runScalafixRules$2(ScalafixProvider.scala:130)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+
+Oct 09, 2024 2:04:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+java.util.concurrent.CompletionException: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\.metals\.tmp\src\main\scala\com\example\App.scala:4: error: `.` expected but `\n\n` found
+
+^
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$runScalafixRules$2(ScalafixProvider.scala:130)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	... 3 more
+
+2024.10.09 14:04:22 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala:4: error: [dialect scala213] . expected but \n\n found
+
+^
+2024.10.09 14:04:22 INFO  compiling root (1 scala source)
+2024.10.09 14:04:22 INFO  time: compiled root in 0.16s
+2024.10.09 14:05:13 INFO  compiling root (1 scala source)
+2024.10.09 14:05:13 INFO  time: compiled root in 0.17s
+2024.10.09 14:06:02 WARN  Could not find semantic tokens for: file:///D:/GitHub/ProgrammierkonzepteDataMining/scalatest-example-vscode/src/main/scala/com/example/CubeCalculator.scala
+2024.10.09 14:06:14 WARN  Could not find semantic tokens for: file:///D:/GitHub/ProgrammierkonzepteDataMining/scalatest-example-vscode/src/main/scala/com/example/CubeCalculator.scala
+2024.10.09 14:06:19 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\CubeCalculator.scala:3: error: [dialect scala213] ; expected but : found
+class CubeCalculator(x: Int):
+                            ^
+2024.10.09 14:06:19 INFO  compiling root (2 scala sources)
+2024.10.09 14:06:19 INFO  time: compiled root in 0.16s
+2024.10.09 14:06:33 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\CubeCalculator.scala:3: error: [dialect scala213] ; expected but : found
+class CubeCalculator(x: Int):
+                            ^
+2024.10.09 14:06:33 INFO  compiling root (2 scala sources)
+2024.10.09 14:06:33 INFO  time: compiled root in 0.16s
+2024.10.09 14:06:57 INFO  Can not organize imports if file has error
+2024.10.09 14:06:57 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala:5: error: [dialect scala213] identifier expected but @ found
+@main def runCube() =
+^
+2024.10.09 14:06:57 INFO  compiling root (2 scala sources)
+2024.10.09 14:06:57 INFO  time: compiled root in 0.14s
+2024.10.09 14:07:55 INFO  Can not organize imports if file has error
+2024.10.09 14:07:55 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala:4: error: [dialect scala213] . expected but \n\n found
+
+^
+2024.10.09 14:07:55 INFO  compiling root (2 scala sources)
+2024.10.09 14:07:55 INFO  time: compiled root in 0.16s
+2024.10.09 14:08:04 INFO  Can not organize imports if file has error
+2024.10.09 14:08:04 ERROR scalafmt: D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala:4: error: [dialect scala213] . expected but \n\n found
+
+^
+2024.10.09 14:08:05 INFO  compiling root (2 scala sources)
+2024.10.09 14:08:05 INFO  time: compiled root in 0.15s
+2024.10.09 14:08:28 INFO  Can not organize imports if file has error
+2024.10.09 14:08:28 INFO  compiling root (2 scala sources)
+2024.10.09 14:08:28 INFO  time: compiled root in 0.34s
+2024.10.09 14:10:19 INFO  compiling root (1 scala source)
+2024.10.09 14:10:19 INFO  time: compiled root in 0.12s
+2024.10.09 14:10:20 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:10:29 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:10:30 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:10:34 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:10:35 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:10:37 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:10:38 INFO  Can not organize imports if file has error
+2024.10.09 14:10:38 INFO  compiling root (1 scala source)
+2024.10.09 14:10:38 INFO  time: compiled root in 0.12s
+2024.10.09 14:10:39 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:10:44 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:10:47 INFO  Can not organize imports if file has error
+2024.10.09 14:10:48 INFO  compiling root (1 scala source)
+2024.10.09 14:10:48 INFO  time: compiled root in 0.13s
+2024.10.09 14:10:48 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:10:50 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:10:55 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:10:58 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:11:03 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:11:34 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:11:36 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:11:36 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:12:05 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:12:05 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:12:11 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:12:14 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:12:36 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:12:36 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:12:39 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:12:41 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:12:51 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:12:54 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:12:57 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:13:08 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:13:12 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:13:13 INFO  Can not organize imports if file has error
+2024.10.09 14:13:13 INFO  compiling root (1 scala source)
+2024.10.09 14:13:13 INFO  time: compiled root in 0.12s
+2024.10.09 14:13:14 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+Oct 09, 2024 2:13:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 09, 2024 2:13:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 09, 2024 2:14:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.10.09 14:14:23 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:14:23 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:14:26 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:14:27 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:14:34 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:14:34 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:14:35 WARN  Could not load snapshot text for D:\GitHub\ProgrammierkonzepteDataMining\scalatest-example-vscode\src\main\scala\com\example\App.scala
+2024.10.09 14:14:36 INFO  Can not organize imports if file has error
+2024.10.09 14:14:36 INFO  compiling root (1 scala source)
+2024.10.09 14:14:36 INFO  time: compiled root in 0.29s
+2024.10.09 14:14:45 INFO  compiling root (1 scala source)
+2024.10.09 14:14:45 INFO  time: compiled root in 0.34s
+2024.10.09 14:15:29 INFO  compiling root (1 scala source)
+2024.10.09 14:15:29 INFO  time: compiled root in 0.3s
+2024.10.09 14:16:05 INFO  compiling root (1 scala source)
+2024.10.09 14:16:05 INFO  time: compiled root in 0.29s
+2024.10.09 14:16:57 INFO  compiling root (1 scala source)
+2024.10.09 14:16:57 INFO  time: compiled root in 0.23s
+2024.10.09 14:18:02 INFO  compiling root (1 scala source)
+2024.10.09 14:18:02 INFO  time: compiled root in 0.28s
+2024.10.09 14:18:54 INFO  compiling root (1 scala source)
+2024.10.09 14:18:54 INFO  time: compiled root in 0.22s
+Oct 09, 2024 2:20:00 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
