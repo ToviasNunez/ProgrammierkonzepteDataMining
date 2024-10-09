@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging D:\GitHub\ProgrammierkonzepteDataMining\HelloWorld\target\scala-3.5.1\helloworld_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\GitHub\ProgrammierkonzepteDataMining\HelloWorld\target\scala-3.5.1\classes\main$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\GitHub\ProgrammierkonzepteDataMining\HelloWorld\target\scala-3.5.1\classes\main$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\GitHub\ProgrammierkonzepteDataMining\HelloWorld\target\scala-3.5.1\classes\main$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Rational.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\GitHub\ProgrammierkonzepteDataMining\HelloWorld\target\scala-3.5.1\classes\Rational.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Rational.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\GitHub\ProgrammierkonzepteDataMining\HelloWorld\target\scala-3.5.1\classes\Rational.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	runRational.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\GitHub\ProgrammierkonzepteDataMining\HelloWorld\target\scala-3.5.1\classes\runRational.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	runRational.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\GitHub\ProgrammierkonzepteDataMining\HelloWorld\target\scala-3.5.1\classes\runRational.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

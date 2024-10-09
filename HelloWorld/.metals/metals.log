@@ -86,3 +86,76 @@ INFO: Unsupported notification method: $/setTrace
 2024.10.09 12:23:53 INFO  Shut down connection with build server.
 2024.10.09 12:23:53 INFO  Shut down connection with build server.
 2024.10.09 12:23:53 INFO  Exiting server
+2024.10.09 13:30:58 INFO  Started: Metals version 1.3.5 in folders 'D:\GitHub\ProgrammierkonzepteDataMining\HelloWorld' for client Visual Studio Code 1.85.2.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@cf8decd]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@2ee1a106]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@cf8decd]
+2024.10.09 13:30:58 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.09 13:30:59 INFO  Attempting to connect to the build server...
+2024.10.09 13:30:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\GitHub\ProgrammierkonzepteDataMining\HelloWorld\.metals\bsp.trace.json or C:\Users\nunezt_admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.09 13:30:59 INFO  Attempting to connect to the build server...
+2024.10.09 13:30:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\GitHub\ProgrammierkonzepteDataMining\HelloWorld\project\.metals\bsp.trace.json or C:\Users\nunezt_admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.09 13:30:59 INFO  time: Connected to build server in 0.81s
+2024.10.09 13:30:59 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.09 13:31:01 INFO  time: Imported build in 0.15s
+2024.10.09 13:31:01 INFO  running doctor check
+2024.10.09 13:31:01 INFO  java targets: root-test, root, helloworld-build
+2024.10.09 13:31:04 WARN  Could not find java sources in C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip. Java symbols will not be available.
+2024.10.09 13:31:05 WARN  Could not find java sources in C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip, C:\Program Files\OpenLogic\src.zip, C:\Program Files\OpenLogic\lib\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\src.zip, C:\Program Files\OpenLogic\jre-17.0.7.7-hotspot\lib\src.zip. Java symbols will not be available.
+2024.10.09 13:31:05 INFO  time: indexed workspace in 4.39s
+2024.10.09 13:31:05 INFO  compiling root (1 scala source)
+2024.10.09 13:31:05 INFO  time: compiled root in 0.74s
+2024.10.09 13:31:05 INFO  compiling root (1 scala source)
+2024.10.09 13:31:06 INFO  time: compiled root in 0.45s
+Oct 09, 2024 1:31:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Oct 09, 2024 1:31:07 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 09, 2024 1:31:09 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 09, 2024 1:31:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17
+Oct 09, 2024 1:31:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+Oct 09, 2024 1:31:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13
+Oct 09, 2024 1:31:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+Oct 09, 2024 1:31:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+Oct 09, 2024 1:31:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+Oct 09, 2024 1:31:12 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 09, 2024 1:31:19 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 09, 2024 1:31:19 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 09, 2024 1:31:19 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 09, 2024 1:31:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 09, 2024 1:31:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.10.09 13:31:54 INFO  time: code lens generation in 3.59s
+Oct 09, 2024 1:31:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 49
+Oct 09, 2024 1:31:58 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 09, 2024 1:31:58 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 09, 2024 1:31:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 51
+Oct 09, 2024 1:31:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 55
+Oct 09, 2024 1:31:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 56
+Oct 09, 2024 1:32:08 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.10.09 13:36:45 INFO  Shutting down server
+2024.10.09 13:36:45 INFO  shutting down Metals
+2024.10.09 13:36:45 INFO  Shut down connection with build server.
+2024.10.09 13:36:45 INFO  Shut down connection with build server.
+2024.10.09 13:36:45 INFO  Exiting server

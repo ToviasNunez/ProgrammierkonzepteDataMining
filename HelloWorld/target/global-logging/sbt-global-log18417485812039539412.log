@@ -15,3 +15,4 @@
 [error] sbt evicted
 [error]    ^
 [debug] > Exec(idea-shell, None, None)
+[info] shutting down sbt server
