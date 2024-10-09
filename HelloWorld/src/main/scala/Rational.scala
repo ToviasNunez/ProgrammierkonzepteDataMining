@@ -1,15 +1,15 @@
-import scala.annotation.{tailrec, targetName}
+import scala.annotation.tailrec
+import scala.annotation.targetName
 
-class Rational(n:Int , d: Int) {
-     require( d != 0, "Denominator can not be zero")
+class Rational(numerator:Int , denominator: Int) {
+     require( denominator != 0, "Denominator can not be zero")
      // Simplify the rational number by dividing by the the GCD of the numerator and dominator
-     private val g = gcd(n.abs , d.abs)
-     val numer: Int = n/g
-     val denom: Int = d/g
+     private val g = gcd(numerator.abs , denominator.abs)
+     private val numer: Int = numerator/g
+     private val denom: Int = denominator/g
 
      // auxiliary constructor: for creating a relation number with only a numerator (denominator = 1)
-     def this(n:Int) = this(n,1)
-
+     def this(denom:Int) = this(denom,1)
      // computer the greatest common divisor (GCD)
      @tailrec
      private def gcd(a: Int, b: Int): Int = if( b==0) a else gcd(b,a%b)
@@ -46,27 +46,3 @@ class Rational(n:Int , d: Int) {
   def max(that: Rational): Rational = if(this < that) that else this
 }
 
-@main def runRationalOperations(): Unit = {
-  val r1 = new Rational(12,16)
-  val r2 = new Rational(2,5)
-
-  println(s"Rational 1: $r1")
-  println(s"Rational 2: $r2")
-
-  // Addition rational numbers
-  println(s"Addition: ${r1 + r2}")
-
-  // Subtraction rational number
-  println(s"Addition: ${r1 - r2}")
-
-  //Negation of the rational numbers
-  println(s"Subtraction: r1 ${-r1}" )
-
-  // Transform to real number
-  println(s"r1 as double : ${r1.toDouble}")
-
-  // Comparing rational numbers
-  println(s"r1 < r2: ${r1 < r2}")
-
-  println(s"Max of r1 and r2: ${r1.max(r2)}")
-}
