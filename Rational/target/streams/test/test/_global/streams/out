@@ -1,0 +1,22 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for org.scalatest.tools.Framework produced 1 initial tasks for 1 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(RationalTest, sbt.ForkMain$SubclassFingerscan@8b87145, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mRationalTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Creating and simplification of a rational number[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Denominator can not be  zero[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Addition of two rational numbers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Subtraction of two rational numbers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Negation of rational number[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Comparison of two rational number (less than)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Max of two rational number[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Converting a rational to a double number[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 8 events.[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 932 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 8[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 8, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RationalTest[0m
