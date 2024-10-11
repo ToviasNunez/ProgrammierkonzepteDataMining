@@ -1,0 +1,38 @@
+String
+ Variables
+ Variables names
+ String specific function
+ String interpolation
+
+
+
+ Multiline String \n
+ """ code operator
+
+Read value from the console input values from user
+
+ numbers types of numbers
+  1 Byte  from -128 127 values
+ Short 16 +-32768
+ Int 32 Bit 4 byte
+ Long 64 Bit  8 Byte
+
+ Float 32 bit 4 Byte
+ Double 64 bit 8 Byte
+ implicit vs explicit definition
+ convert one type to other
+
+how are numbers stored on memory
+
+computer memory is composed of elemnt that can be on or off
+on = 1
+off = 0
+One element is called a bit
+8 element are called a byte
+
+turn bit into number
+
+Numbers - implicit  var cats = 3 // Int , bill = 2.4 //Double
+Numbers - explicit  val dogs = Bytes 5
+
+
