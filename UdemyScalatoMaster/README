@@ -36,3 +36,12 @@ Numbers - implicit  var cats = 3 // Int , bill = 2.4 //Double
 Numbers - explicit  val dogs = Bytes 5
 
 
+String type
+
+
+// Assignment Operator
+    Reference $variable
+    Reference expression ${variable}
+    
+    
+// Augmented assignment 
