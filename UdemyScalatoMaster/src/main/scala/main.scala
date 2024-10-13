@@ -101,7 +101,70 @@ def main(): Unit = {
   println(cat.getClass)
   println(dog.getClass)
   println(day.getClass)
-  
-  
+
+  //  val name: String = "John"
+  //  println(name.getClass)
+  //
+  //  println("Please  enter a number ")
+  //  val numberInt = userInput.getTheInputIntValue
+  //  val numberToByte = numberInt.toByte
+  //  val numberToShot = numberInt.toShort
+  //  val numberToInt = numberInt.toInt
+  //  val numberToFloat = numberInt.toFloat
+  //  val numberToDouble = numberInt.toDouble
+  //
+  //  println(s"${numberToByte.getClass} , ${numberToShot.getClass} " +
+  //    s" ${numberToInt.getClass} , ${numberToFloat.getClass} " +
+  //    s" ${numberToDouble.getClass}")
+
+  //  println("Please  enter a number ")
+  //  val inputDouble = userInput.getTheInputDoubleValue
+  //  println(inputDouble)
+  //  println(inputDouble.getClass)
+
+  val result = 5 + 3
+  println(result)
+  println("Hi " + " John")
+
+
+  var operation = new OperatorAndBoolean(5, 2)
+
+  println(s"Addition = ${operation.addition}")
+  println(s"subtraction = ${operation.subtraction}")
+  println(s"multiplication = ${operation.multiplication}")
+  println(s"division = ${operation.division}")
+  println(s"module = ${operation.modules.toInt}")
+
+
+  println(operation.dozen)
+  println(operation.month)
+
+  var userName = "Lucy"
+  var greeting = s"Hi $userName"
+  println(greeting)
+  println(s"operation = $$${operation.division + operation.division}")
+
+
+  var bikes = 5
+  bikes += 1
+  println(bikes)
+  bikes -= 1
+  println(bikes)
+  bikes *= 2
+  println(bikes)
+  bikes /= 3
+  println(bikes)
+  bikes %= 2
+  println(bikes)
+
+
+  println("Please  enter a the amount of the year ")
+  val yearAmount = userInput.getTheInputDoubleValue
+  val rate = 5.5
+  val time = 5
+  var total = operation.calculatePercentOfYear(yearAmount, rate, time)
+  println(s"Interest in 1 year for this $total")
+  println(f"the total amount after $time%d years with a $rate%.1f%% interest rate is: $$${total}")
+
 
 }

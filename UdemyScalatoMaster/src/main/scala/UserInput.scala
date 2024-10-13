@@ -9,22 +9,27 @@ class UserInput:
     val text = "Please enter you name"
     text
 
-  def getTheInputValue:String =
-      val input: String = StdIn.readLine()
-      input
+  def getTheInputValue: String =
+    val input: String = StdIn.readLine()
+    input
   // transformation the input into a number
 
   def getTheInputIntValue: Int =
     val input: Int = StdIn.readLine().toInt
     input.toInt
+
+  def getTheInputDoubleValue: Double =
+    val inputDouble: Double = StdIn.readDouble()
+    inputDouble
+
   // generate random number
   def generateRandomValue: Int =
-   val random = Random().nextInt(100)
-   random
+    val random = Random().nextInt(100)
+    random
 
   def getCurrentYear: Int =
-   var currentYear = Year.now.getValue
-   currentYear
+    var currentYear = Year.now.getValue
+    currentYear
 
 end UserInput
 
