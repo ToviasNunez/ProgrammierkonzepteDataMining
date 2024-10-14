@@ -175,4 +175,28 @@ def main(): Unit = {
   println(false || false)
 
   println(s"${booleans.expression_1} is greater than ${booleans.expression_2} : ${booleans.expression_1 > booleans.expression_2}")
+
+  println(!((3>=3)&&(false || ( 2< 5))))
+  val  buy = booleans.byToys(2,1)
+  println(s"They should  $buy")
+
+   val toys = 2
+   val brockenToys = 1
+   val noBrockenToys = toys-brockenToys 
+  val  comprar = if ( (toys < 5) && (noBrockenToys >=1)) then "buy toys" else "don't buy toys"
+  println(comprar)
+
+    // farmer 
+    val cows = 3
+    val produceMilk = 1
+    var noProduceMilk = cows - produceMilk
+    var children = 2
+    val familyMember = children + 1
+    val applicationResult = booleans.fundingApplication(cows , produceMilk , familyMember)
+
+
+    val canGetFunding = (cows <= 5 || produceMilk > 0) || (familyMember >=4)
+
+  println(s"Result of the aplication ${applicationResult}")
+  println(s"Will farmer received a funding ${canGetFunding}")
 }
