@@ -157,7 +157,7 @@ def main(): Unit = {
   bikes %= 2
   println(bikes)
 
-
+/*
   println("Please  enter a the amount of the year ")
   val yearAmount = userInput.getTheInputDoubleValue
   val rate = 5.5
@@ -165,6 +165,14 @@ def main(): Unit = {
   var total = operation.calculatePercentOfYear(yearAmount, rate, time)
   println(s"Interest in 1 year for this $total")
   println(f"the total amount after $time%d years with a $rate%.1f%% interest rate is: $$${total}")
+  */
+
+  var booleans = new Booleans
+  println(booleans.isTake)
 
 
+  println(true || false )
+  println(false || false)
+
+  println(s"${booleans.expression_1} is greater than ${booleans.expression_2} : ${booleans.expression_1 > booleans.expression_2}")
 }
