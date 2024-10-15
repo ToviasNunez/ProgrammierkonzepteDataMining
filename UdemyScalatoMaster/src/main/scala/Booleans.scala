@@ -4,11 +4,11 @@ class Booleans:
   val isTake = true
 
 
-  val expression_1 = 5374*95847
+  val expression_1: Int = 5374*95847
 
-  val expression_2 = 3237*153726
+  val expression_2:Int = 3237*153726
 
-  var comparation = expression_1 > expression_2
+  var comparation: Boolean = expression_1 > expression_2
 
    
 

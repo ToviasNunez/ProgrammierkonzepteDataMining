@@ -157,46 +157,46 @@ def main(): Unit = {
   bikes %= 2
   println(bikes)
 
-/*
-  println("Please  enter a the amount of the year ")
-  val yearAmount = userInput.getTheInputDoubleValue
-  val rate = 5.5
-  val time = 5
-  var total = operation.calculatePercentOfYear(yearAmount, rate, time)
-  println(s"Interest in 1 year for this $total")
-  println(f"the total amount after $time%d years with a $rate%.1f%% interest rate is: $$${total}")
-  */
+  /*
+    println("Please  enter a the amount of the year ")
+    val yearAmount = userInput.getTheInputDoubleValue
+    val rate = 5.5
+    val time = 5
+    var total = operation.calculatePercentOfYear(yearAmount, rate, time)
+    println(s"Interest in 1 year for this $total")
+    println(f"the total amount after $time%d years with a $rate%.1f%% interest rate is: $$${total}")
+    */
 
   var booleans = new Booleans
   println(booleans.isTake)
 
 
-  println(true || false )
+  println(true || false)
   println(false || false)
 
   println(s"${booleans.expression_1} is greater than ${booleans.expression_2} : ${booleans.expression_1 > booleans.expression_2}")
 
-  println(!((3>=3)&&(false || ( 2< 5))))
-  val  buy = booleans.byToys(2,1)
+  println(!((3 >= 3) && (false || (2 < 5))))
+  val buy = booleans.byToys(2, 1)
   println(s"They should  $buy")
 
-   val toys = 2
-   val brockenToys = 1
-   val noBrockenToys = toys-brockenToys 
-  val  comprar = if ( (toys < 5) && (noBrockenToys >=1)) then "buy toys" else "don't buy toys"
+  val toys = 2
+  val brockenToys = 1
+  val noBrockenToys = toys - brockenToys
+  val comprar = if ((toys < 5) && (noBrockenToys >= 1)) then "buy toys" else "don't buy toys"
   println(comprar)
 
-    // farmer 
-    val cows = 3
-    val produceMilk = 1
-    var noProduceMilk = cows - produceMilk
-    var children = 2
-    val familyMember = children + 1
-    val applicationResult = booleans.fundingApplication(cows , produceMilk , familyMember)
+  // farmer
+  val cows = 3
+  val produceMilk = 1
+  var noProduceMilk = cows - produceMilk
+  var children = 2
+  val familyMember = children + 1
+  val applicationResult = booleans.fundingApplication(cows, produceMilk, familyMember)
 
 
-    val canGetFunding = (cows <= 5 || produceMilk > 0) || (familyMember >=4)
+  val canGetFunding = (cows <= 5 || produceMilk > 0) || (familyMember >= 4)
 
-  println(s"Result of the aplication ${applicationResult}")
+  println(s"Result of the application ${applicationResult}")
   println(s"Will farmer received a funding ${canGetFunding}")
 }
