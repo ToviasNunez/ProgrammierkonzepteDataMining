@@ -10,8 +10,5 @@ lazy val root = (project in file("."))
     Compile / console / scalacOptions --= Seq("-Ywarn-unused", "-Ywarn-unused-import"),
     Test / fork := true,
     libraryDependencies ++= Seq("org.scalactic" %% "scalactic" % "3.2.19" % "test",
-      "org.scalatest" %% "scalatest" % "3.2.19" % "test"),
-    addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.5.0")
-
-
+      "org.scalatest" %% "scalatest" % "3.2.19" % "test")
   )

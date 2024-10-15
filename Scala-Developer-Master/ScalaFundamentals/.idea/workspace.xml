@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f4d06a2-1de6-40e4-8aa0-5efc0ea86937" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.metals/.reports/bloop/2024-10-14/r_No project associate..._08-21-12-218.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.metals/metals.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uebung1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$0d7d433c0515266151af$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$0d7d433c0515266151af.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$0d7d433c0515266151af.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$1505a94b2bc6f5a039e4$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$1505a94b2bc6f5a039e4.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$1505a94b2bc6f5a039e4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$97ac5bcd0233ec995b4b$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$97ac5bcd0233ec995b4b.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$97ac5bcd0233ec995b4b.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$e092e387540f24ea9f48$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$e092e387540f24ea9f48.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/config-classes/$e092e387540f24ea9f48.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/exportedProducts/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/src/main/scala/Booleans.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/src/main/scala/Booleans.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/src/main/scala/main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/Booleans.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/Booleans.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/Numbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/Numbers.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/OperatorAndBoolean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/OperatorAndBoolean.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/StringExamples.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/StringExamples.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/StringFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/StringFunction.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/UserInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/UserInput.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/VariablesExamples.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/VariablesExamples.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/main$package$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/main$package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/main$package.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/classes/main.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/update/update_cache_3/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/update/update_cache_3/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/update/update_cache_3/output" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/update/update_cache_3/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/scala-3.5.1/zinc/inc_compile_3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/_global/ivyConfiguration/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/_global/ssExtractDependencies/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/compile/_global/_global/discoveredMainClasses/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/compile/internalDependencyClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/compile/internalDependencyClasspath/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/runtime/unmanagedClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/runtime/unmanagedClasspath/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/runtime/unmanagedJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/test/unmanagedClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/test/unmanagedClasspath/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UdemyScalatoMaster/target/streams/test/unmanagedJars/_global/streams/export" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2nEWYRb0FQim59xq6E5ojXpiCFv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/GitHub/ProgrammierkonzepteDataMining",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.HelloWorld">
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="HelloWorld" />
+      <module name="ScalaFundamentals" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hello" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="hello" />
+      <module name="ScalaFundamentals" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.hello" />
+      <item itemvalue="Application.HelloWorld" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloWorld" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f4d06a2-1de6-40e4-8aa0-5efc0ea86937" name="Changes" comment="" />
+      <created>1728538762832</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728538762832</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+</project>
