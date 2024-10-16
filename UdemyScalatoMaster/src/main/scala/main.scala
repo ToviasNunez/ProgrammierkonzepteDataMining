@@ -122,6 +122,9 @@ def main(): Unit = {
   //  println(inputDouble)
   //  println(inputDouble.getClass)
 
+
+  // operator 
+  /*
   val result = 5 + 3
   println(result)
   println("Hi " + " John")
@@ -155,7 +158,7 @@ def main(): Unit = {
   bikes /= 3
   println(bikes)
   bikes %= 2
-  println(bikes)
+  println(bikes) */
 
 /*
   println("Please  enter a the amount of the year ")
@@ -167,6 +170,8 @@ def main(): Unit = {
   println(f"the total amount after $time%d years with a $rate%.1f%% interest rate is: $$${total}")
   */
 
+     // the boolean  
+   /*
   var booleans = new Booleans
   println(booleans.isTake)
 
@@ -198,5 +203,6 @@ def main(): Unit = {
     val canGetFunding = (cows <= 5 || produceMilk > 0) || (familyMember >=4)
 
   println(s"Result of the aplication ${applicationResult}")
-  println(s"Will farmer received a funding ${canGetFunding}")
+  println(s"Will farmer received a funding ${canGetFunding}") */
+
 }

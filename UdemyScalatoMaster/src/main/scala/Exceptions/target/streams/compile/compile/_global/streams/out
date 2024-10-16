@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0mD:\GitHub\ProgrammierkonzepteDataMining\UdemyScalatoMaster\src\main\scala\Exceptions\ExceptionRun.scala:5:1: expected start of definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef ExceptionRun(): Unit = {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\GitHub\ProgrammierkonzepteDataMining\UdemyScalatoMaster\src\main\scala\Exceptions\ExceptionsHanding.scala:1:24: ';' expected but ':' found.[0m
+[0m[[0m[31merror[0m] [0m[0mclass ExceptionsHanding:[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\GitHub\ProgrammierkonzepteDataMining\UdemyScalatoMaster\src\main\scala\Exceptions\ExceptionsHanding.scala:5:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mend ExceptionsHanding[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
