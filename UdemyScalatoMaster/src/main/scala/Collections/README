@@ -13,4 +13,4 @@ val a = List(1,2,456, 34, 454)
 List and Array    // group element with duplicate
 Set and  HashSet   // can not add or remove element unique element  the order is not defined  , A deck of cards is a set
 Mash and HashMap   //  hast unique key to one  value  , value can be duplicated 
-Tuple 
+Tuple  //  can contain duplicate element 
