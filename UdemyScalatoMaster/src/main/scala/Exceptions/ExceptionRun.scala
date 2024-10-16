@@ -34,6 +34,6 @@ def ExceptionRun(): Unit = {
 
     println(s"The product : $productName amount $productAmount total price" +
       s"${buyProduct.totalPrice}")
-
+     
 
 }
