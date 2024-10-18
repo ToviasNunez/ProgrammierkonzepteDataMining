@@ -1,0 +1,12 @@
+Exceptions 
+try catch block 
+finally block 
+throw exceptions 
+
+is an unexpected event in a program
+the system cannot recovery from an exception 
+execution is stopped and data is lost 
+cause very bad user experience 
+
+throw 
+a way to generate your own exception  , can be used 
