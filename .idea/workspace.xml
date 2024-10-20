@@ -5,36 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="688c6350-29e1-4949-8840-f46bedf81a5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Uebung-2/.bsp/sbt.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uebung-2/.idea/modules/Uebung-2.Uebung-2-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uebung-2/Uebung-2.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uebung-2/build.sbt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uebung-2/project/build.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uebung-2/src/main/scala/main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a-test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/Uebung-2_f4dd477a3a-analysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/META-INF/semanticdb/.scala-build/Uebung-2_f4dd477a3a/src_generated/main/Uebung-2.scala.semanticdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/META-INF/semanticdb/src/main/scala/main.scala.semanticdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2$_.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2$_.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2$package$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2$package.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2$package.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2_sc$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2_sc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2_sc.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/main$package$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/main$package.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/main$package.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/main.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/META-INF/semanticdb/Uebung-2.sc.semanticdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/META-INF/semanticdb/src/main/scala/main.scala.semanticdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$_.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$_.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$package$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$package.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$package.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2_sc$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2_sc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2_sc.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/main$package$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/main$package.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/main$package.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/main.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/src_generated/main/Uebung-2.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metals/metals.lock.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.metals/metals.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metals/metals.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.metals/metals.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/.metals/metals.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/BuyProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/BuyProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/BuyProduct.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/BuyProduct.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionRun$package.class" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionRun$package.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionRun$package.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionRun$package.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionRun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionRun.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionRun.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionsHanding.class" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionsHanding.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionsHanding.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/ExceptionsHanding.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/List_Array$package$.class" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/List_Array$package$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/List_Array$package.class" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/List_Array$package.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/List_Array$package.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/List_Array$package.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/List_Array.class" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/List_Array.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/List_Array.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/List_Array.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/Numbers.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/Numbers.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/OperatorAndBoolean.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/OperatorAndBoolean.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/StringExamples.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/StringExamples.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/UserInput.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/UserInput.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/UserMilles.class" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/UserMilles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/UserMilles.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/UdemyScalatoMaster/target/scala-3.5.1/classes/UserMilles.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/Uebung-2.sc" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/Uebung-2.sc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +93,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.runRationalOperations (1).executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -174,6 +183,18 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+  <component name="WfRunsListSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;branch&quot;: &quot;main&quot;,
+      &quot;currentBranchFilter&quot;: true
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;branch&quot;: &quot;main&quot;,
+    &quot;currentBranchFilter&quot;: true
+  }
+}</component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
