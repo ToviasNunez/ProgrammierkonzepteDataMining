@@ -1,0 +1,9 @@
+-- problem with scala cmd
+
+cs uninstall scala
+cs install scala
+
+
+cs update
+
+scala -version

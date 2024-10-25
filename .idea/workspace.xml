@@ -5,56 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="688c6350-29e1-4949-8840-f46bedf81a5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala3_library_3_3_6_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_15_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__scala_sdk_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Recursion.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metals/Rekursion/.scala-build/.bloop/Rekursion_f4dd477a3a/bloop-internal-classes/main-77ndrPPvQj2pV769G1kpzg==/META-INF/semanticdb/.scala-build/Rekursion_f4dd477a3a/src_generated/main/Rekusion.scala.semanticdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metals/Rekursion/.scala-build/.bloop/Rekursion_f4dd477a3a/bloop-internal-classes/main-77ndrPPvQj2pV769G1kpzg==/Rekusion$_.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metals/Rekursion/.scala-build/.bloop/Rekursion_f4dd477a3a/bloop-internal-classes/main-77ndrPPvQj2pV769G1kpzg==/Rekusion$_.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metals/Rekursion/.scala-build/.bloop/Rekursion_f4dd477a3a/bloop-internal-classes/main-77ndrPPvQj2pV769G1kpzg==/Rekusion$package$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metals/Rekursion/.scala-build/.bloop/Rekursion_f4dd477a3a/bloop-internal-classes/main-77ndrPPvQj2pV769G1kpzg==/Rekusion$package.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metals/Rekursion/.scala-build/.bloop/Rekursion_f4dd477a3a/bloop-internal-classes/main-77ndrPPvQj2pV769G1kpzg==/Rekusion$package.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metals/Rekursion/.scala-build/.bloop/Rekursion_f4dd477a3a/bloop-internal-classes/main-77ndrPPvQj2pV769G1kpzg==/Rekusion_sc$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metals/Rekursion/.scala-build/.bloop/Rekursion_f4dd477a3a/bloop-internal-classes/main-77ndrPPvQj2pV769G1kpzg==/Rekusion_sc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metals/Rekursion/.scala-build/.bloop/Rekursion_f4dd477a3a/bloop-internal-classes/main-77ndrPPvQj2pV769G1kpzg==/Rekusion_sc.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recursion/.idea/modules/Recursion.Recursion-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recursion/Recursion.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recursion/build.sbt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recursion/project/build.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recursion/src/main/scala/main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProgrammierkonzepteDataMining.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProgrammierkonzepteDataMining.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metals/metals.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metals/metals.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metals/metals.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/.metals/metals.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/Uebung-2_f4dd477a3a-analysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/Uebung-2_f4dd477a3a-analysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/META-INF/semanticdb/.scala-build/Uebung-2_f4dd477a3a/src_generated/main/Uebung-2.scala.semanticdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/META-INF/semanticdb/src/main/scala/main.scala.semanticdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2$_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2$_.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2$package$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2$package.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2$package.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2_sc$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2_sc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/Uebung$minus2_sc.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/main$package$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/main$package.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/main$package.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/.bloop/Uebung-2_f4dd477a3a/bloop-internal-classes/main-jVs2J7CUSAyM-3yuUhkwRA==/main.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/META-INF/semanticdb/Uebung-2.sc.semanticdb" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/META-INF/semanticdb/Uebung-2.sc.semanticdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$_.class" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$_.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$_.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$_.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$package$.class" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$package$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$package.class" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$package.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$package.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2$package.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2_sc$.class" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2_sc$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2_sc.class" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2_sc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2_sc.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/classes/main/Uebung$minus2_sc.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/src_generated/main/Uebung-2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/src_generated/main/Uebung-2.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion/.idea/modules/Recursion.Recursion-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/.idea/modules/Recursion.Recursion-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion/Recursion.sc" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/Recursion.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/Uebung-2.sc" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/Uebung-2.sc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +46,9 @@
     &quot;accountId&quot;: &quot;d6dbcc5f-c9fd-4a21-9128-27679c2be40e&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -105,22 +63,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.runRationalOperations (1).executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "scala_project_settings_configurable.last_selected_tab_index": "7",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.runRationalOperations (1).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;scala_project_settings_configurable.last_selected_tab_index&quot;: &quot;7&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -202,6 +160,10 @@
   </component>
   <component name="WfRunsListSearchHistory">{
   &quot;history&quot;: [
+    {
+      &quot;branch&quot;: &quot;main&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
     {
       &quot;branch&quot;: &quot;main&quot;,
       &quot;currentBranchFilter&quot;: true

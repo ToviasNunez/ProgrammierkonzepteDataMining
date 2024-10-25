@@ -1,5 +1,6 @@
+import scala.util.Random
 
-// 1- 
+// 1-
 def  or(x:Boolean, y: Boolean): Boolean = {if(!x) false else y }
 
 or(true,false)
@@ -175,3 +176,50 @@ println(s"Smallest multiple for numbers 1 to 10: $result10")
 // Test the function for X = 20 (should return 232792560)
 val result20 = smallestMultiple(20)
 println(s"Smallest multiple for numbers 1 to 20: $result20")
+
+/*Aufgabe 10: Die Summe aller Primzahlen der Zahlen bis 10 ist: 2+3+5+7 =17. Schreiben Sie
+eine Funktion, die die Summe aller Primzahlen unter 2 Millionen bildet (Ergebnis:
+12272577818052).*/
+
+def  isPrime(n: Int): Boolean = {
+  if (n <= 1) false
+  else if(n == 2 ) true
+  else if( n % 2 == 0) false
+  else !(3 to math.sqrt(n).toInt by 2).exists(n % _ == 0)
+}
+def sumOfPrimes(limit: Int): Long = {
+  (2 until limit ).filter(isPrime).map(_.toLong).sum
+}
+val limit = 2000000
+val sum = sumOfPrimes(limit)
+println(s"the sum of all primes below $limit is $sum")
+
+
+/*Aufgabe 11: Implementieren Sie die Methode calculatePi, die auf Basis Zufall die Zahl Pi
+ermittelt (Monte Carlo Algorithmus – Nachlesbar in Wikipedia) Verwenden Sie dabei keine
+Variablen sondern nur Rekursionen. Zufallszahlen erzeugen Sie mit der Klasse Random, die
+Funktion nextDouble enthält:
+import scala.util.Random
+val randGen= Random
+Verwenden Sie für die Lösungen nur Elemente aus der Funktionalen Programmierung, d.h.
+hier nur unveränderliche Variablen und Rekursionen.*/
+
+
+def calculatePi(totalPoints: Int , pointsInsideCircle: Int = 0 , iterations: Int = 0): Double = {
+  if(iterations >= totalPoints){
+    // Base case: if we've reached the required number of points, calculate and return Pi
+    4.0 * pointsInsideCircle / totalPoints
+  }else{
+    // Generate a random point
+    val x = Random.nextDouble()
+    val y = Random.nextDouble()
+    // Check if the point is inside the unit circle
+    val insideCircle = if(x*x + y*y <= 1) pointsInsideCircle + 1 else pointsInsideCircle
+    // Recursive call to continue with the next point
+    calculatePi(totalPoints, insideCircle,iterations + 1)
+  }
+}
+
+val totalPoints = 1000000
+val piEstimate = calculatePi(totalPoints)
+println(s"Estimated value of Pi: $piEstimate")
