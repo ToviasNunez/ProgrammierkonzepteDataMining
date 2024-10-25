@@ -3,6 +3,16 @@
   <component name="ScalaSbtSettings">
     <option name="linkedExternalProjectsSettings">
       <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Recursion" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Recursion" />
+            <option value="$PROJECT_DIR$/Recursion/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.10.3" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/Uebung-2" />
         <option name="modules">
           <set>

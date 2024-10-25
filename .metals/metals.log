@@ -1749,3 +1749,63 @@ SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@5aaf272
 2024.10.20 08:32:40 INFO  Shut down connection with build server.
 2024.10.20 08:32:40 INFO  Shut down connection with build server.
 2024.10.20 08:32:40 INFO  Exiting server
+2024.10.25 09:59:15 INFO  Started: Metals version 1.4.0 in folders '/Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining' for client Visual Studio Code 1.94.2.
+2024.10.25 09:59:15 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.25 09:59:15 INFO  no build target found for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2/Uebung-2.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.25 09:59:16 INFO  Attempting to connect to the build server...
+2024.10.25 09:59:16 INFO  No running Bloop server found, starting one.
+Okt. 25, 2024 9:59:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 3
+Okt. 25, 2024 9:59:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 1
+2024.10.25 09:59:18 INFO  Starting compilation server
+2024.10.25 09:59:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/.metals/bsp.trace.json or /Users/toviasnunezborrero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.25 09:59:20 INFO  time: Connected to build server in 3.76s
+2024.10.25 09:59:20 INFO  Connected to Build server: Bloop v2.0.3
+2024.10.25 09:59:20 INFO  running doctor check
+2024.10.25 09:59:20 INFO  java targets: 
+2024.10.25 09:59:22 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.25 09:59:36 INFO  time: indexed workspace in 16s
+2024.10.25 09:59:36 WARN  no build target for: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2/Uebung-2.sc
+2024.10.25 09:59:36 INFO  no build target found for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2/Uebung-2.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.25 09:59:37 INFO  time: code lens generation in 1.77s
+2024.10.25 09:59:38 INFO  Running List(/Users/toviasnunezborrero/Library/Application Support/Coursier/bin/scala-cli, bsp, /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2)
+2024.10.25 09:59:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2/.metals/bsp.trace.json or /Users/toviasnunezborrero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.25 09:59:40 INFO  no build target found for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/src_generated/main/Uebung-2.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.25 09:59:40 WARN  no build target for: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/src_generated/main/Uebung-2.scala
+2024.10.25 09:59:40 INFO  no build target found for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/src_generated/main/Uebung-2.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.25 09:59:40 INFO  Connected to Scala CLI server v1.5.1
+2024.10.25 09:59:40 INFO  no build target found for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/src_generated/main/Uebung-2.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.25 09:59:40 WARN  no build target for: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/src_generated/main/Uebung-2.scala
+2024.10.25 09:59:41 INFO  no build target found for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2/.scala-build/Uebung-2_f4dd477a3a/src_generated/main/Uebung-2.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.25 09:59:42 INFO  compiling uebung-2_f4dd477a3a (1 scala source)
+2024.10.25 09:59:43 INFO  time: indexed workspace in 2.62s
+2024.10.25 09:59:49 INFO  time: compiled Uebung-2_f4dd477a3a in 7.58s
+2024.10.25 09:59:50 INFO  Scala CLI started for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-2
+2024.10.25 09:59:51 INFO  no build target found for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/.metals/Rekursion/Rekusion.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.25 09:59:51 INFO  Running List(/Users/toviasnunezborrero/Library/Application Support/Coursier/bin/scala-cli, bsp, /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/.metals/Rekursion)
+2024.10.25 09:59:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/.metals/Rekursion/.metals/bsp.trace.json or /Users/toviasnunezborrero/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.25 09:59:53 INFO  Connected to Scala CLI server v1.5.1
+2024.10.25 09:59:53 INFO  compiling rekursion_f4dd477a3a (1 scala source)
+2024.10.25 09:59:53 INFO  time: compiled Rekursion_f4dd477a3a in 0.45s
+2024.10.25 09:59:54 INFO  time: indexed workspace in 1.3s
+2024.10.25 09:59:54 INFO  Scala CLI started for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/.metals/Rekursion
+2024.10.25 10:00:01 INFO  no build target found for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/UdemyScalatoMaster/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.25 10:00:01 INFO  no build target found for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/UdemyScalatoMaster/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.25 10:00:01 INFO  no build target found for /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/UdemyScalatoMaster/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.25 10:03:32 INFO  compiling rekursion_f4dd477a3a (1 scala source)
+2024.10.25 10:03:32 INFO  time: compiled Rekursion_f4dd477a3a in 0.28s
+2024.10.25 10:03:49 INFO  compiling rekursion_f4dd477a3a (1 scala source)
+2024.10.25 10:03:49 INFO  time: compiled Rekursion_f4dd477a3a in 0.21s
+2024.10.25 10:04:17 INFO  compiling rekursion_f4dd477a3a (1 scala source)
+2024.10.25 10:04:17 INFO  time: compiled Rekursion_f4dd477a3a in 0.3s
+2024.10.25 10:05:15 INFO  compiling rekursion_f4dd477a3a (1 scala source)
+2024.10.25 10:05:15 INFO  time: compiled Rekursion_f4dd477a3a in 0.25s
+2024.10.25 10:05:55 INFO  compiling rekursion_f4dd477a3a (1 scala source)
+2024.10.25 10:05:55 INFO  time: compiled Rekursion_f4dd477a3a in 0.46s
+2024.10.25 10:08:50 INFO  Shutting down server
+2024.10.25 10:08:50 INFO  shutting down Metals
+2024.10.25 10:08:50 INFO  Shut down connection with build server.
+2024.10.25 10:08:50 INFO  Shut down connection with build server.
+2024.10.25 10:08:50 INFO  Shut down connection with build server.
+2024.10.25 10:08:50 INFO  Exiting server
