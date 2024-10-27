@@ -5,11 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="688c6350-29e1-4949-8840-f46bedf81a5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recursion/Recursiv_Exercises.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ProgrammierkonzepteDataMining.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProgrammierkonzepteDataMining.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recursion/.idea/modules/Recursion.Recursion-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/.idea/modules/Recursion.Recursion-build.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Recursion/Recursion.sc" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/Recursion.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion/project/target/config-classes/$7c18a5dfd5b9423b6b84$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion/project/target/config-classes/$7c18a5dfd5b9423b6b84.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion/project/target/config-classes/$7c18a5dfd5b9423b6b84.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion/project/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion/target/streams/_global/_global/dumpStructure/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/target/streams/_global/_global/dumpStructure/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion/target/streams/_global/updateClassifiers/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/target/streams/_global/updateClassifiers/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Uebung-2/Uebung-2.sc" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/Uebung-2.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/project/target/config-classes/$85c15b6b1ab98b66eb35$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/project/target/config-classes/$85c15b6b1ab98b66eb35.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/project/target/config-classes/$85c15b6b1ab98b66eb35.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/project/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/target/streams/_global/_global/dumpStructure/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/target/streams/_global/_global/dumpStructure/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/target/streams/_global/updateClassifiers/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/target/streams/_global/updateClassifiers/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -116,6 +116,8 @@ def quersumme1(zahl: Int): Int = {
 }
 r1 = quersumme1(12345)
 
+
+
 // 7-
 def fibo(x:Int): Int= {
   if(x==0)0
@@ -130,21 +132,14 @@ F√ºr alle anderen Werte berechnet die Funktion die Summe der Fibonacci-Zahlen f√
  */
 
 r1 = fibo(10)
-def fibo1(x:Int): BigInt= {
-  if(x==0)0
-  else if(x==1)1
-  else {
-    var a : BigInt =0
-    var b : BigInt =1
-    var result : BigInt = 0
-    for (i <- 2 to x){
-      result = a + b
-      a = b
-      b = result
-    }
-    result
 
+// recursive  version
+def fibo1(x:Int): BigInt= {
+
+  def  fibHelper(n: Int, a: BigInt, b: BigInt):BigInt = {
+    if(n==0)a else fibHelper(n-1 , b , a+b)
   }
+  fibHelper(x,0,1)
 }
 
 var r2:BigInt = fibo1(100)
@@ -223,3 +218,20 @@ def calculatePi(totalPoints: Int , pointsInsideCircle: Int = 0 , iterations: Int
 val totalPoints = 1000000
 val piEstimate = calculatePi(totalPoints)
 println(s"Estimated value of Pi: $piEstimate")
+
+
+// dynamic programming EXTRAS
+def fibonacci(n: Int): Long = {
+  val memo = Array.fill(n+1)(-1L)
+  def fibHelper(n:Int): Long = {
+    if(n <=1 ) n
+    else if (memo(n) != -1)memo(n)
+    else {
+      memo(n) = fibHelper(n-1)+fibHelper(n-2)
+      memo(n)
+    }
+  }
+  fibHelper(n)
+}
+
+
