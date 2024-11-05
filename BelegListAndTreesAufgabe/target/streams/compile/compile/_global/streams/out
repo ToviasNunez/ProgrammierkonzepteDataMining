@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe/src/main/scala/tree/implementation/BinaryTree.scala:81:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m81 |[0m            right.findSuccessor [33mmatch[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m            ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m            value findSuccessor is not a member of tree.traits.IntTree[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
