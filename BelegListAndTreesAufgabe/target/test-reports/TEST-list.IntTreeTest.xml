@@ -1,109 +1,60 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuite hostname="MBP-von-Tovias" name="list.IntTreeTest" tests="34" errors="0" failures="1" skipped="0" time="0.044" timestamp="2024-11-05T16:24:49">
+<testsuite hostname="MacBook-Pro-von-Tovias.local" name="list.IntTreeTest" tests="34" errors="0" failures="0" skipped="0" time="0.026" timestamp="2024-11-08T11:48:14">
           <properties>
-      <property name="java.specification.version" value="23"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="java.class.path" value="/usr/local/Cellar/sbt/1.10.5/libexec/bin/sbt-launch.jar"/><property name="java.vm.vendor" value="Homebrew"/><property name="sun.arch.data.model" value="64"/><property name="jline.shutdownhook" value="false"/><property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/><property name="user.timezone" value="Europe/Berlin"/><property name="java.vm.specification.version" value="23"/><property name="os.name" value="Mac OS X"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="user.country" value="DE"/><property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/23.0.1/libexec/openjdk.jdk/Contents/Home/lib"/><property name="sun.java.command" value="/usr/local/Cellar/sbt/1.10.5/libexec/bin/sbt-launch.jar test"/><property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="jdk.debug" value="release"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="/Users/toviasnunezborrero"/><property name="user.language" value="de"/><property name="sbt.script" value="/usr/local/Cellar/sbt/1.10.5/libexec/bin/sbt"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="sbt.ipcsocket.tmpdir" value="/var/folders/s1/fcnc3yxx2rj4g305s97dzx4h0000gn/T/.sbta94f3cb7/ipcsocket"/><property name="swoval.tmpdir" value="/var/folders/s1/fcnc3yxx2rj4g305s97dzx4h0000gn/T/.sbta94f3cb7/swoval"/><property name="java.version.date" value="2024-10-15"/><property name="java.home" value="/usr/local/Cellar/openjdk/23.0.1/libexec/openjdk.jdk/Contents/Home"/><property name="file.separator" value="/"/><property name="java.vm.compressedOopsMode" value="Zero based"/><property name="line.separator" value="
-"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="apple.awt.application.name" value="Boot"/><property name="jline.esc.timeout" value="0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="java.runtime.version" value="23.0.1"/><property name="user.name" value="toviasnunezborrero"/><property name="stdout.encoding" value="UTF-8"/><property name="path.separator" value=":"/><property name="os.version" value="15.0.1"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/Users/toviasnunezborrero/Library/Caches/JNA/temp/jna14121851794985168002.tmp"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="jna.platform.library.path" value="/usr/lib:/usr/lib"/><property name="java.vendor.version" value="Homebrew"/><property name="jna.loaded" value="true"/><property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/><property name="java.io.tmpdir" value="/var/folders/s1/fcnc3yxx2rj4g305s97dzx4h0000gn/T/"/><property name="java.version" value="23.0.1"/><property name="user.dir" value="/Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe"/><property name="os.arch" value="x86_64"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="native.encoding" value="UTF-8"/><property name="java.library.path" value="/Users/toviasnunezborrero/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.vm.info" value="mixed mode, sharing"/><property name="stderr.encoding" value="UTF-8"/><property name="java.vendor" value="Homebrew"/><property name="java.vm.version" value="23.0.1"/><property name="scala.ext.dirs" value="/Users/toviasnunezborrero/.sbt/1.0/java9-rt-ext-homebrew_23_0_1"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="java.class.version" value="67.0"/>
+      <property name="java.specification.version" value="23"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="java.class.path" value="/usr/local/Cellar/sbt/1.10.5/libexec/bin/sbt-launch.jar"/><property name="java.vm.vendor" value="Homebrew"/><property name="sun.arch.data.model" value="64"/><property name="jline.shutdownhook" value="false"/><property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/><property name="user.timezone" value="Europe/Berlin"/><property name="java.vm.specification.version" value="23"/><property name="os.name" value="Mac OS X"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="user.country" value="DE"/><property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/23.0.1/libexec/openjdk.jdk/Contents/Home/lib"/><property name="sun.java.command" value="/usr/local/Cellar/sbt/1.10.5/libexec/bin/sbt-launch.jar test"/><property name="jdk.debug" value="release"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="/Users/toviasnunezborrero"/><property name="user.language" value="de"/><property name="sbt.script" value="/usr/local/Cellar/sbt/1.10.5/libexec/bin/sbt"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="sbt.ipcsocket.tmpdir" value="/var/folders/s1/fcnc3yxx2rj4g305s97dzx4h0000gn/T/.sbta94f3cb7/ipcsocket"/><property name="swoval.tmpdir" value="/var/folders/s1/fcnc3yxx2rj4g305s97dzx4h0000gn/T/.sbta94f3cb7/swoval"/><property name="java.version.date" value="2024-10-15"/><property name="java.home" value="/usr/local/Cellar/openjdk/23.0.1/libexec/openjdk.jdk/Contents/Home"/><property name="file.separator" value="/"/><property name="java.vm.compressedOopsMode" value="Zero based"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="apple.awt.application.name" value="Boot"/><property name="jline.esc.timeout" value="0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="23.0.1"/><property name="user.name" value="toviasnunezborrero"/><property name="stdout.encoding" value="UTF-8"/><property name="path.separator" value=":"/><property name="os.version" value="15.0.1"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/Users/toviasnunezborrero/Library/Caches/JNA/temp/jna18022139886763537839.tmp"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="jna.platform.library.path" value="/usr/lib:/usr/lib"/><property name="java.vendor.version" value="Homebrew"/><property name="jna.loaded" value="true"/><property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/><property name="java.io.tmpdir" value="/var/folders/s1/fcnc3yxx2rj4g305s97dzx4h0000gn/T/"/><property name="java.version" value="23.0.1"/><property name="user.dir" value="/Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe"/><property name="os.arch" value="x86_64"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="native.encoding" value="UTF-8"/><property name="java.library.path" value="/Users/toviasnunezborrero/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.vm.info" value="mixed mode, sharing"/><property name="stderr.encoding" value="UTF-8"/><property name="java.vendor" value="Homebrew"/><property name="java.vm.version" value="23.0.1"/><property name="scala.ext.dirs" value="/Users/toviasnunezborrero/.sbt/1.0/java9-rt-ext-homebrew_23_0_1"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="java.class.version" value="67.0"/>
     </properties>
-          <testcase classname="list.IntTreeTest" name="test object apply" time="0.015">
+          <testcase classname="list.IntTreeTest" name="test object apply" time="0.002">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="test object apply tail" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="test object apply tail" time="0.001">
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testIsEmpty positive" time="0.0">
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testIsEmpty negative" time="0.0">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testContains positive" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="testContains positive" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testSize empty" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="testSize empty" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testSize nonempty" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="testSize nonempty" time="0.001">
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testContains negative" time="0.0">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testGet" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="testGet" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testPrepend" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="testPrepend" time="0.001">
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testAppend" time="0.0">
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testPrefix" time="0.0">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testDelete" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="testDelete" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testDeleteAll" time="0.001">
+                    </testcase><testcase classname="list.IntTreeTest" name="testDeleteAll" time="0.0">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testFlipList" time="0.001">
+                    </testcase><testcase classname="list.IntTreeTest" name="testFlipList" time="0.0">
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testMap" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testFilter" time="0.002">
+                    </testcase><testcase classname="list.IntTreeTest" name="testFilter" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testFoldLeft" time="0.001">
+                    </testcase><testcase classname="list.IntTreeTest" name="testFoldLeft" time="0.002">
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testFoldLeft is left to right" time="0.001">
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testFoldLeft is left to right 2" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testReduceLeft is left to right" time="0.002">
+                    </testcase><testcase classname="list.IntTreeTest" name="testReduceLeft is left to right" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testReduceLeft is left to right 2" time="0.014">
-                      <failure message="org.scalatest.exceptions.TestFailedException: 5 did not equal -13" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: org.scalatest.exceptions.TestFailedException: 5 did not equal -13
-	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:476)
-	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:421)
-	at org.scalatest.Assertions$.newAssertionFailedException(Assertions.scala:1385)
-	at org.scalatest.Assertions$AssertionsHelper.macroAssert(Assertions.scala:1460)
-	at list.IntTreeTest.testFun$proxy22$1(IntTreeTest.scala:101)
-	at list.IntTreeTest.$init$$$anonfun$22(IntTreeTest.scala:100)
-	at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)
-	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
-	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)
-	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-	at org.scalatest.Transformer.apply(Transformer.scala:22)
-	at org.scalatest.Transformer.apply(Transformer.scala:21)
-	at org.scalatest.funsuite.AnyFunSuiteLike$$anon$1.apply(AnyFunSuiteLike.scala:206)
-	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
-	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:138)
-	at org.scalatest.funsuite.AnyFunSuite.withFixture(AnyFunSuite.scala:1563)
-	at org.scalatest.funsuite.AnyFunSuiteLike.invokeWithFixture$1(AnyFunSuiteLike.scala:212)
-	at org.scalatest.funsuite.AnyFunSuiteLike.runTest$$anonfun$1(AnyFunSuiteLike.scala:216)
-	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-	at org.scalatest.funsuite.AnyFunSuiteLike.runTest(AnyFunSuiteLike.scala:216)
-	at org.scalatest.funsuite.AnyFunSuiteLike.runTest$(AnyFunSuiteLike.scala:47)
-	at org.scalatest.funsuite.AnyFunSuite.runTest(AnyFunSuite.scala:1563)
-	at org.scalatest.funsuite.AnyFunSuiteLike.runTests$$anonfun$1(AnyFunSuiteLike.scala:249)
-	at org.scalatest.SuperEngine.traverseSubNodes$1$$anonfun$1(Engine.scala:413)
-	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
-	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
-	at scala.collection.immutable.List.foreach(List.scala:334)
-	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:429)
-	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
-	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
-	at org.scalatest.funsuite.AnyFunSuiteLike.runTests(AnyFunSuiteLike.scala:249)
-	at org.scalatest.funsuite.AnyFunSuiteLike.runTests$(AnyFunSuiteLike.scala:47)
-	at org.scalatest.funsuite.AnyFunSuite.runTests(AnyFunSuite.scala:1563)
-	at org.scalatest.Suite.run(Suite.scala:1114)
-	at org.scalatest.Suite.run$(Suite.scala:564)
-	at org.scalatest.funsuite.AnyFunSuite.org$scalatest$funsuite$AnyFunSuiteLike$$super$run(AnyFunSuite.scala:1563)
-	at org.scalatest.funsuite.AnyFunSuiteLike.run$$anonfun$1(AnyFunSuiteLike.scala:253)
-	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
-	at org.scalatest.funsuite.AnyFunSuiteLike.run(AnyFunSuiteLike.scala:253)
-	at org.scalatest.funsuite.AnyFunSuiteLike.run$(AnyFunSuiteLike.scala:47)
-	at org.scalatest.funsuite.AnyFunSuite.run(AnyFunSuite.scala:1563)
-	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:321)
-	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:517)
-	at sbt.ForkMain$Run.lambda$runTest$1(ForkMain.java:414)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-</failure>
-                    </testcase><testcase classname="list.IntTreeTest" name="testForAll positive" time="0.001">
+                    </testcase><testcase classname="list.IntTreeTest" name="testReduceLeft is left to right 2" time="0.001">
+                      
+                    </testcase><testcase classname="list.IntTreeTest" name="testForAll positive" time="0.0">
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testForAll negative" time="0.0">
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testForAll returns on first negative" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testFoldRight" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="testFoldRight" time="0.001">
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testFoldRight is right to left" time="0.001">
                       
@@ -113,13 +64,13 @@
                       
                     </testcase><testcase classname="list.IntTreeTest" name="testReduceRight is right to left" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testInsertionSort" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="testInsertionSort" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testInsertSorted" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="testInsertSorted" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testInsertSorted2" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="testInsertSorted2" time="0.001">
                       
-                    </testcase><testcase classname="list.IntTreeTest" name="testInsertSorted3" time="0.0">
+                    </testcase><testcase classname="list.IntTreeTest" name="testInsertSorted3" time="0.001">
                       
                     </testcase>
           <system-out><![CDATA[]]></system-out>

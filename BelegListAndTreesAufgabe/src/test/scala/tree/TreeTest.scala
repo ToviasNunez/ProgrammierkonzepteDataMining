@@ -70,12 +70,10 @@ class TreeTest extends AnyFunSuite :
     val tree = BinaryTree(3, 11, 8, 15, 4, 5, 16, 1)
     val expected = BinaryTree(3, 11, 8, 15, 4, 16, 1)
     assert(tree.delete(5) === expected)
-
+ // here is problem
   test("delete middle node"):
     val tree = BinaryTree(3, 11, 8, 15, 4, 5, 16, 1)
     val expected = BinaryTree(4, 11, 8, 5, 15, 16, 1)
-   // val expected = BinaryTree(15, 1, 11, 8, 4, 5, 16) // Adjusted expected tree
-
     assert(tree.delete(3) === expected)
 
   test("delete nothing"):
@@ -105,12 +103,15 @@ class TreeTest extends AnyFunSuite :
     val expected =  BinaryTree(9, 121, 64, 225, 16, 25, 256, 1)
     assert(tree.map(x=>x*x) === expected)
 
-  test("filter x=>x % 2==0") :
+  test("filter x=>x % 2==0"):
     val tree = BinaryTree(3, 11, 8, 15, 4, 5, 16, 1)
-    val result= tree.filter(x=>x%2==0)
+    val result= tree.filter(x => x % 2==0)
     val expected= List(4,8,16)
     assert(result.tree2List===expected)
     assert(result.isBinaryTree)
+
+
+
 /*
   test("foldLeft associative function") :
     val tree = BinaryTree(3, 11, 8, 15, 4, 5, 16, 1)

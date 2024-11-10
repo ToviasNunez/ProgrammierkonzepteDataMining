@@ -97,8 +97,9 @@ class IntTreeTest extends AnyFunSuite {
     }) === 3)
   }
 
+  // here is problem
   test("testReduceLeft is left to right 2") {
-    assert(SinglyLinkedIntList(1, 2, 3, 4 , 5).reduceLeft((x, y) => x-y) === -13)
+    assert(SinglyLinkedIntList(1, 2, 3, 4 , 5).reduceLeft((x, y) => x-y ) === -13)
   }
 
   test("testForAll positive") {

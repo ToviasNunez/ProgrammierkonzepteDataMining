@@ -1,7 +1,7 @@
 package recursions
 
+import list.implementation.*
 import list.traits.IntList
-import list.implementation._
 
 object ProblemsLists :
 

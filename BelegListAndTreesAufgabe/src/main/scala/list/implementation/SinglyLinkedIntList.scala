@@ -64,12 +64,38 @@ abstract class SinglyLinkedIntList extends IntList :
     case Empty => initial
     case Cons(h , t) => t.foldLeft(reduceFunc(initial, h))(reduceFunc)
 
+  // here is a problem reduce happen not correct
   /* Do not use a fold-operator for the implementation!*/
   // Reduces the list from the left without using `fold`
-  override def reduceLeft(reduceFunc: (Int, Int) => Int): Int = this match
-    case Cons(h, Empty) => h
-    case Cons(h , t) => t.reduceLeft((acc,elem) => reduceFunc(acc,elem))
+  override def reduceLeft(reduceFunc: (Int, Int) => Int): Int = this match {
     case Empty => throw new UnsupportedOperationException("reduceLeft on empty list")
+    case Cons(h, t) =>
+      // Helper method to accumulate the result as we traverse the list
+      def loop(acc: Int, remaining: IntList): Int = remaining match {
+        case Empty => acc // When there's no more elements, return accumulated result
+        case Cons(head, tail) =>
+          val newAcc = reduceFunc(acc, head) // Apply the function to update the accumulator
+         // println(s"Applying reduceFunc: reduceFunc($acc, $head) = $newAcc") // Debugging output
+          loop(newAcc, tail) // Continue with the updated accumulator and the remaining list
+      }
+      loop(h, t) // Start accumulating with the head as initial value and the tail as remaining list
+  }
+ /* override def reduceLeft(reduceFunc: (Int, Int) => Int): Int = this match {
+    case Empty => throw new UnsupportedOperationException("reduceLeft on empty list") // Handle the empty list case
+    case Cons(h, t) =>
+      // If the tail is empty, return the head (base case)
+      t match {
+        case Empty => h
+        case _ =>
+          // Recursively call reduceLeft on the tail and apply the function with head
+          val tailResult = t.reduceLeft(reduceFunc) // Recursively reduce the tail
+          println(s"Applying reduceFunc: reduceFunc($h, $tailResult)") // Debugging output
+          // Update h with the result of the function applied to head and the result of the tail
+          reduceFunc(h, tailResult)
+      }
+  }*/
+
+
 
   // Inserts `elem` into the sorted list
   override def insertSorted(elem: Int): IntList = this match

@@ -5,280 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="688c6350-29e1-4949-8840-f46bedf81a5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Beleg_1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/Beleg1_Aufgabe.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/build.sbt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/build.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/config-classes/$58c6a8ccf1f3c3562e45$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/config-classes/$58c6a8ccf1f3c3562e45.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/config-classes/$58c6a8ccf1f3c3562e45.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/config-classes/$d3ba7a88425d815c5354$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/config-classes/$d3ba7a88425d815c5354.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/config-classes/$d3ba7a88425d815c5354.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/scala-2.12/sbt-1.0/sync/copy-resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/_global/_global/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/_global/csrConfiguration/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/_global/ivySbt/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/_global/moduleSettings/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/_global/projectDescriptors/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/_global/scalaCompilerBridgeScope/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/_global/_global/discoveredMainClasses/data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/bspReporter/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/compile/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/internalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/internalDependencyClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/scalacOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/unmanagedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/unmanagedClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/compile/unmanagedJars/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/runtime/exportedProducts/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/runtime/internalDependencyClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/runtime/unmanagedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/runtime/unmanagedClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/project/target/streams/runtime/unmanagedJars/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/resources/stopwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/resources/words.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/list/implementation/Cons.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/list/implementation/Empty.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/list/implementation/SinglyLinkedIntList.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/list/traits/IntList.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/recursions/ProblemsLists.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/tree/implementation/BinaryTree.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/tree/implementation/Empty.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/tree/implementation/NonEmpty.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/tree/traits/IntTree.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/resources/stopwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/list/IntTreeTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/recursions/ProblemsListsTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/TreeTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/scala-2.12/update/update_cache_2.12/inputs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/scala-2.12/update/update_cache_2.12/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/_global/_global/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/_global/csrConfiguration/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/_global/ivySbt/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/_global/moduleSettings/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/_global/projectDescriptors/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/_global/scalaCompilerBridgeScope/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/_global/update/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/bspReporter/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/compile/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/internalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/internalDependencyClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/scalacOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/unmanagedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/unmanagedClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/target/streams/compile/unmanagedJars/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/scala-2.12/sync/copy-resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/scala-2.12/test-sync/copy-resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/scala-2.12/update/update_cache_2.12/inputs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/scala-2.12/update/update_cache_2.12/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/_global/_global/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/_global/csrConfiguration/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/_global/ivySbt/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/_global/moduleSettings/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/_global/projectDescriptors/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/_global/scalaCompilerBridgeScope/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/_global/update/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/_global/_global/discoveredMainClasses/data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/bspReporter/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/compile/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/internalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/internalDependencyClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/scalacOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/unmanagedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/unmanagedClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/compile/unmanagedJars/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/runtime/exportedProducts/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/runtime/unmanagedJars/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/_global/_global/compileOutputs/previous" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/_global/_global/definedTestNames/data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/_global/_global/discoveredMainClasses/data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/bspReporter/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/compile/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/compileIncremental/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/compileIncremental/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/copyResources/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/definedTests/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/exportedProducts/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/fullClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/incOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/internalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/internalDependencyClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/loadedTestFrameworks/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/scalacOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/test/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/testListeners/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/unmanagedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/unmanagedClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/target/streams/test/unmanagedJars/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Cons$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Cons.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Cons.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Empty$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Empty.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Empty.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/SinglyLinkedIntList$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/SinglyLinkedIntList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/SinglyLinkedIntList.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/traits/IntList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/traits/IntList.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/recursions/ProblemsLists$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/recursions/ProblemsLists.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/recursions/ProblemsLists.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/stopwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/BinaryTree$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/BinaryTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/BinaryTree.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/Empty$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/Empty.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/Empty.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/NonEmpty$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/NonEmpty.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/NonEmpty.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/traits/IntTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/traits/IntTree.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/words.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/sync/copy-resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/list/IntTreeTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/list/IntTreeTest.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/recursions/ProblemsListsTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/recursions/ProblemsListsTest.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/stopwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/tree/TreeTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/tree/TreeTest.tasty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-sync/copy-resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-zinc/inc_compile_3.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/update/update_cache_3/inputs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/update/update_cache_3/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/zinc/inc_compile_3.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/_global/_global/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/_global/csrConfiguration/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/input_dsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/output_dsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/_global/ivySbt/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/_global/moduleSettings/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/_global/projectDescriptors/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/_global/scalaCompilerBridgeScope/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/_global/update/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/_global/_global/discoveredMainClasses/data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/bspReporter/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/compile/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/internalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/internalDependencyClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/scalacOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/unmanagedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/unmanagedClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/unmanagedJars/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/runtime/exportedProducts/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/runtime/unmanagedJars/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/_global/_global/compileOutputs/previous" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/_global/_global/definedTestNames/data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/_global/_global/discoveredMainClasses/data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/bspReporter/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/compile/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/compileIncremental/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/compileIncremental/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/copyResources/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/definedTests/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/exportedProducts/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/fullClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/incOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/internalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/internalDependencyClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/loadedTestFrameworks/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/scalacOptions/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/test/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/test/_global/streams/succeeded_tests" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/testListeners/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/unmanagedClasspath/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/unmanagedClasspath/_global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/unmanagedJars/_global/streams/export" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/test-reports/TEST-list.IntTreeTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/test-reports/TEST-recursions.ProblemsListsTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/test-reports/TEST-tree.TreeTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beleg_1/.bsp/sbt.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beleg_1/.idea/modules/Beleg_1.Beleg_1-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beleg_1/Beleg1_Aufgabe.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beleg_1/build.sbt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beleg_1/project/build.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beleg_1/src/main/scala/main.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beleg_1_Aufgabe.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProgrammierkonzepteDataMining.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProgrammierkonzepteDataMining.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/inc_compile_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/inc_compile_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/inc_compile_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/inc_compile_33.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/.bsp/sbt.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/.history3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recursion/project/target/config-classes/$d5170952a808ac42f494$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recursion/project/target/config-classes/$d5170952a808ac42f494.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recursion/project/target/config-classes/$d5170952a808ac42f494.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recursion/target/streams/_global/_global/dumpStructure/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/target/streams/_global/_global/dumpStructure/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/project/target/config-classes/$7e759554e7a918545a37$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/project/target/config-classes/$7e759554e7a918545a37.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung-2/project/target/config-classes/$7e759554e7a918545a37.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung2-Aufgabenblatt.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung-2/Uebung2-Aufgabenblatt.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/list/implementation/SinglyLinkedIntList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/list/implementation/SinglyLinkedIntList.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/recursions/ProblemsLists.scala" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/recursions/ProblemsLists.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/tree/implementation/BinaryTree.scala" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/main/scala/tree/implementation/BinaryTree.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/list/IntTreeTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/list/IntTreeTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/TreeTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/TreeTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Cons.class" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Cons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Cons.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Cons.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Empty.class" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Empty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Empty.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/Empty.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/SinglyLinkedIntList.class" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/SinglyLinkedIntList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/SinglyLinkedIntList.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/list/implementation/SinglyLinkedIntList.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/recursions/ProblemsLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/recursions/ProblemsLists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/recursions/ProblemsLists.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/recursions/ProblemsLists.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/BinaryTree.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/BinaryTree.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/Empty.class" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/Empty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/Empty.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/Empty.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/NonEmpty.class" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/NonEmpty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/NonEmpty.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/tree/implementation/NonEmpty.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/list/IntTreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/list/IntTreeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/list/IntTreeTest.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/list/IntTreeTest.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/tree/TreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/tree/TreeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/tree/TreeTest.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-classes/tree/TreeTest.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-zinc/inc_compile_3.zip" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/test-zinc/inc_compile_3.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/zinc/inc_compile_3.zip" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/scala-3.5.1/zinc/inc_compile_3.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/compile/compile/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/_global/_global/definedTestNames/data" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/_global/_global/definedTestNames/data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/definedTests/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/definedTests/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/incOptions/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/test/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/test/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/test/_global/streams/succeeded_tests" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/streams/test/test/_global/streams/succeeded_tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/test-reports/TEST-list.IntTreeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/test-reports/TEST-list.IntTreeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/test-reports/TEST-recursions.ProblemsListsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/test-reports/TEST-recursions.ProblemsListsTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/test-reports/TEST-tree.TreeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BelegListAndTreesAufgabe/target/test-reports/TEST-tree.TreeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/project/target/config-classes/$562a27b152dfbb59fa07$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/project/target/config-classes/$562a27b152dfbb59fa07.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung-2/project/target/config-classes/$562a27b152dfbb59fa07.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,6 +112,8 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.runRationalOperations (1).executor": "Debug",
+    "Application.runRationalOperations.executor": "Debug",
+    "Remote JVM Debug.Debug sbt shell.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -348,7 +126,7 @@
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "scala_project_settings_configurable.last_selected_tab_index": "7",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "debugger.stepping"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -359,7 +137,7 @@
       <recent name="D:\GitHub\ProgrammierkonzepteDataMining\Scala-Developer-Master" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.runRationalOperations">
+  <component name="RunManager" selected="Remote JVM Debug.Debug sbt shell">
     <configuration name="main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -387,6 +165,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Debug sbt shell" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="ProgrammierkonzepteDataMining" />
       <option name="ENV_FILES" value="" />
@@ -407,11 +198,12 @@
       <item itemvalue="Application.main" />
       <item itemvalue="Application.runRationalOperations" />
       <item itemvalue="Python tests.Python tests in test" />
+      <item itemvalue="Remote JVM Debug.Debug sbt shell" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test" />
         <item itemvalue="Application.runRationalOperations" />
+        <item itemvalue="Python tests.Python tests in test" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
@@ -480,18 +272,26 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/TreeTest.scala</url>
-          <line>77</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/TreeTest.scala</url>
-          <line>75</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/tree/TreeTest.scala</url>
           <line>74</line>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/list/IntTreeTest.scala</url>
+          <line>101</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/list/IntTreeTest.scala</url>
+          <line>99</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/BelegListAndTreesAufgabe/src/test/scala/list/IntTreeTest.scala</url>
+          <line>100</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaSbtSettings">
+    <option name="customLauncherPath" />
+    <option name="customVMEnabled" value="true" />
+    <option name="customVMPath" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home" />
     <option name="linkedExternalProjectsSettings">
       <SbtProjectSettings>
+        <option name="enableDebugSbtShell" value="true" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Beleg_1" />
         <option name="modules">
           <set>
@@ -10,7 +14,7 @@
             <option value="$PROJECT_DIR$/Beleg_1/project" />
           </set>
         </option>
-        <option name="sbtVersion" value="1.10.5" />
+        <option name="useSbtShellForBuild" value="true" />
       </SbtProjectSettings>
       <SbtProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/Recursion" />
@@ -20,7 +24,6 @@
             <option value="$PROJECT_DIR$/Recursion/project" />
           </set>
         </option>
-        <option name="sbtVersion" value="1.10.3" />
       </SbtProjectSettings>
       <SbtProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/Uebung-2" />
@@ -30,7 +33,6 @@
             <option value="$PROJECT_DIR$/Uebung-2/project" />
           </set>
         </option>
-        <option name="sbtVersion" value="1.10.2" />
       </SbtProjectSettings>
     </option>
   </component>
