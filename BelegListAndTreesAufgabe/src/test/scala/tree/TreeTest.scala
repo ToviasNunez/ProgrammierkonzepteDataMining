@@ -1,7 +1,12 @@
 package tree
 
-import tree.implementation.{Empty,NonEmpty,BinaryTree}
 import org.scalatest.funsuite.AnyFunSuite
+import tree.implementation.BinaryTree
+import tree.implementation.Empty
+import tree.implementation.NonEmpty
+
+
+
 
 class TreeTest extends AnyFunSuite :
 
@@ -125,3 +130,12 @@ class TreeTest extends AnyFunSuite :
     val tree = BinaryTree(3, 11, 8, 15, 4, 5, 16, 1)
     assert(tree.reduceLeft((x, y) => x - y) === 63)
 */
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe\src\main\scala\tree\implementation\BinaryTree.scala:131:1 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m131 |[0m [33mdef[0m [36mfilterHelper[0m([36mtree[0m: [35mIntTree[0m, [36mfilterFun[0m: [35mInt[0m => [35mBoolean[0m, [36mseen[0m: [35mSet[0m[[35mInt[0m]): [35mIntTree[0m = tree [33mmatch[0m {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

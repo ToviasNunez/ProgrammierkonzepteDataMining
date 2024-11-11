@@ -1,0 +1,143 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\nunezt_admin\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\nunezt_admin\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.10.2 (OpenLogic Java 17.0.7)
+[debug]       Load.loadUnit: plugins took 56.2673ms
+[debug]       Load.loadUnit: defsScala took 0.1782ms
+[debug] [Loading] Scanning directory C:\Users\nunezt_admin\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\nunezt_admin\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 10.9252 ms
+[debug]           Load.resolveProject(global-plugins) took 25.8057ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\nunezt_admin\.sbt\1.0\plugins, plugins: List(<none>))) took 48.1385ms
+[debug] [Loading] Done in C:\Users\nunezt_admin\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 63.823101ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.108299ms
+[debug]     Load.loadUnit(file:/C:/Users/nunezt_admin/.sbt/1.0/plugins/, ...) took 125.2616ms
+[debug]   Load.apply: load took 250.895199ms
+[debug]   Load.apply: resolveProjects took 3.1236ms
+[debug]   Load.apply: finalTransforms took 44.719001ms
+[debug]   Load.apply: config.delegates took 9.2487ms
+[debug]   Load.apply: Def.make(settings)... took 453.4341ms
+[debug]   Load.apply: structureIndex took 108.8744ms
+[debug]   Load.apply: mkStreams took 4.2162ms
+[info] loading global plugins from C:\Users\nunezt_admin\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 1989.1754ms
+[debug]           Load.loadUnit: plugins took 22.998499ms
+[debug]           Load.loadUnit: defsScala took 0.004699ms
+[debug] [Loading] Scanning directory D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe\project
+[debug]             Load.loadUnit: mkEval took 3.1544ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.041699 ms
+[info] loading settings for project beleglistandtreesaufgabe-build from plugins.sbt,idea.sbt ...
+[debug]               Load.resolveProject(beleglistandtreesaufgabe-build) took 4.7931ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id beleglistandtreesaufgabe-build, base: D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe\project, plugins: List(<none>))) took 6.156601ms
+[debug] [Loading] Done in D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe\project, returning: (beleglistandtreesaufgabe-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 1969.665399ms
+[debug]           Load.loadUnit: cleanEvalClasses took 5.0985ms
+[debug]         Load.loadUnit(file:/D:/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe/project/, ...) took 1998.453401ms
+[debug]       Load.apply: load took 1999.4183ms
+[debug]       Load.apply: resolveProjects took 0.0965ms
+[debug]       Load.apply: finalTransforms took 5.5691ms
+[debug]       Load.apply: config.delegates took 0.239101ms
+[debug]       Load.apply: Def.make(settings)... took 44.535199ms
+[debug]       Load.apply: structureIndex took 18.398501ms
+[debug]       Load.apply: mkStreams took 0.0022ms
+[info] loading project definition from D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[debug]     Load.loadUnit: plugins took 3164.2179ms
+[debug]     Load.loadUnit: defsScala took 0.002701ms
+[debug] [Loading] Scanning directory D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe
+[debug]       Load.loadUnit: mkEval took 0.211801ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
+[debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 1.726 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 68.595201ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe, plugins: List(<none>))) took 72.7154ms
+[debug] [Loading] Done in D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 965.8503ms
+[debug]     Load.loadUnit: cleanEvalClasses took 6.4555ms
+[debug]   Load.loadUnit(file:/D:/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe/, ...) took 4137.2609ms
+[debug] Load.apply: load took 4138.3403ms
+[debug] Load.apply: resolveProjects took 0.0887ms
+[debug] Load.apply: finalTransforms took 27.5609ms
+[debug] Load.apply: config.delegates took 0.175ms
+[debug] Load.apply: Def.make(settings)... took 41.220301ms
+[debug] Load.apply: structureIndex took 15.322301ms
+[debug] Load.apply: mkStreams took 0.002099ms
+[info] set current project to BelegListAndTreeAufgabe (in build file:/D:/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 49248 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 49248, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to BelegListAndTreeAufgabe (in build file:/D:/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe/)
+[debug] > Exec(idea-shell, None, None)

@@ -1,3 +1,3 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe/src/main/resources/words.txt,/Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/words.txt)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe/src/main/resources/stopwords.txt,/Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe/target/scala-3.5.1/classes/stopwords.txt)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe\src\main\resources\stopwords.txt,D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe\target\scala-3.5.2\classes\stopwords.txt)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe\src\main\resources\words.txt,D:\GitHub\ProgrammierkonzepteDataMining\BelegListAndTreesAufgabe\target\scala-3.5.2\classes\words.txt)[0m
