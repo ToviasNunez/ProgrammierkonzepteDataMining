@@ -2,7 +2,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
 [0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
 [0m[[0m[0mdebug[0m] [0m[0mRunner for org.scalatest.tools.Framework produced 3 initial tasks for 3 tests.[0m
-[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(tree.TreeTest, sbt.ForkMain$SubclassFingerscan@617c74e5, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(tree.TreeTest, sbt.ForkMain$SubclassFingerscan@3796751b, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mTreeTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Tree initialization test[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Tree initialization test apply[0m[0m
@@ -26,12 +26,9 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- isBinaryTree false 2[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- tree2List[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- map x=>x*x[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- filter x=>x % 2==0 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  List(4, 8, 8, 16) did not equal List(4, 8, 16) (TreeTest.scala:112)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  List(2: 8 -> 16, 3: 16 -> )[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- filter x=>x % 2==0[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 23 events.[0m
-[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(list.IntTreeTest, sbt.ForkMain$SubclassFingerscan@6537cf78, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(list.IntTreeTest, sbt.ForkMain$SubclassFingerscan@67b64c45, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mIntTreeTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- test object apply[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- test object apply tail[0m[0m
@@ -68,7 +65,7 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- testInsertSorted2[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- testInsertSorted3[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 34 events.[0m
-[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(recursions.ProblemsListsTest, sbt.ForkMain$SubclassFingerscan@67b6d4ae, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(recursions.ProblemsListsTest, sbt.ForkMain$SubclassFingerscan@4411d970, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mProblemsListsTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- duplicate Num[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- duplicate NumbersFulfillingPredicate[0m[0m
@@ -76,14 +73,12 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- combinations unsorted[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- combinations Empty[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 753 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 980 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 62[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 3, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 61, failed 1, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 62, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tree.TreeTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	list.IntTreeTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	recursions.ProblemsListsTest[0m
-[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
-[0m[[0m[31merror[0m] [0m[0m	tree.TreeTest[0m
-[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

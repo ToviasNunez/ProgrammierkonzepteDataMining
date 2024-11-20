@@ -1,0 +1,85 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:13:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m    [33mval[0m [36mresult[0m = avgEvenOdd(numbers)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: avgEvenOdd[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:19:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m    [33mval[0m [36mresult[0m = avgEvenOdd(numbers)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: avgEvenOdd[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:26:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m    [33mval[0m [36mresult[0m = duplicateElements(numbers)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: duplicateElements[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:32:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m32 |[0m    [33mval[0m [36mresult[0m = duplicateElements(numbers)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: duplicateElements[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:40:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m40 |[0m    [33mval[0m [36mresult[0m = cartesianproduct(list1, list2)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: cartesianproduct[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:47:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m47 |[0m    [33mval[0m [36mresult[0m = cartesianproduct(list1, list2)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: cartesianproduct[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:54:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m54 |[0m    [33mval[0m [36mresult[0m = moduloMap(numbers, [31m3[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: moduloMap[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:60:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m60 |[0m    [33mval[0m [36mresult[0m = moduloMap(numbers, [31m3[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: moduloMap[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:67:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m67 |[0m    [33mval[0m [36mresult[0m = countLetters(words)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: countLetters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:73:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m73 |[0m    [33mval[0m [36mresult[0m = countLetters(words)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: countLetters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:80:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m80 |[0m    [33mval[0m [36mresult[0m = wordsByLength(words)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: wordsByLength[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:86:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m86 |[0m    [33mval[0m [36mresult[0m = wordsByLength(words)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: wordsByLength[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:93:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m93 |[0m    [33mval[0m [36mresult[0m = avgNumbers(numbers)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: avgNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Uebung-5/src/test/scala/menge/Uebung_5Test.scala:99:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m99 |[0m    [33mval[0m [36mresult[0m = avgNumbers(numbers)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Not found: avgNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m14 errors found[0m

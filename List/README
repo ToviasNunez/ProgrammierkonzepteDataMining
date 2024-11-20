@@ -1,0 +1,10 @@
+List<Int> I = new ArrayList() --> performing technic it is not so good , add a new element
+
+ArrayList<Int> I = new ArrayList()
+
+
+
+Trail
+Abstract
+
+Object Strutur

@@ -2,6 +2,8 @@ package list.implementation
 
 import list.traits.IntList
 
+import scala.annotation.tailrec
+
 /**
   * A companion object for the singly linked list.
   * This enables creating lists list this: val list = SinglyLinkedIntList(1,2,3)
@@ -64,13 +66,14 @@ abstract class SinglyLinkedIntList extends IntList :
     case Empty => initial
     case Cons(h , t) => t.foldLeft(reduceFunc(initial, h))(reduceFunc)
 
-  // here is a problem reduce happen not correct
+
   /* Do not use a fold-operator for the implementation!*/
   // Reduces the list from the left without using `fold`
   override def reduceLeft(reduceFunc: (Int, Int) => Int): Int = this match {
     case Empty => throw new UnsupportedOperationException("reduceLeft on empty list")
     case Cons(h, t) =>
       // Helper method to accumulate the result as we traverse the list
+      @tailrec
       def loop(acc: Int, remaining: IntList): Int = remaining match {
         case Empty => acc // When there's no more elements, return accumulated result
         case Cons(head, tail) =>
@@ -80,22 +83,15 @@ abstract class SinglyLinkedIntList extends IntList :
       }
       loop(h, t) // Start accumulating with the head as initial value and the tail as remaining list
   }
- /* override def reduceLeft(reduceFunc: (Int, Int) => Int): Int = this match {
-    case Empty => throw new UnsupportedOperationException("reduceLeft on empty list") // Handle the empty list case
-    case Cons(h, t) =>
-      // If the tail is empty, return the head (base case)
-      t match {
-        case Empty => h
-        case _ =>
-          // Recursively call reduceLeft on the tail and apply the function with head
-          val tailResult = t.reduceLeft(reduceFunc) // Recursively reduce the tail
-          println(s"Applying reduceFunc: reduceFunc($h, $tailResult)") // Debugging output
-          // Update h with the result of the function applied to head and the result of the tail
-          reduceFunc(h, tailResult)
-      }
-  }*/
-
-
+  // this doesnt work
+  /*
+  override def reduceLeft(reduceFunc: (Int, Int) => Int): Int = this match
+    case Empty => throw new UnsupportedOperationException("reduceLeft on empty list")
+    case Cons(h,Empty)=> h
+    case Cons(h,t)=> t match
+      case Empty => h
+      case _ => reduceFunc(h,t.reduceLeft(reduceFunc))
+*/
 
   // Inserts `elem` into the sorted list
   override def insertSorted(elem: Int): IntList = this match
@@ -108,10 +104,15 @@ abstract class SinglyLinkedIntList extends IntList :
     case Empty => Empty
     case Cons(h,t) => t.insertionSort.insertSorted(h)
   // Reverses the list
-  override def flip: IntList = {
+ /* override def flip: IntList = {
+    @tailrec
     def reverse(acc: IntList, list: IntList): IntList = list match
       case Empty => acc
       case Cons(h ,t) => reverse(Cons(h, acc), t)
-
     reverse(Empty, this)
-  }
+  }*/
+  override def flip: IntList = this match
+    case Empty => Empty
+    case Cons(h,t)=>(Cons(h,Empty)).prefix(tail.flip)
+
+
