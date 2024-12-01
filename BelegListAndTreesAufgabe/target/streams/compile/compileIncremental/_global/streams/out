@@ -2,5 +2,30 @@
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
 [0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 16 products, 9 sources, 2 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/list/implementation/Cons.scala, ${BASE}/src/main/scala/tree/implementation/Empty.scala, ${BASE}/src/main/scala/tree/implementation/NonEmpty.scala, ${BASE}/src/main/scala/recursions/ProblemsLists.scala, ${BASE}/src/main/scala/list/implementation/Empty.scala, ${BASE}/src/main/scala/tree/traits/IntTree.scala, ${BASE}/src/main/scala/list/traits/IntList.scala, ${BASE}/src/main/scala/tree/implementation/BinaryTree.scala, ${BASE}/src/main/scala/list/implementation/SinglyLinkedIntList.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(${BASE}/target/scala-3.5.2/classes/list/traits/IntList.class, ${BASE}/target/scala-3.5.2/classes/recursions/ProblemsLists.class, ${BASE}/target/scala-3.5.2/classes/tree/implementation/NonEmpty.class, ${BASE}/target/scala-3.5.2/classes/tree/traits/IntTree.class, ${BASE}/target/scala-3.5.2/classes/list/implementation/Empty.class, ${BASE}/target/scala-3.5.2/classes/tree/implementation/Empty.class, ${BASE}/target/scala-3.5.2/classes/list/implementation/SinglyLinkedIntList.class, ${BASE}/target/scala-3.5.2/classes/list/implementation/Cons.class, ${BASE}/target/scala-3.5.2/classes/tree/implementation/BinaryTree.class),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set(${BASE}/target/scala-3.5.2/classes/list/traits/IntList.class, ${BASE}/target/scala-3.5.2/classes/recursions/ProblemsLists.class, ${BASE}/target/scala-3.5.2/classes/tree/implementation/NonEmpty.class, ${BASE}/target/scala-3.5.2/classes/tree/traits/IntTree.class, ${BASE}/target/scala-3.5.2/classes/list/implementation/Empty.class, ${BASE}/target/scala-3.5.2/classes/tree/implementation/Empty.class, ${BASE}/target/scala-3.5.2/classes/list/implementation/SinglyLinkedIntList.class, ${BASE}/target/scala-3.5.2/classes/list/implementation/Cons.class, ${BASE}/target/scala-3.5.2/classes/tree/implementation/BinaryTree.class)[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set(${BASE}/src/main/scala/list/implementation/Cons.scala, ${BASE}/src/main/scala/tree/implementation/Empty.scala, ${BASE}/src/main/scala/tree/implementation/NonEmpty.scala, ${BASE}/src/main/scala/recursions/ProblemsLists.scala, ${BASE}/src/main/scala/list/implementation/Empty.scala, ${BASE}/src/main/scala/tree/traits/IntTree.scala, ${BASE}/src/main/scala/list/traits/IntList.scala, ${BASE}/src/main/scala/tree/implementation/BinaryTree.scala, ${BASE}/src/main/scala/list/implementation/SinglyLinkedIntList.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mall 9 sources are invalidated[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0 percent of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe/target/scala-3.5.2/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: /Users/toviasnunezborrero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.5.2/scala3-sbt-bridge-3.5.2.jar.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 5e81fe4c for Scala Compiler version 3.5.2[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-deprecation[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/BelegListAndTreesAufgabe/target/scala-3.5.2/classes:/Users/toviasnunezborrero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.5.2/scala3-library_3-3.5.2.jar:/Users/toviasnunezborrero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_3/2.17.1/jackson-module-scala_3-2.17.1.jar:/Users/toviasnunezborrero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.14/scala-library-2.13.14.jar:/Users/toviasnunezborrero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/toviasnunezborrero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/toviasnunezborrero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/toviasnunezborrero/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 4.000343227 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
