@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea498e3e-33c9-4b79-8a81-08b1a4b96a0f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_annotations_2_17_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_core_2_17_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_databind_2_17_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__com_fasterxml_jackson_module_jackson_module_scala_3_2_17_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__com_thoughtworks_paranamer_paranamer_2_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_3_2_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalactic_scalactic_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_compatible_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_core_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_diagrams_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_featurespec_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_flatspec_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_freespec_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_funspec_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_funsuite_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_matchers_core_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_mustmatchers_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_propspec_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_refspec_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_shouldmatchers_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/libraries/sbt__org_scalatest_scalatest_wordspec_3_3_2_19_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/Klausurvorbereitung.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/LinkedList.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/Playground_HOF.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/project/target/config-classes/$ff6981123949bd128cf9$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/project/target/config-classes/$ff6981123949bd128cf9.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/project/target/config-classes/$ff6981123949bd128cf9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$3f62a0d074d8b65f87d9$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$3f62a0d074d8b65f87d9.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$3f62a0d074d8b65f87d9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$bc20ee0230437220ecfc$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$bc20ee0230437220ecfc.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$bc20ee0230437220ecfc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$fdfbc867c1cf162f6548$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$fdfbc867c1cf162f6548.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$fdfbc867c1cf162f6548.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/src/main/scala/implementation/CalorieTracker.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/src/main/scala/implementation/Cons.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/src/main/scala/implementation/Empty.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/src/main/scala/implementation/IntList.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/src/test/scala/implementation/CalorieTrackerTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/src/test/scala/implementation/IntListTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/classes/implementation/Cons$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/classes/implementation/Cons.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/classes/implementation/Cons.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/classes/implementation/Empty$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/classes/implementation/Empty.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/classes/implementation/Empty.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/test-classes/implementation/CalorieTrackerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/test-classes/implementation/CalorieTrackerTest.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/test-classes/implementation/IntListTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/test-classes/implementation/IntListTest.tasty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kausurvorbereitung/Übungsblatt_WiederholungT1Aufgabe.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.bsp/sbt.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/easycode.ignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala3_library_3_3_6_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_15_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__scala_sdk_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$4f0845f13c674913765d$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$4f0845f13c674913765d.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$4f0845f13c674913765d.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$7913fb115a2326012b5f$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$7913fb115a2326012b5f.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$7913fb115a2326012b5f.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$88573943cc94acbc48c1$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$88573943cc94acbc48c1.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$88573943cc94acbc48c1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$c3e40c72ea811cb59bed$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$c3e40c72ea811cb59bed.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$c3e40c72ea811cb59bed.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/sync/copy-resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/_global/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/csrConfiguration/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/ivySbt/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/moduleSettings/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/projectDescriptors/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/scalaCompilerBridgeScope/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/discoveredMainClasses/data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/bspReporter/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/compile/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/internalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/internalDependencyClasspath/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/scalacOptions/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/unmanagedClasspath/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/compile/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/unmanagedClasspath/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/streams/runtime/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-3.6.1/update/update_cache_3/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-3.6.1/update/update_cache_3/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/_global/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/_global/dumpStructure/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/csrConfiguration/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/input_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/output_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/ivySbt/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/moduleSettings/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/projectDescriptors/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/scalacOptions/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/unmanagedClasspath/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/compile/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/unmanagedClasspath/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/runtime/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/test/scalacOptions/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/test/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/test/unmanagedClasspath/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/streams/test/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/.bsp/sbt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/.idea/modules/BelegListAndTreeAufgabe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/.idea/modules/BelegListAndTreeAufgabe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/project/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/project/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/project/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/_global/updateClassifiers/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/_global/updateClassifiers/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/_global/updateSbtClassifiers/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/_global/updateSbtClassifiers/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/compile/bloopGenerate/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/compile/bloopGenerate/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/compile/bloopPostGenerate/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/compile/bloopPostGenerate/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/project/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/_global/updateSbtClassifiers/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/_global/updateSbtClassifiers/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/compile/bloopGenerate/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/compile/bloopGenerate/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/compile/bloopPostGenerate/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/compile/bloopPostGenerate/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/project/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/target/scala-3.5.2/classes/tree/implementation/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/target/scala-3.5.2/classes/tree/implementation/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/target/scala-3.5.2/classes/tree/implementation/BinaryTree.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/target/scala-3.5.2/classes/tree/implementation/BinaryTree.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../BelegListAndTreesAufgabe/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.bsp/sbt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/modules/Kausurvorbereitung.Kausurvorbereitung-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/modules/Kausurvorbereitung.Kausurvorbereitung-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/modules/Kausurvorbereitung.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/modules/Kausurvorbereitung.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$3897b8b156744ec60a9e$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$3897b8b156744ec60a9e.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$3897b8b156744ec60a9e.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$684274c00a317afc1334$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$684274c00a317afc1334.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$684274c00a317afc1334.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$780f9abe6e75dab5d595$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$780f9abe6e75dab5d595.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$780f9abe6e75dab5d595.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$c6c3a47fba851fee17fa$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$c6c3a47fba851fee17fa.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/project/target/config-classes/$c6c3a47fba851fee17fa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/update/update_cache_3/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/update/update_cache_3/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/update/update_cache_3/output" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/scala-3.6.1/update/update_cache_3/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/_global/dependencyPositions/_global/streams/update_cache_3/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/output" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/test/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/test/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Kausurvorbereitung/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Worksheet" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ToviasNunez&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ToviasNunez/ProgrammierkonzepteDataMining.git&quot;,
+    &quot;accountId&quot;: &quot;d6dbcc5f-c9fd-4a21-9128-27679c2be40e&quot;
+  }
+}</component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2pi1LhbYbSWdxxgw6ELGxFbeWwN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "didalgo.chatgpt.ToolWindow.ACTIVE": "OLLAMA",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="ScalaProjectSettings">
+    <option name="migrateConfigurationsNotificationShown" value="true" />
+    <option name="scala3DisclaimerShown" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea498e3e-33c9-4b79-8a81-08b1a4b96a0f" name="Changes" comment="" />
+      <created>1733234030101</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733234030101</updated>
+    </task>
+    <servers />
+  </component>
+</project>
