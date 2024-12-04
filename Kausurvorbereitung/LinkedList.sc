@@ -133,7 +133,7 @@ list_1.flatMap(x => Cons(x, Cons(x+1, Empty)))
 // 10. foldLeft: func recursively combines the elem of the list a give func starting with an initial value
 list_1.foldLeft(0)(_ + _)
 
-// 11. reduce: similar to foldLeft, but is doesn't require an initial value, it reduces the list to single value by applying a func
+// 11. reduce: similar to foldLeft, but not require an initial value, it reduces the list to single value by applying a func
 list_1.reduce(_+_)
 
 // 12. reverse: func reverse the order of the elem in this list

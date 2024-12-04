@@ -10,18 +10,22 @@ object SpotifyDataAnalysis {
       Use only an aggregation function
      */
       //l.map(song => (song, song.streams)).reduce((a,b) => if(a._2 > b._2) a else b)._1
-      l.filter(song => song.streams == l.map(_.streams).max)
-        .reduce((song1, song2) => song1)
+//      l.filter(song => song.streams == l.map(_.streams).max)
+//        .reduce((song1, song2) => song1)
+        l.maxBy(_.streams)
 
   def getNameAndNumberOfTheArtistWithMostSongsInList(l:List[Song]):(String,Int)=
     /*
       Get the Name of the Artist with the most Songs in the streaming list
       and the number of occurences
      */
-     l.map(_.artist)// extract artis name
-       .groupBy(identity) // group by artis name
-       .map{case (artist, song) => (artist , song.size)} // Map to (artist , count)
-       .reduce((a,b) => if (a._2 > b._2) a else b)
+//     l.map(_.artist)// extract artis name
+//       .groupBy(identity) // group by artis name
+//       .map{case (artist, song) => (artist , song.size)} // Map to (artist , count)
+//       .reduce((a,b) => if (a._2 > b._2) a else b)
+    l.groupBy(_.artist) // Group by artist name
+      .map { case (artist, songs) => (artist, songs.size) } // Map to (artist, number of songs)
+      .maxBy(_._2) // Find the artist with the most songs
 
   def getArtistWithMostStreams(l: List[Song]): (String, BigInt) =
 
@@ -29,10 +33,13 @@ object SpotifyDataAnalysis {
        Gets the Artist with the most streams in total
        and the number of streams
      */
-      l.map(song => (song.artist , song.streams)) // Map to (artist , streams)
-        .groupBy(_._1) // group by artist name
-        .map {case (artist , stream) => (artist , stream.map(_._2).sum)} // Sum stream
-        .reduce((a,b) => if (a._2 > b._2) a else b) // reduce to fin the artis with the most streams
+//      l.map(song => (song.artist , song.streams)) // Map to (artist , streams)
+//        .groupBy(_._1) // group by artist name
+//        .map {case (artist , stream) => (artist , stream.map(_._2).sum)} // Sum stream
+//        .reduce((a,b) => if (a._2 > b._2) a else b) // reduce to fin the artis with the most streams
+      l.groupBy(_.artist) // Group by artist name
+        .map { case (artist, songs) => (artist, songs.map(_.streams).sum) } // Map to (artist, total streams)
+        .maxBy(_._2) // Find the artist with the most streams
 
   def getMinAndMaxAndAvgBPM(l:List[Song]):(Int,Int,Double)=
 
@@ -201,6 +208,49 @@ object SpotifyDataAnalysis {
     Write three own functions that analysis the dataset! Write the functions with some explanations and corresponding tests!
 
      */
+
+
+  def getTopSongsByAttributes(songs: List[Song]): List[(String, Int, String, String)] = {
+    val attributes = List(
+      ("danceability", (s: Song) => s.danceability),
+      ("valence", (s: Song) => s.valence),
+      ("energy", (s: Song) => s.energy),
+      ("acousticness", (s: Song) => s.acousticness),
+      ("instrumentalness", (s: Song) => s.instrumentalness),
+      ("liveness", (s: Song) => s.liveness),
+      ("speechiness", (s: Song) => s.speechiness)
+    )
+
+    attributes.map { case (attributeName, attributeFunc) =>
+      val topSong = songs.maxBy(attributeFunc)
+      (attributeName, topSong.released_year, topSong.track, topSong.artist)
+    }
+  }
+
+  def getMostStreamedSongPlatformAndArtistByYear(songs: List[Song]): Map[Int, (String, String , String)] = {
+    songs.groupBy(_.released_year).map { case (year, songsInYear) =>
+      val mostStreamedSong = songsInYear.maxBy(_.streams)
+      val platform = if (mostStreamedSong.in_spotify_charts > 0) "Spotify"
+      else if (mostStreamedSong.in_apple_charts > 0) "Apple Music"
+      else if (mostStreamedSong.in_deezer_charts > 0) "Deezer"
+      else if (mostStreamedSong.in_shazam_charts > 0) "Shazam"
+      else "Unknown"
+      year -> (platform, mostStreamedSong.artist , mostStreamedSong.track)
+    }
+  }
+
+  def getPlatformRankingByStreams(songs: List[Song]): List[(String, BigInt)] = {
+    val platformStreams = songs.groupBy { song =>
+      if (song.in_spotify_charts > 0) "Spotify"
+      else if (song.in_apple_charts > 0) "Apple Music"
+      else if (song.in_deezer_charts > 0) "Deezer"
+      else if (song.in_shazam_charts > 0) "Shazam"
+      else "Unknown"
+    }.view.mapValues(_.map(_.streams).sum).toMap
+    platformStreams.toList.sortBy(-_._2)
+  }
+
+
 }
 
 
