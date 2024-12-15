@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>SinglyLinkedIntList.scala</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #fe8019;}
+.s1 { color: #fbf1c7;}
+.s2 { color: #ebdbb2;}
+.s3 { color: #83786e;}
+.s4 { color: #fabd2f;}
+.s5 { color: #bdae93;}
+.s6 { color: #b8bb26;}
+.s7 { color: #f8e1aa;}
+.s8 { color: #928374; font-style: italic;}
+.s9 { color: #d5c4a1;}
+.s10 { color: #d3869b;}
+</style>
+</head>
+<body bgcolor="#282828">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+SinglyLinkedIntList.scala</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">list</span><span class="s2">.</span><span class="s1">implementation</span>
+
+<span class="s0">import </span><span class="s1">list</span><span class="s2">.</span><span class="s1">traits</span><span class="s2">.</span><span class="s1">IntList</span>
+<span class="s0">import </span><span class="s1">scala</span><span class="s2">.</span><span class="s1">annotation</span><span class="s2">.</span><span class="s1">tailrec</span>
+
+<span class="s3">/**</span>
+ <span class="s3">* A companion object for the singly linked list.</span>
+ <span class="s3">* This enables creating lists like this: val list = SinglyLinkedIntList(1, 2, 3)</span>
+ <span class="s3">* which results in Cons(1, Cons(2, Cons(3, Empty)))</span>
+ <span class="s3">*/</span>
+<span class="s0">object </span><span class="s4">SinglyLinkedIntList </span><span class="s1">:</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* The </span><span class="s5">`</span><span class="s3">apply</span><span class="s5">` </span><span class="s3">function is a special function in Scala.</span>
+   <span class="s3">* It can be invoked as SinglyLinkedIntList.apply(args) or simply SinglyLinkedIntList(args).</span>
+   <span class="s3">* This particular implementation is also a variadic function, i.e.,</span>
+   <span class="s3">* a function that accepts zero or more arguments of the same type (integers) as parameters.</span>
+   <span class="s3">*/</span>
+  <span class="s0">def </span><span class="s6">apply</span><span class="s7">(</span><span class="s1">xs: Int*</span><span class="s7">)</span><span class="s1">: SinglyLinkedIntList </span><span class="s2">= </span><span class="s1">xs </span><span class="s0">match</span>
+    <span class="s0">case </span><span class="s1">Seq</span><span class="s7">() </span><span class="s2">=&gt; </span><span class="s1">Empty</span>
+    <span class="s8">// `: _*` results in the sequence being passed as multiple arguments</span>
+    <span class="s8">// For example, Seq(1, 2, 3) becomes (1, 2, 3)</span>
+    <span class="s0">case </span><span class="s1">_ </span><span class="s2">=&gt; </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">xs</span><span class="s2">.</span><span class="s1">head</span><span class="s2">, </span><span class="s1">SinglyLinkedIntList</span><span class="s7">(</span><span class="s1">xs</span><span class="s2">.</span><span class="s1">tail*</span><span class="s7">))</span>
+
+<span class="s3">/**</span>
+ <span class="s3">* Abstract class for a singly linked list, extending the </span><span class="s5">`</span><span class="s3">IntList</span><span class="s5">` </span><span class="s3">trait.</span>
+ <span class="s3">* Implements common operations for functional-style list manipulation.</span>
+ <span class="s3">*/</span>
+<span class="s0">abstract class </span><span class="s4">SinglyLinkedIntList </span><span class="s0">extends </span><span class="s1">IntList :</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Appends another list (</span><span class="s5">`</span><span class="s3">other</span><span class="s5">`</span><span class="s3">) to the front of the current list.</span>
+   <span class="s3">* </span><span class="s9">@param other </span><span class="s3">Another list to be prefixed.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">A new list with </span><span class="s5">`</span><span class="s3">other</span><span class="s5">` </span><span class="s3">prefixed.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">prefix</span><span class="s7">(</span><span class="s1">other: IntList</span><span class="s7">)</span><span class="s1">: IntList </span><span class="s2">= </span><span class="s1">other </span><span class="s0">match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s0">this </span><span class="s8">// If the other list is empty, return the current list.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">prefix</span><span class="s7">(</span><span class="s1">t</span><span class="s7">)) </span><span class="s8">// Recurse through the elements of `other`.</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Calculates the total number of elements in the list.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">The size of the list.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">size</span><span class="s1">: Int </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s10">0 </span><span class="s8">// An empty list has size 0.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">_</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s10">1 </span><span class="s1">+ t</span><span class="s2">.</span><span class="s1">size </span><span class="s8">// Add 1 for the head, then calculate size recursively for the tail.</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Applies a transformation function to each element of the list.</span>
+   <span class="s3">* </span><span class="s9">@param mapFunc </span><span class="s3">A function to transform each element.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">A new list with transformed elements.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">map</span><span class="s7">(</span><span class="s1">mapFunc: Int </span><span class="s2">=&gt; </span><span class="s1">Int</span><span class="s7">)</span><span class="s1">: IntList </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">Empty </span><span class="s8">// An empty list remains empty after mapping.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">mapFunc</span><span class="s7">(</span><span class="s1">h</span><span class="s7">)</span><span class="s2">, </span><span class="s1">t</span><span class="s2">.</span><span class="s1">map</span><span class="s7">(</span><span class="s1">mapFunc</span><span class="s7">)) </span><span class="s8">// Transform the head, and map the tail recursively.</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Filters the elements of the list based on a predicate function.</span>
+   <span class="s3">* </span><span class="s9">@param filterFunc </span><span class="s3">A function that returns true for elements to keep.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">A new list with only elements satisfying the predicate.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">filter</span><span class="s7">(</span><span class="s1">filterFunc: Int </span><span class="s2">=&gt; </span><span class="s1">Boolean</span><span class="s7">)</span><span class="s1">: IntList </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">Empty </span><span class="s8">// An empty list remains empty after filtering.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s0">if </span><span class="s1">filterFunc</span><span class="s7">(</span><span class="s1">h</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s2">.</span><span class="s1">filter</span><span class="s7">(</span><span class="s1">filterFunc</span><span class="s7">)) </span><span class="s8">// Keep the head if it satisfies the predicate.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">_</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">t</span><span class="s2">.</span><span class="s1">filter</span><span class="s7">(</span><span class="s1">filterFunc</span><span class="s7">) </span><span class="s8">// Skip the head if it doesn't satisfy the predicate.</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Folds the list from the right with an initial value and a combining function.</span>
+   <span class="s3">* </span><span class="s9">@param initial </span><span class="s3">The initial value for the fold operation.</span>
+   <span class="s3">* </span><span class="s9">@param reduceFunc </span><span class="s3">The combining function.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">The result of folding from the right.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">foldRight</span><span class="s7">(</span><span class="s1">initial: Int</span><span class="s7">)(</span><span class="s1">reduceFunc: </span><span class="s7">(</span><span class="s1">Int</span><span class="s2">, </span><span class="s1">Int</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">Int</span><span class="s7">)</span><span class="s1">: Int </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">initial </span><span class="s8">// Return the initial value when the list is empty.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">reduceFunc</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s2">.</span><span class="s1">foldRight</span><span class="s7">(</span><span class="s1">initial</span><span class="s7">)(</span><span class="s1">reduceFunc</span><span class="s7">)) </span><span class="s8">// Combine the head with the fold result of the tail.</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Reduces the list from the right without using fold.</span>
+   <span class="s3">* </span><span class="s9">@param reduceFunc </span><span class="s3">The combining function.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">The reduced result.</span>
+   <span class="s3">* </span><span class="s9">@throws </span><span class="s3">UnsupportedOperationException if the list is empty.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">reduceRight</span><span class="s7">(</span><span class="s1">reduceFunc: </span><span class="s7">(</span><span class="s1">Int</span><span class="s2">, </span><span class="s1">Int</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">Int</span><span class="s7">)</span><span class="s1">: Int </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">Empty</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">h </span><span class="s8">// A single-element list reduces to its only element.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">reduceFunc</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s2">.</span><span class="s1">reduceRight</span><span class="s7">(</span><span class="s1">reduceFunc</span><span class="s7">)) </span><span class="s8">// Combine the head with the reduction of the tail.</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s0">throw new </span><span class="s1">UnsupportedOperationException</span><span class="s7">(</span><span class="s6">&quot;reduceRight on empty list&quot;</span><span class="s7">)</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Checks if all elements satisfy a predicate.</span>
+   <span class="s3">* </span><span class="s9">@param predicateFunc </span><span class="s3">The predicate function.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">True if all elements satisfy the predicate, false otherwise.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">forAll</span><span class="s7">(</span><span class="s1">predicateFunc: Int </span><span class="s2">=&gt; </span><span class="s1">Boolean</span><span class="s7">)</span><span class="s1">: Boolean </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s0">true </span><span class="s8">// An empty list satisfies any predicate.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">predicateFunc</span><span class="s7">(</span><span class="s1">h</span><span class="s7">) </span><span class="s1">&amp;&amp; t</span><span class="s2">.</span><span class="s1">forAll</span><span class="s7">(</span><span class="s1">predicateFunc</span><span class="s7">) </span><span class="s8">// Check the head and recurse through the tail.</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Folds the list from the left with an initial value and a combining function.</span>
+   <span class="s3">* </span><span class="s9">@param initial </span><span class="s3">The initial value for the fold operation.</span>
+   <span class="s3">* </span><span class="s9">@param reduceFunc </span><span class="s3">The combining function.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">The result of folding from the left.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">foldLeft</span><span class="s7">(</span><span class="s1">initial: Int</span><span class="s7">)(</span><span class="s1">reduceFunc: </span><span class="s7">(</span><span class="s1">Int</span><span class="s2">, </span><span class="s1">Int</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">Int</span><span class="s7">)</span><span class="s1">: Int </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">initial </span><span class="s8">// Return the initial value when the list is empty.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">t</span><span class="s2">.</span><span class="s1">foldLeft</span><span class="s7">(</span><span class="s1">reduceFunc</span><span class="s7">(</span><span class="s1">initial</span><span class="s2">, </span><span class="s1">h</span><span class="s7">))(</span><span class="s1">reduceFunc</span><span class="s7">) </span><span class="s8">// Combine the initial value with the head, then fold the tail.</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Reduces the list from the left without using fold.</span>
+   <span class="s3">* </span><span class="s9">@param reduceFunc </span><span class="s3">The combining function.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">The reduced result.</span>
+   <span class="s3">* </span><span class="s9">@throws </span><span class="s3">UnsupportedOperationException if the list is empty.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">reduceLeft</span><span class="s7">(</span><span class="s1">reduceFunc: </span><span class="s7">(</span><span class="s1">Int</span><span class="s2">, </span><span class="s1">Int</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">Int</span><span class="s7">)</span><span class="s1">: Int </span><span class="s2">= </span><span class="s0">this match </span><span class="s7">{</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s0">throw new </span><span class="s1">UnsupportedOperationException</span><span class="s7">(</span><span class="s6">&quot;reduceLeft on empty list&quot;</span><span class="s7">)</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt;</span>
+      <span class="s1">@tailrec</span>
+      <span class="s0">def </span><span class="s6">loop</span><span class="s7">(</span><span class="s1">acc: Int</span><span class="s2">, </span><span class="s1">remaining: IntList</span><span class="s7">)</span><span class="s1">: Int </span><span class="s2">= </span><span class="s1">remaining </span><span class="s0">match </span><span class="s7">{</span>
+        <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">acc </span><span class="s8">// Return the accumulated value when the list is empty.</span>
+        <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">head</span><span class="s2">, </span><span class="s1">tail</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">loop</span><span class="s7">(</span><span class="s1">reduceFunc</span><span class="s7">(</span><span class="s1">acc</span><span class="s2">, </span><span class="s1">head</span><span class="s7">)</span><span class="s2">, </span><span class="s1">tail</span><span class="s7">) </span><span class="s8">// Update the accumulator and recurse.</span>
+      <span class="s7">}</span>
+      <span class="s1">loop</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s8">// Start the loop with the head as the initial accumulator and the tail as the remaining list.</span>
+  <span class="s7">}</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Inserts an element into the sorted list, preserving order.</span>
+   <span class="s3">* </span><span class="s9">@param elem </span><span class="s3">The element to insert.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">A new list with the element inserted.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">insertSorted</span><span class="s7">(</span><span class="s1">elem: Int</span><span class="s7">)</span><span class="s1">: IntList </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">elem</span><span class="s2">, </span><span class="s1">Empty</span><span class="s7">) </span><span class="s8">// Insert into an empty list.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s0">if </span><span class="s1">elem &lt;= h </span><span class="s2">=&gt; </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">elem</span><span class="s2">, </span><span class="s0">this</span><span class="s7">) </span><span class="s8">// Insert before the current head if the element is smaller or equal.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s2">.</span><span class="s1">insertSorted</span><span class="s7">(</span><span class="s1">elem</span><span class="s7">)) </span><span class="s8">// Recurse into the tail to find the correct position.</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Sorts the list using insertion sort.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">A sorted list.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">insertionSort</span><span class="s1">: IntList </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">Empty </span><span class="s8">// An empty list is already sorted.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">t</span><span class="s2">.</span><span class="s1">insertionSort</span><span class="s2">.</span><span class="s1">insertSorted</span><span class="s7">(</span><span class="s1">h</span><span class="s7">) </span><span class="s8">// Sort the tail first, then insert the head in the sorted list.</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Reverses the list.</span>
+   <span class="s3">* </span><span class="s9">@return </span><span class="s3">A new list with elements in reverse order.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">flip</span><span class="s1">: IntList </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">Empty </span><span class="s8">// An empty list remains empty after reversal.</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">t</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">Cons</span><span class="s7">(</span><span class="s1">h</span><span class="s2">, </span><span class="s1">Empty</span><span class="s7">)</span><span class="s2">.</span><span class="s1">prefix</span><span class="s7">(</span><span class="s1">t</span><span class="s2">.</span><span class="s1">flip</span><span class="s7">) </span><span class="s8">// Recurse through the tail, reversing each element.</span>
+</pre>
+</body>
+</html>

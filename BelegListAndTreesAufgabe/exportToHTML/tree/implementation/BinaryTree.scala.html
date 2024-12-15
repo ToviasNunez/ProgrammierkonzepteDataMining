@@ -1,0 +1,214 @@
+<html>
+<head>
+<title>BinaryTree.scala</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #fe8019;}
+.s1 { color: #fbf1c7;}
+.s2 { color: #ebdbb2;}
+.s3 { color: #83786e;}
+.s4 { color: #fabd2f;}
+.s5 { color: #d5c4a1;}
+.s6 { color: #b8bb26;}
+.s7 { color: #f8e1aa;}
+.s8 { color: #928374; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#282828">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+BinaryTree.scala</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">tree</span><span class="s2">.</span><span class="s1">implementation</span>
+
+<span class="s0">import </span><span class="s1">tree</span><span class="s2">.</span><span class="s1">traits</span><span class="s2">.</span><span class="s1">IntTree</span>
+<span class="s0">import </span><span class="s1">scala</span><span class="s2">.</span><span class="s1">annotation</span><span class="s2">.</span><span class="s1">tailrec</span>
+
+<span class="s3">/**</span>
+ <span class="s3">* A companion object for the BinaryTree.</span>
+ <span class="s3">* This enables creating trees like: val tree = BinaryTree(1, 2, 3),</span>
+ <span class="s3">* which results in a BinaryTree with elements inserted in sequence.</span>
+ <span class="s3">*/</span>
+<span class="s0">object </span><span class="s4">BinaryTree</span><span class="s1">:</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* The apply function is a special function in Scala that allows for creating a BinaryTree</span>
+   <span class="s3">* with a sequence of integers. This is a variadic function that accepts any number of integers.</span>
+   <span class="s3">*</span>
+   <span class="s3">* </span><span class="s5">@param xs </span><span class="s3">The sequence of integers to insert into the tree.</span>
+   <span class="s3">* </span><span class="s5">@return </span><span class="s3">A BinaryTree with the elements of xs inserted in sequence.</span>
+   <span class="s3">*/</span>
+  <span class="s0">def </span><span class="s6">apply</span><span class="s7">(</span><span class="s1">xs: Int*</span><span class="s7">)</span><span class="s1">: BinaryTree </span><span class="s2">=</span>
+
+    <span class="s3">/**</span>
+     <span class="s3">* Helper function to insert each element of xs into the tree.</span>
+     <span class="s3">* </span><span class="s5">@param tree </span><span class="s3">The current state of the tree.</span>
+     <span class="s3">* </span><span class="s5">@param xs </span><span class="s3">The remaining elements to insert.</span>
+     <span class="s3">* </span><span class="s5">@return </span><span class="s3">A BinaryTree with all elements of xs inserted.</span>
+     <span class="s3">*/</span>
+    <span class="s1">@tailrec</span>
+    <span class="s0">def </span><span class="s6">treeInitialization</span><span class="s7">(</span><span class="s1">tree: BinaryTree</span><span class="s2">, </span><span class="s1">xs: Int*</span><span class="s7">)</span><span class="s1">: BinaryTree </span><span class="s2">= </span><span class="s1">xs </span><span class="s0">match</span>
+      <span class="s0">case </span><span class="s1">Seq</span><span class="s7">() </span><span class="s2">=&gt; </span><span class="s1">tree </span><span class="s8">// If no elements remain, return the current tree.</span>
+      <span class="s0">case </span><span class="s1">_ </span><span class="s2">=&gt;</span>
+        <span class="s8">// Insert the first element of xs and recurse for the rest.</span>
+        <span class="s1">treeInitialization</span><span class="s7">(</span><span class="s1">tree</span><span class="s2">.</span><span class="s1">insert</span><span class="s7">(</span><span class="s1">xs</span><span class="s2">.</span><span class="s1">head</span><span class="s7">)</span><span class="s2">.</span><span class="s1">asInstanceOf</span><span class="s7">[</span><span class="s1">BinaryTree</span><span class="s7">]</span><span class="s2">, </span><span class="s1">xs</span><span class="s2">.</span><span class="s1">tail*</span><span class="s7">)</span>
+
+    <span class="s8">// Start with an empty tree and initialize it with all elements in xs.</span>
+    <span class="s1">treeInitialization</span><span class="s7">(</span><span class="s1">Empty</span><span class="s2">, </span><span class="s1">xs*</span><span class="s7">)</span>
+
+<span class="s3">/**</span>
+ <span class="s3">* An abstract class representing a binary tree with integer values.</span>
+ <span class="s3">* It provides various methods to manipulate the tree, such as insertion, deletion,</span>
+ <span class="s3">* mapping, filtering, and converting it to a list.</span>
+ <span class="s3">*/</span>
+<span class="s0">abstract class </span><span class="s4">BinaryTree </span><span class="s0">extends </span><span class="s1">IntTree:</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Finds the successor of the current node in the binary tree.</span>
+   <span class="s3">* The successor is the smallest node in the right subtree of the current node.</span>
+   <span class="s3">*</span>
+   <span class="s3">* </span><span class="s5">@return </span><span class="s3">The successor node of the current node.</span>
+   <span class="s3">* </span><span class="s5">@throws </span><span class="s3">Error if there is no successor (e.g., for an empty tree).</span>
+   <span class="s3">*/</span>
+  <span class="s0">def </span><span class="s6">findSuccessor</span><span class="s1">: BinaryTree </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">_</span><span class="s2">, </span><span class="s1">_</span><span class="s2">, </span><span class="s1">right</span><span class="s7">) </span><span class="s2">=&gt;</span>
+      <span class="s1">right </span><span class="s0">match </span><span class="s7">{</span>
+        <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s0">throw new </span><span class="s1">Error</span><span class="s7">(</span><span class="s6">&quot;No successor in an empty tree&quot;</span><span class="s7">)</span>
+        <span class="s0">case </span><span class="s1">rightTree: NonEmpty </span><span class="s2">=&gt; </span><span class="s1">findLeftmost</span><span class="s7">(</span><span class="s1">rightTree</span><span class="s7">) </span><span class="s8">// Find the smallest element in the right subtree.</span>
+      <span class="s7">}</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s0">throw new </span><span class="s1">Error</span><span class="s7">(</span><span class="s6">&quot;No successor in an empty tree&quot;</span><span class="s7">)</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Finds the leftmost node in a subtree, used to determine the minimum node.</span>
+   <span class="s3">*</span>
+   <span class="s3">* </span><span class="s5">@param node </span><span class="s3">The subtree root node.</span>
+   <span class="s3">* </span><span class="s5">@return </span><span class="s3">The leftmost node in the subtree.</span>
+   <span class="s3">*/</span>
+  <span class="s1">@tailrec</span>
+  <span class="s0">private def </span><span class="s6">findLeftmost</span><span class="s7">(</span><span class="s1">node: NonEmpty</span><span class="s7">)</span><span class="s1">: BinaryTree </span><span class="s2">= </span><span class="s1">node</span><span class="s2">.</span><span class="s1">left </span><span class="s0">match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">node </span><span class="s8">// If no left child exists, the current node is the leftmost.</span>
+    <span class="s0">case </span><span class="s1">leftTree: NonEmpty </span><span class="s2">=&gt; </span><span class="s1">findLeftmost</span><span class="s7">(</span><span class="s1">leftTree</span><span class="s7">) </span><span class="s8">// Recurse further down the left subtree.</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Inserts a new integer value into the binary tree.</span>
+   <span class="s3">*</span>
+   <span class="s3">* </span><span class="s5">@param value </span><span class="s3">The value to insert.</span>
+   <span class="s3">* </span><span class="s5">@return </span><span class="s3">A new binary tree with the value inserted in the correct position.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">insert</span><span class="s7">(</span><span class="s1">value: Int</span><span class="s7">)</span><span class="s1">: IntTree </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">value</span><span class="s2">, </span><span class="s1">Empty</span><span class="s2">, </span><span class="s1">Empty</span><span class="s7">) </span><span class="s8">// Insert into an empty tree.</span>
+    <span class="s0">case </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">root</span><span class="s2">, </span><span class="s1">left</span><span class="s2">, </span><span class="s1">right</span><span class="s7">) </span><span class="s2">=&gt;</span>
+      <span class="s0">if </span><span class="s7">(</span><span class="s1">value &lt;= root</span><span class="s7">) </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">root</span><span class="s2">, </span><span class="s1">left</span><span class="s2">.</span><span class="s1">insert</span><span class="s7">(</span><span class="s1">value</span><span class="s7">)</span><span class="s2">, </span><span class="s1">right</span><span class="s7">) </span><span class="s8">// Insert into the left subtree if smaller or equal.</span>
+      <span class="s0">else </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">root</span><span class="s2">, </span><span class="s1">left</span><span class="s2">, </span><span class="s1">right</span><span class="s2">.</span><span class="s1">insert</span><span class="s7">(</span><span class="s1">value</span><span class="s7">)) </span><span class="s8">// Insert into the right subtree if greater.</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Deletes an element from the binary tree.</span>
+   <span class="s3">*</span>
+   <span class="s3">* </span><span class="s5">@param i </span><span class="s3">The integer value to delete from the tree.</span>
+   <span class="s3">* </span><span class="s5">@return </span><span class="s3">A new binary tree with the element removed.</span>
+   <span class="s3">* </span><span class="s5">@throws </span><span class="s3">Error if the element is not found.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">delete</span><span class="s7">(</span><span class="s1">i: Int</span><span class="s7">)</span><span class="s1">: IntTree </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s0">throw new </span><span class="s1">Error</span><span class="s7">(</span><span class="s6">&quot;Node not found for deletion&quot;</span><span class="s7">)</span>
+    <span class="s0">case </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">value</span><span class="s2">, </span><span class="s1">left</span><span class="s2">, </span><span class="s1">right</span><span class="s7">) </span><span class="s2">=&gt;</span>
+      <span class="s0">if </span><span class="s7">(</span><span class="s1">i &lt; value</span><span class="s7">) {</span>
+        <span class="s8">// Recurse into the left subtree if the value to delete is smaller.</span>
+        <span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">value</span><span class="s2">, </span><span class="s1">left</span><span class="s2">.</span><span class="s1">delete</span><span class="s7">(</span><span class="s1">i</span><span class="s7">)</span><span class="s2">, </span><span class="s1">right</span><span class="s7">)</span>
+      <span class="s7">} </span><span class="s0">else if </span><span class="s7">(</span><span class="s1">i &gt; value</span><span class="s7">) {</span>
+        <span class="s8">// Recurse into the right subtree if the value to delete is greater.</span>
+        <span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">value</span><span class="s2">, </span><span class="s1">left</span><span class="s2">, </span><span class="s1">right</span><span class="s2">.</span><span class="s1">delete</span><span class="s7">(</span><span class="s1">i</span><span class="s7">))</span>
+      <span class="s7">} </span><span class="s0">else </span><span class="s7">{</span>
+        <span class="s8">// Case where the current node matches the value to delete.</span>
+        <span class="s7">(</span><span class="s1">left</span><span class="s2">, </span><span class="s1">right</span><span class="s7">) </span><span class="s0">match </span><span class="s7">{</span>
+          <span class="s0">case </span><span class="s7">(</span><span class="s1">Empty</span><span class="s2">, </span><span class="s1">_</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">right </span><span class="s8">// If the left subtree is empty, return the right subtree.</span>
+          <span class="s0">case </span><span class="s7">(</span><span class="s1">_</span><span class="s2">, </span><span class="s1">Empty</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">left </span><span class="s8">// If the right subtree is empty, return the left subtree.</span>
+          <span class="s0">case </span><span class="s1">_ </span><span class="s2">=&gt;</span>
+            <span class="s8">// Both subtrees are non-empty. Replace the current node with its successor.</span>
+            <span class="s1">right </span><span class="s0">match </span><span class="s7">{</span>
+              <span class="s0">case </span><span class="s1">nonEmptyRight: NonEmpty </span><span class="s2">=&gt;</span>
+                <span class="s0">val </span><span class="s1">successor </span><span class="s2">= </span><span class="s1">findLeftmost</span><span class="s7">(</span><span class="s1">nonEmptyRight</span><span class="s7">)</span>
+                <span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">successor</span><span class="s2">.</span><span class="s1">root</span><span class="s2">, </span><span class="s1">left</span><span class="s2">, </span><span class="s1">right</span><span class="s2">.</span><span class="s1">delete</span><span class="s7">(</span><span class="s1">successor</span><span class="s2">.</span><span class="s1">root</span><span class="s7">))</span>
+            <span class="s7">}</span>
+        <span class="s7">}</span>
+      <span class="s7">}</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Maps each element in the tree using a provided function.</span>
+   <span class="s3">*</span>
+   <span class="s3">* </span><span class="s5">@param mapFun </span><span class="s3">The function to apply to each element.</span>
+   <span class="s3">* </span><span class="s5">@return </span><span class="s3">A new binary tree with each element transformed by mapFun.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">map</span><span class="s7">(</span><span class="s1">mapFun: Int </span><span class="s2">=&gt; </span><span class="s1">Int</span><span class="s7">)</span><span class="s1">: IntTree </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">Empty </span><span class="s8">// An empty tree remains empty after mapping.</span>
+    <span class="s0">case </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">value</span><span class="s2">, </span><span class="s1">left</span><span class="s2">, </span><span class="s1">right</span><span class="s7">) </span><span class="s2">=&gt;</span>
+      <span class="s8">// Apply the function to the current node's value and recurse into its children.</span>
+      <span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">mapFun</span><span class="s7">(</span><span class="s1">value</span><span class="s7">)</span><span class="s2">, </span><span class="s1">left</span><span class="s2">.</span><span class="s1">map</span><span class="s7">(</span><span class="s1">mapFun</span><span class="s7">)</span><span class="s2">, </span><span class="s1">right</span><span class="s2">.</span><span class="s1">map</span><span class="s7">(</span><span class="s1">mapFun</span><span class="s7">))</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Gathers values that pass a filter function into a list without duplicates.</span>
+   <span class="s3">*</span>
+   <span class="s3">* </span><span class="s5">@param tree </span><span class="s3">The tree to filter.</span>
+   <span class="s3">* </span><span class="s5">@param filterFun </span><span class="s3">The filtering function.</span>
+   <span class="s3">* </span><span class="s5">@param seen </span><span class="s3">A set of already-seen values to avoid duplicates.</span>
+   <span class="s3">* </span><span class="s5">@return </span><span class="s3">A list of values that pass filterFun without duplicates.</span>
+   <span class="s3">*/</span>
+  <span class="s0">def </span><span class="s6">filterToList</span><span class="s7">(</span><span class="s1">tree: IntTree</span><span class="s2">, </span><span class="s1">filterFun: Int </span><span class="s2">=&gt; </span><span class="s1">Boolean</span><span class="s2">, </span><span class="s1">seen: Set</span><span class="s7">[</span><span class="s1">Int</span><span class="s7">])</span><span class="s1">: List</span><span class="s7">[</span><span class="s1">Int</span><span class="s7">] </span><span class="s2">= </span><span class="s1">tree </span><span class="s0">match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">List</span><span class="s7">() </span><span class="s8">// An empty tree contributes no elements.</span>
+    <span class="s0">case </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">value</span><span class="s2">, </span><span class="s1">left</span><span class="s2">, </span><span class="s1">right</span><span class="s7">) </span><span class="s2">=&gt;</span>
+      <span class="s0">val </span><span class="s1">currentList </span><span class="s2">= </span><span class="s0">if </span><span class="s7">(</span><span class="s1">filterFun</span><span class="s7">(</span><span class="s1">value</span><span class="s7">) </span><span class="s1">&amp;&amp; !seen</span><span class="s2">.</span><span class="s1">contains</span><span class="s7">(</span><span class="s1">value</span><span class="s7">)) </span><span class="s1">List</span><span class="s7">(</span><span class="s1">value</span><span class="s7">) </span><span class="s0">else </span><span class="s1">List</span><span class="s7">()</span>
+      <span class="s0">val </span><span class="s1">leftList </span><span class="s2">= </span><span class="s1">filterToList</span><span class="s7">(</span><span class="s1">left</span><span class="s2">, </span><span class="s1">filterFun</span><span class="s2">, </span><span class="s1">seen ++ currentList</span><span class="s7">)</span>
+      <span class="s0">val </span><span class="s1">rightList </span><span class="s2">= </span><span class="s1">filterToList</span><span class="s7">(</span><span class="s1">right</span><span class="s2">, </span><span class="s1">filterFun</span><span class="s2">, </span><span class="s1">seen ++ currentList</span><span class="s7">)</span>
+      <span class="s1">currentList ++ leftList ++ rightList</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Rebuilds a binary tree from a list of integer values.</span>
+   <span class="s3">*</span>
+   <span class="s3">* </span><span class="s5">@param values </span><span class="s3">The list of values to insert into the new tree.</span>
+   <span class="s3">* </span><span class="s5">@return </span><span class="s3">A new binary tree constructed from the values in the list.</span>
+   <span class="s3">*/</span>
+  <span class="s0">def </span><span class="s6">rebuildTree</span><span class="s7">(</span><span class="s1">values: List</span><span class="s7">[</span><span class="s1">Int</span><span class="s7">])</span><span class="s1">: IntTree </span><span class="s2">=</span>
+    <span class="s1">values</span><span class="s2">.</span><span class="s1">foldLeft</span><span class="s7">(</span><span class="s1">Empty: IntTree</span><span class="s7">)((</span><span class="s1">tree</span><span class="s2">, </span><span class="s1">value</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">tree</span><span class="s2">.</span><span class="s1">insert</span><span class="s7">(</span><span class="s1">value</span><span class="s7">))</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Filters the binary tree based on a predicate function.</span>
+   <span class="s3">*</span>
+   <span class="s3">* </span><span class="s5">@param filterFun </span><span class="s3">The predicate function to filter tree values.</span>
+   <span class="s3">* </span><span class="s5">@return </span><span class="s3">A new binary tree containing only elements that pass filterFun.</span>
+   <span class="s3">*/</span>
+ <span class="s8">/* override def filter(filterFun: Int =&gt; Boolean): IntTree = 
+    rebuildTree(filterToList(this, filterFun, Set.empty).distinct)*/</span>
+  <span class="s0">override def </span><span class="s6">filter</span><span class="s7">(</span><span class="s1">filterFun: Int </span><span class="s2">=&gt; </span><span class="s1">Boolean</span><span class="s7">)</span><span class="s1">: IntTree </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">Empty</span>
+    <span class="s0">case </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">elem</span><span class="s2">, </span><span class="s1">left </span><span class="s2">, </span><span class="s1">right</span><span class="s7">) </span><span class="s2">=&gt;</span>
+      <span class="s0">if </span><span class="s1">filterFun</span><span class="s7">(</span><span class="s1">elem</span><span class="s7">) </span><span class="s0">then </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">elem</span><span class="s2">, </span><span class="s1">left</span><span class="s2">.</span><span class="s1">filter</span><span class="s7">(</span><span class="s1">filterFun</span><span class="s7">) </span><span class="s2">, </span><span class="s1">right</span><span class="s2">.</span><span class="s1">filter</span><span class="s7">(</span><span class="s1">filterFun</span><span class="s7">))</span>
+      <span class="s0">else </span><span class="s1">delete</span><span class="s7">(</span><span class="s1">elem</span><span class="s7">)</span><span class="s2">.</span><span class="s1">filter</span><span class="s7">(</span><span class="s1">filterFun</span><span class="s7">)</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Converts the binary tree to a list in an in-order traversal.</span>
+   <span class="s3">*</span>
+   <span class="s3">* </span><span class="s5">@return </span><span class="s3">A list of elements in the tree in sorted order.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">tree2List</span><span class="s1">: List</span><span class="s7">[</span><span class="s1">Int</span><span class="s7">] </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">List</span><span class="s7">() </span><span class="s8">// An empty tree produces an empty list.</span>
+    <span class="s0">case </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">value</span><span class="s2">, </span><span class="s1">left</span><span class="s2">, </span><span class="s1">right</span><span class="s7">) </span><span class="s2">=&gt;</span>
+      <span class="s1">left</span><span class="s2">.</span><span class="s1">tree2List ++ List</span><span class="s7">(</span><span class="s1">value</span><span class="s7">) </span><span class="s1">++ right</span><span class="s2">.</span><span class="s1">tree2List</span>
+
+  <span class="s3">/**</span>
+   <span class="s3">* Checks if the binary tree maintains the binary search tree (BST) property.</span>
+   <span class="s3">*</span>
+   <span class="s3">* </span><span class="s5">@return </span><span class="s3">True if the tree is a valid BST, false otherwise.</span>
+   <span class="s3">*/</span>
+  <span class="s0">override def </span><span class="s6">isBinaryTree</span><span class="s1">: Boolean </span><span class="s2">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s0">true </span><span class="s8">// An empty tree satisfies the BST property.</span>
+    <span class="s0">case </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">elem</span><span class="s2">, </span><span class="s1">left</span><span class="s2">, </span><span class="s1">right</span><span class="s7">) </span><span class="s2">=&gt;</span>
+      <span class="s0">val </span><span class="s1">leftCheck </span><span class="s2">= </span><span class="s1">left </span><span class="s0">match</span>
+        <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s0">true</span>
+        <span class="s0">case </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">leftElem</span><span class="s2">, </span><span class="s1">_</span><span class="s2">, </span><span class="s1">_</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">leftElem &lt; elem &amp;&amp; left</span><span class="s2">.</span><span class="s1">isBinaryTree</span>
+      <span class="s0">val </span><span class="s1">rightCheck </span><span class="s2">= </span><span class="s1">right </span><span class="s0">match</span>
+        <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s0">true</span>
+        <span class="s0">case </span><span class="s1">NonEmpty</span><span class="s7">(</span><span class="s1">rightElem</span><span class="s2">, </span><span class="s1">_</span><span class="s2">, </span><span class="s1">_</span><span class="s7">) </span><span class="s2">=&gt; </span><span class="s1">rightElem &gt; elem &amp;&amp; right</span><span class="s2">.</span><span class="s1">isBinaryTree</span>
+      <span class="s1">leftCheck &amp;&amp; rightCheck</span>
+</pre>
+</body>
+</html>

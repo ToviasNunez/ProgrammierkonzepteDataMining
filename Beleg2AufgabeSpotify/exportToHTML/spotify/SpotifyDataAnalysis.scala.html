@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>SpotifyDataAnalysis.scala</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #fe8019;}
+.s1 { color: #fbf1c7;}
+.s2 { color: #ebdbb2;}
+.s3 { color: #fabd2f;}
+.s4 { color: #f8e1aa;}
+.s5 { color: #b8bb26;}
+.s6 { color: #928374; font-style: italic;}
+.s7 { color: #d3869b;}
+.s8 { color: #d79921;}
+</style>
+</head>
+<body bgcolor="#282828">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+SpotifyDataAnalysis.scala</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">spotify</span>
+
+<span class="s0">import </span><span class="s1">spotify</span><span class="s2">.</span><span class="s1">models</span><span class="s2">.</span><span class="s1">Song</span>
+
+<span class="s0">object </span><span class="s3">SpotifyDataAnalysis </span><span class="s4">{</span>
+
+  <span class="s0">def </span><span class="s5">getSongWithMostStreams</span><span class="s4">(</span><span class="s1">l:List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">])</span><span class="s1">:Song</span><span class="s2">=</span>
+    <span class="s6">/* 
+      The functions gets the most streamed song 
+      Use only an aggregation function 
+     */</span>
+      <span class="s6">//l.map(song =&gt; (song, song.streams)).reduce((a,b) =&gt; if(a._2 &gt; b._2) a else b)._1</span>
+<span class="s6">//      l.filter(song =&gt; song.streams == l.map(_.streams).max)</span>
+<span class="s6">//        .reduce((song1, song2) =&gt; song1)</span>
+        <span class="s1">l</span><span class="s2">.</span><span class="s1">maxBy</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">streams</span><span class="s4">)</span>
+
+  <span class="s0">def </span><span class="s5">getNameAndNumberOfTheArtistWithMostSongsInList</span><span class="s4">(</span><span class="s1">l:List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">])</span><span class="s1">:</span><span class="s4">(</span><span class="s1">String</span><span class="s2">,</span><span class="s1">Int</span><span class="s4">)</span><span class="s2">=</span>
+    <span class="s6">/* 
+      Get the Name of the Artist with the most Songs in the streaming list 
+      and the number of occurences 
+     */</span>
+<span class="s6">//     l.map(_.artist)// extract artis name</span>
+<span class="s6">//       .groupBy(identity) // group by artis name</span>
+<span class="s6">//       .map{case (artist, song) =&gt; (artist , song.size)} // Map to (artist , count)</span>
+<span class="s6">//       .reduce((a,b) =&gt; if (a._2 &gt; b._2) a else b)</span>
+    <span class="s1">l</span><span class="s2">.</span><span class="s1">groupBy</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">artist</span><span class="s4">) </span><span class="s6">// Group by artist name</span>
+      <span class="s2">.</span><span class="s1">map </span><span class="s4">{ </span><span class="s0">case </span><span class="s4">(</span><span class="s1">artist</span><span class="s2">, </span><span class="s1">songs</span><span class="s4">) </span><span class="s2">=&gt; </span><span class="s4">(</span><span class="s1">artist</span><span class="s2">, </span><span class="s1">songs</span><span class="s2">.</span><span class="s1">size</span><span class="s4">) } </span><span class="s6">// Map to (artist, number of songs)</span>
+      <span class="s2">.</span><span class="s1">maxBy</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">_2</span><span class="s4">) </span><span class="s6">// Find the artist with the most songs</span>
+
+  <span class="s0">def </span><span class="s5">getArtistWithMostStreams</span><span class="s4">(</span><span class="s1">l: List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">])</span><span class="s1">: </span><span class="s4">(</span><span class="s1">String</span><span class="s2">, </span><span class="s1">BigInt</span><span class="s4">) </span><span class="s2">=</span>
+
+    <span class="s6">/* 
+       Gets the Artist with the most streams in total 
+       and the number of streams 
+     */</span>
+<span class="s6">//      l.map(song =&gt; (song.artist , song.streams)) // Map to (artist , streams)</span>
+<span class="s6">//        .groupBy(_._1) // group by artist name</span>
+<span class="s6">//        .map {case (artist , stream) =&gt; (artist , stream.map(_._2).sum)} // Sum stream</span>
+<span class="s6">//        .reduce((a,b) =&gt; if (a._2 &gt; b._2) a else b) // reduce to fin the artis with the most streams</span>
+      <span class="s1">l</span><span class="s2">.</span><span class="s1">groupBy</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">artist</span><span class="s4">) </span><span class="s6">// Group by artist name</span>
+        <span class="s2">.</span><span class="s1">map </span><span class="s4">{ </span><span class="s0">case </span><span class="s4">(</span><span class="s1">artist</span><span class="s2">, </span><span class="s1">songs</span><span class="s4">) </span><span class="s2">=&gt; </span><span class="s4">(</span><span class="s1">artist</span><span class="s2">, </span><span class="s1">songs</span><span class="s2">.</span><span class="s1">map</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">streams</span><span class="s4">)</span><span class="s2">.</span><span class="s1">sum</span><span class="s4">) } </span><span class="s6">// Map to (artist, total streams)</span>
+        <span class="s2">.</span><span class="s1">maxBy</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">_2</span><span class="s4">) </span><span class="s6">// Find the artist with the most streams</span>
+
+  <span class="s0">def </span><span class="s5">getMinAndMaxAndAvgBPM</span><span class="s4">(</span><span class="s1">l:List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">])</span><span class="s1">:</span><span class="s4">(</span><span class="s1">Int</span><span class="s2">,</span><span class="s1">Int</span><span class="s2">,</span><span class="s1">Double</span><span class="s4">)</span><span class="s2">=</span>
+
+    <span class="s6">/* 
+      Gets the minimum, maximum and avg BPM of all songs 
+      Use only one aggregation function to calculate the values 
+     */</span>
+      <span class="s1">l</span><span class="s2">.</span><span class="s1">map</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">bpm</span><span class="s4">) </span><span class="s6">// extract the MPB values form the list of the song</span>
+        <span class="s2">.</span><span class="s1">foldLeft</span><span class="s4">(</span><span class="s1">Int</span><span class="s2">.</span><span class="s1">MaxValue </span><span class="s2">, </span><span class="s1">Int</span><span class="s2">.</span><span class="s1">MinValue </span><span class="s2">, </span><span class="s7">0</span><span class="s4">) </span><span class="s6">// initialize the accumulation</span>
+        <span class="s4">{</span><span class="s0">case </span><span class="s4">((</span><span class="s1">min</span><span class="s2">,</span><span class="s1">max</span><span class="s2">, </span><span class="s1">sum</span><span class="s4">) </span><span class="s2">, </span><span class="s1">bpm</span><span class="s4">) </span><span class="s2">=&gt;</span>
+          <span class="s6">//Update the accumulation</span>
+          <span class="s6">//Calculate the new Minimum</span>
+          <span class="s6">// Calculate the nre max</span>
+          <span class="s6">//add the current bpm to the running  total</span>
+          <span class="s4">(</span><span class="s1">min</span><span class="s2">.</span><span class="s1">min</span><span class="s4">(</span><span class="s1">bpm</span><span class="s4">) </span><span class="s2">, </span><span class="s1">max</span><span class="s2">.</span><span class="s1">max</span><span class="s4">(</span><span class="s1">bpm</span><span class="s4">) </span><span class="s2">, </span><span class="s1">sum + bpm</span><span class="s4">)}</span>
+      <span class="s6">//after folding, match the result tuple to extract the values</span>
+         <span class="s0">match</span><span class="s4">{</span><span class="s0">case </span><span class="s4">(</span><span class="s1">min</span><span class="s2">, </span><span class="s1">max</span><span class="s2">, </span><span class="s1">sum</span><span class="s4">) </span><span class="s2">=&gt;</span>
+        <span class="s6">// calculate the average BPM by dividing the sum by number of the sum</span>
+        <span class="s4">(</span><span class="s1">min </span><span class="s2">, </span><span class="s1">max</span><span class="s2">, </span><span class="s1">sum</span><span class="s2">.</span><span class="s1">toDouble / l</span><span class="s2">.</span><span class="s1">size</span><span class="s4">)} </span><span class="s6">// calculate the average</span>
+
+  <span class="s0">def </span><span class="s5">getThe4MonthWithMostMinorSongs</span><span class="s4">(</span><span class="s1">l:List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">])</span><span class="s1">:List</span><span class="s4">[(</span><span class="s1">Int</span><span class="s2">,</span><span class="s1">Double</span><span class="s4">)]</span><span class="s2">=</span>
+    <span class="s6">/* 
+     Gets the 4 months (release date) with the most songs written in minor 
+     (use the relative values not the absolute) 
+    */</span>
+    <span class="s6">// Filter minor songs</span>
+    <span class="s1">l</span><span class="s2">.</span><span class="s1">filter</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">mode</span><span class="s2">.</span><span class="s1">toLowerCase == </span><span class="s5">&quot;minor&quot;</span><span class="s4">)</span>
+      <span class="s2">.</span><span class="s1">groupBy</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">released_month</span><span class="s4">) </span><span class="s6">// Group by month</span>
+      <span class="s2">.</span><span class="s1">map </span><span class="s4">{ </span><span class="s0">case </span><span class="s4">(</span><span class="s1">month</span><span class="s2">, </span><span class="s1">songs</span><span class="s4">) </span><span class="s2">=&gt;</span>
+        <span class="s6">// Calculate relative percentage: minor songs in the month / total songs in the month</span>
+        <span class="s0">val </span><span class="s1">totalSongsInMonth </span><span class="s2">= </span><span class="s1">l</span><span class="s2">.</span><span class="s1">count</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">released_month == month</span><span class="s4">)</span>
+        <span class="s0">val </span><span class="s1">percentage </span><span class="s2">= </span><span class="s1">songs</span><span class="s2">.</span><span class="s1">size</span><span class="s2">.</span><span class="s1">toDouble / totalSongsInMonth</span>
+        <span class="s4">(</span><span class="s1">month</span><span class="s2">, </span><span class="s1">percentage</span><span class="s4">)</span>
+      <span class="s4">}</span>
+      <span class="s2">.</span><span class="s1">toList </span><span class="s6">// Convert to a list</span>
+      <span class="s2">.</span><span class="s1">sortBy</span><span class="s4">(</span><span class="s1">-_</span><span class="s2">.</span><span class="s1">_2</span><span class="s4">) </span><span class="s6">// Sort by percentage in descending order</span>
+      <span class="s2">.</span><span class="s1">take</span><span class="s4">(</span><span class="s7">4</span><span class="s4">) </span><span class="s6">// Take the top 4 months</span>
+
+
+
+  <span class="s0">def </span><span class="s5">getWords</span><span class="s4">(</span><span class="s1">line: String</span><span class="s4">)</span><span class="s1">: List</span><span class="s4">[</span><span class="s1">String</span><span class="s4">] </span><span class="s2">=</span>
+    <span class="s6">/* 
+     * Extracts all words from a line 
+     * 
+     * 1. Removes all characters which are not letters (A-Z or a-z) 
+     * 2. Shifts all words to lower case 
+     * 3. Extracts all words and put them into a list of strings 
+     */</span>
+      <span class="s1">line </span><span class="s6">// remove non-letter characters by replacing them with spaces</span>
+        <span class="s2">.</span><span class="s1">map</span><span class="s4">(</span><span class="s1">c </span><span class="s2">=&gt; </span><span class="s0">if </span><span class="s4">(</span><span class="s1">c</span><span class="s2">.</span><span class="s1">isLetter</span><span class="s4">) </span><span class="s1">c </span><span class="s0">else </span><span class="s5">' '</span><span class="s4">)</span>
+      <span class="s6">// convert all characters to lowercase</span>
+        <span class="s2">.</span><span class="s1">map</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">toLower</span><span class="s4">)</span>
+      <span class="s6">// split by whitespaces into word and filter out empty string</span>
+        <span class="s2">.</span><span class="s1">split</span><span class="s4">(</span><span class="s5">&quot;</span><span class="s8">\\</span><span class="s5">s+&quot;</span><span class="s4">) </span><span class="s6">// splits the string into words, using one or more spaces as the delimiter.</span>
+        <span class="s2">.</span><span class="s1">toList</span>
+        <span class="s2">.</span><span class="s1">filter</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">nonEmpty</span><span class="s4">) </span><span class="s6">// ensures only non-empty words are retained.</span>
+
+
+  <span class="s0">def </span><span class="s5">getAllWords</span><span class="s4">(</span><span class="s1">l: List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">])</span><span class="s1">: List</span><span class="s4">[</span><span class="s1">String</span><span class="s4">] </span><span class="s2">=</span>
+    <span class="s6">/* 
+     * Extracts all words from a List of Songs 
+     * The words should be in the same order as they occur in the source document 
+     * 
+     * Hint: Use the flatMap function 
+     */</span>
+      <span class="s1">l</span><span class="s2">.</span><span class="s1">flatMap</span><span class="s4">(</span><span class="s1">song </span><span class="s2">=&gt; </span><span class="s1">song</span><span class="s2">.</span><span class="s1">track</span>
+        <span class="s2">.</span><span class="s1">replaceAll</span><span class="s4">(</span><span class="s5">&quot;[^A-Za-z]&quot;</span><span class="s2">, </span><span class="s5">&quot; &quot;</span><span class="s4">)</span>
+        <span class="s2">.</span><span class="s1">toLowerCase</span><span class="s4">()</span>
+        <span class="s2">.</span><span class="s1">split</span><span class="s4">(</span><span class="s5">&quot;</span><span class="s8">\\</span><span class="s5">s+&quot;</span><span class="s4">)</span>
+        <span class="s2">.</span><span class="s1">filter</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">nonEmpty</span><span class="s4">)</span>
+        <span class="s2">.</span><span class="s1">toList</span>
+      <span class="s4">)</span>
+
+
+  <span class="s0">def </span><span class="s5">getThe4MostFrequentWordsInTitle</span><span class="s4">(</span><span class="s1">l:List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">])</span><span class="s1">:List</span><span class="s4">[(</span><span class="s1">String</span><span class="s2">,</span><span class="s1">Int</span><span class="s4">)]</span><span class="s2">=</span>
+    <span class="s6">/* 
+      Gets the 4 most frequent words that occur in the titles of a songlist. 
+     */</span>
+    <span class="s1">l</span><span class="s2">.</span><span class="s1">flatMap</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">track</span><span class="s2">.</span><span class="s1">toLowerCase</span><span class="s2">.</span><span class="s1">replaceAll</span><span class="s4">(</span><span class="s5">&quot;[^a-z]&quot;</span><span class="s2">, </span><span class="s5">&quot; &quot;</span><span class="s4">)</span><span class="s2">.</span><span class="s1">split</span><span class="s4">(</span><span class="s5">&quot;</span><span class="s8">\\</span><span class="s5">s+&quot;</span><span class="s4">)</span><span class="s2">.</span><span class="s1">filter</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">nonEmpty</span><span class="s4">))</span>
+       <span class="s2">.</span><span class="s1">groupBy</span><span class="s4">(</span><span class="s1">identity</span><span class="s4">)</span>
+       <span class="s2">.</span><span class="s1">view</span><span class="s2">.</span><span class="s1">mapValues</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">size</span><span class="s4">)</span>
+       <span class="s2">.</span><span class="s1">toMap</span>
+       <span class="s2">.</span><span class="s1">toList</span>
+       <span class="s2">.</span><span class="s1">sortBy</span><span class="s4">(</span><span class="s1">-_</span><span class="s2">.</span><span class="s1">_2</span><span class="s4">)</span>
+       <span class="s2">.</span><span class="s1">take</span><span class="s4">(</span><span class="s7">4</span><span class="s4">)</span>
+
+
+  <span class="s0">def </span><span class="s5">getThe20MostFrequentWordsInTitleWithFilter</span><span class="s4">(</span><span class="s1">l:List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">]</span><span class="s2">, </span><span class="s1">predicate: String</span><span class="s2">=&gt;</span><span class="s1">Boolean</span><span class="s4">)</span><span class="s1">:List</span><span class="s4">[(</span><span class="s1">String</span><span class="s2">,</span><span class="s1">Int</span><span class="s4">)]</span><span class="s2">=</span>
+    <span class="s6">/* 
+      Get the 20 most frequent words occurring in the titles of a songlist 
+      Integrate a filter predicate that decides whether a word is in the resulting list or not. 
+      Give back tuples with the word and the number of occurrences. 
+     */</span>
+
+    <span class="s1">l</span><span class="s2">.</span><span class="s1">flatMap</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">track</span><span class="s2">.</span><span class="s1">toLowerCase</span><span class="s2">.</span><span class="s1">replaceAll</span><span class="s4">(</span><span class="s5">&quot;[^a-z]&quot;</span><span class="s2">, </span><span class="s5">&quot; &quot;</span><span class="s4">)</span><span class="s2">.</span><span class="s1">split</span><span class="s4">(</span><span class="s5">&quot;</span><span class="s8">\\</span><span class="s5">s+&quot;</span><span class="s4">)</span><span class="s2">.</span><span class="s1">filter</span><span class="s4">(</span><span class="s1">word </span><span class="s2">=&gt; </span><span class="s1">word</span><span class="s2">.</span><span class="s1">nonEmpty &amp;&amp; predicate</span><span class="s4">(</span><span class="s1">word</span><span class="s4">)))</span>
+       <span class="s2">.</span><span class="s1">groupBy</span><span class="s4">(</span><span class="s1">identity</span><span class="s4">)</span>
+       <span class="s2">.</span><span class="s1">view</span><span class="s2">.</span><span class="s1">mapValues</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">size</span><span class="s4">)</span>
+       <span class="s2">.</span><span class="s1">toMap</span>
+       <span class="s2">.</span><span class="s1">toList</span>
+       <span class="s2">.</span><span class="s1">sortBy</span><span class="s4">(</span><span class="s1">-_</span><span class="s2">.</span><span class="s1">_2</span><span class="s4">)</span>
+       <span class="s2">.</span><span class="s1">take</span><span class="s4">(</span><span class="s7">20</span><span class="s4">)</span>
+
+  <span class="s0">def </span><span class="s5">getAllWordsWithIndex</span><span class="s4">(</span><span class="s1">l:List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">])</span><span class="s1">:Set</span><span class="s4">[(</span><span class="s1">Long</span><span class="s2">,</span><span class="s1">String</span><span class="s4">)] </span><span class="s2">=</span>
+    <span class="s6">/* 
+      Êxtract all words of the titles of a songlist and give back tuples containing 
+      the ID of the song and the word 
+     */</span>
+    <span class="s1">l</span><span class="s2">.</span><span class="s1">flatMap</span><span class="s4">(</span><span class="s1">song </span><span class="s2">=&gt;</span>
+      <span class="s1">song</span><span class="s2">.</span><span class="s1">track</span><span class="s2">.</span><span class="s1">toLowerCase</span>
+        <span class="s2">.</span><span class="s1">replaceAll</span><span class="s4">(</span><span class="s5">&quot;[^a-z]&quot;</span><span class="s2">, </span><span class="s5">&quot; &quot;</span><span class="s4">) </span><span class="s6">// Remove non-alphabetic characters</span>
+        <span class="s2">.</span><span class="s1">split</span><span class="s4">(</span><span class="s5">&quot;</span><span class="s8">\\</span><span class="s5">s+&quot;</span><span class="s4">)             </span><span class="s6">// Split into words</span>
+        <span class="s2">.</span><span class="s1">filter</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">nonEmpty</span><span class="s4">)        </span><span class="s6">// Remove empty strings</span>
+        <span class="s2">.</span><span class="s1">map</span><span class="s4">(</span><span class="s1">word </span><span class="s2">=&gt; </span><span class="s4">(</span><span class="s1">song</span><span class="s2">.</span><span class="s1">id</span><span class="s2">, </span><span class="s1">word</span><span class="s4">)) </span><span class="s6">// Pair the word with the song ID</span>
+    <span class="s4">)</span><span class="s2">.</span><span class="s1">toSet </span><span class="s6">// Convert to a set to ensure unique pairs</span>
+
+  <span class="s0">def </span><span class="s5">createInverseIndex</span><span class="s4">(</span><span class="s1">wwi:Set</span><span class="s4">[(</span><span class="s1">Long</span><span class="s2">, </span><span class="s1">String</span><span class="s4">)])</span><span class="s1">:Map</span><span class="s4">[</span><span class="s1">String</span><span class="s2">,</span><span class="s1">Set</span><span class="s4">[</span><span class="s1">Long</span><span class="s4">]]</span><span class="s2">=</span>
+
+    <span class="s6">/* 
+      Create an inverse index consisting of all words as the key element and 
+      the IDs of all songs that contains the certain word as the value. 
+      The function gets all words with the index (see function above) 
+      and returns a map. 
+     */</span>
+    <span class="s1">wwi</span><span class="s2">.</span><span class="s1">groupBy</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">_2</span><span class="s4">) </span><span class="s6">// Group by the word (second element of the tuple)</span>
+      <span class="s2">.</span><span class="s1">view</span><span class="s2">.</span><span class="s1">mapValues</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">map</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">_1</span><span class="s4">)</span><span class="s2">.</span><span class="s1">toSet</span><span class="s4">) </span><span class="s6">// Map each word to the set of IDs</span>
+      <span class="s2">.</span><span class="s1">toMap </span><span class="s6">// Convert the view back to a strict Map</span>
+
+  <span class="s0">def </span><span class="s5">orConjunction</span><span class="s4">(</span><span class="s1">words: List</span><span class="s4">[</span><span class="s1">String</span><span class="s4">]</span><span class="s2">, </span><span class="s1">invInd: Map</span><span class="s4">[</span><span class="s1">String</span><span class="s2">, </span><span class="s1">Set</span><span class="s4">[</span><span class="s1">Long</span><span class="s4">]])</span><span class="s1">: Set</span><span class="s4">[</span><span class="s1">Long</span><span class="s4">] </span><span class="s2">=</span>
+    <span class="s6">/* 
+    * The Functions gets a list of words and returns a set of tweet ids where at least one 
+    * of the word occurs 
+    * Use the inverse index for calculating the or-Operation. 
+     */</span>
+    <span class="s1">words</span><span class="s2">.</span><span class="s1">flatMap</span><span class="s4">(</span><span class="s1">invInd</span><span class="s2">.</span><span class="s1">getOrElse</span><span class="s4">(</span><span class="s1">_</span><span class="s2">, </span><span class="s1">Set</span><span class="s2">.</span><span class="s1">empty</span><span class="s4">))</span><span class="s2">.</span><span class="s1">toSet</span>
+
+  <span class="s0">def </span><span class="s5">andConjunction</span><span class="s4">(</span><span class="s1">words: List</span><span class="s4">[</span><span class="s1">String</span><span class="s4">]</span><span class="s2">, </span><span class="s1">invInd: Map</span><span class="s4">[</span><span class="s1">String</span><span class="s2">, </span><span class="s1">Set</span><span class="s4">[</span><span class="s1">Long</span><span class="s4">]])</span><span class="s1">: Set</span><span class="s4">[</span><span class="s1">Long</span><span class="s4">] </span><span class="s2">=</span>
+
+    <span class="s6">/* 
+   * The Functions gets a list of words and returns a set of tweet ids where all of the words occur 
+  * Use the inverse index for calculating the and-Operation. 
+    */</span>
+    <span class="s1">words</span><span class="s2">.</span><span class="s1">map</span><span class="s4">(</span><span class="s1">word </span><span class="s2">=&gt; </span><span class="s1">invInd</span><span class="s2">.</span><span class="s1">getOrElse</span><span class="s4">(</span><span class="s1">word</span><span class="s2">, </span><span class="s1">Set</span><span class="s2">.</span><span class="s1">empty</span><span class="s4">[</span><span class="s1">Long</span><span class="s4">])) </span><span class="s6">// Get the set of song IDs for each word</span>
+      <span class="s2">.</span><span class="s1">reduceOption</span><span class="s4">((</span><span class="s1">a</span><span class="s2">, </span><span class="s1">b</span><span class="s4">) </span><span class="s2">=&gt; </span><span class="s1">a</span><span class="s2">.</span><span class="s1">intersect</span><span class="s4">(</span><span class="s1">b</span><span class="s4">)) </span><span class="s6">// Perform intersection to get common IDs</span>
+      <span class="s2">.</span><span class="s1">getOrElse</span><span class="s4">(</span><span class="s1">Set</span><span class="s4">()) </span><span class="s6">// If no common IDs, return an empty set</span>
+
+  <span class="s0">def </span><span class="s5">findSongsWithAtLeast2WordsFromWordlist</span><span class="s4">(</span><span class="s1">l:List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">]</span><span class="s2">, </span><span class="s1">words:List</span><span class="s4">[</span><span class="s1">String</span><span class="s4">])</span><span class="s1">:Set</span><span class="s4">[(</span><span class="s1">Long</span><span class="s2">,</span><span class="s1">String</span><span class="s2">,</span><span class="s1">Set</span><span class="s4">[</span><span class="s1">String</span><span class="s4">])]</span><span class="s2">=</span>
+
+    <span class="s6">/* 
+      Find all songs with at least two words of the wordlist. Return triples containing the ID of the song, the title and 
+      the words that occur in the title. 
+    */</span>
+    <span class="s1">l</span><span class="s2">.</span><span class="s1">flatMap</span><span class="s4">(</span><span class="s1">song </span><span class="s2">=&gt; </span><span class="s4">{</span>
+      <span class="s0">val </span><span class="s1">titleWords </span><span class="s2">= </span><span class="s1">song</span><span class="s2">.</span><span class="s1">track</span>
+        <span class="s2">.</span><span class="s1">replaceAll</span><span class="s4">(</span><span class="s5">&quot;[^A-Za-z]&quot;</span><span class="s2">, </span><span class="s5">&quot; &quot;</span><span class="s4">)</span>
+        <span class="s2">.</span><span class="s1">toLowerCase</span>
+        <span class="s2">.</span><span class="s1">split</span><span class="s4">(</span><span class="s5">&quot;</span><span class="s8">\\</span><span class="s5">s+&quot;</span><span class="s4">)</span>
+        <span class="s2">.</span><span class="s1">toSet</span>
+        <span class="s2">.</span><span class="s1">intersect</span><span class="s4">(</span><span class="s1">words</span><span class="s2">.</span><span class="s1">map</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">toLowerCase</span><span class="s4">)</span><span class="s2">.</span><span class="s1">toSet</span><span class="s4">)</span>
+
+      <span class="s0">if </span><span class="s4">(</span><span class="s1">titleWords</span><span class="s2">.</span><span class="s1">size &gt;= </span><span class="s7">2</span><span class="s4">) </span><span class="s1">Some</span><span class="s4">((</span><span class="s1">song</span><span class="s2">.</span><span class="s1">id</span><span class="s2">, </span><span class="s1">song</span><span class="s2">.</span><span class="s1">track</span><span class="s2">, </span><span class="s1">titleWords</span><span class="s4">)) </span><span class="s0">else </span><span class="s1">None</span>
+    <span class="s4">})</span><span class="s2">.</span><span class="s1">toSet</span>
+
+
+    <span class="s6">/* 
+ 
+    Write three own functions that analysis the dataset! Write the functions with some explanations and corresponding tests! 
+ 
+     */</span>
+
+
+  <span class="s0">def </span><span class="s5">getTopSongsByAttributes</span><span class="s4">(</span><span class="s1">songs: List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">])</span><span class="s1">: List</span><span class="s4">[(</span><span class="s1">String</span><span class="s2">, </span><span class="s1">Int</span><span class="s2">, </span><span class="s1">String</span><span class="s2">, </span><span class="s1">String</span><span class="s4">)] </span><span class="s2">= </span><span class="s4">{</span>
+    <span class="s0">val </span><span class="s1">attributes </span><span class="s2">= </span><span class="s1">List</span><span class="s4">(</span>
+      <span class="s4">(</span><span class="s5">&quot;danceability&quot;</span><span class="s2">, </span><span class="s4">(</span><span class="s1">s: Song</span><span class="s4">) </span><span class="s2">=&gt; </span><span class="s1">s</span><span class="s2">.</span><span class="s1">danceability</span><span class="s4">)</span><span class="s2">,</span>
+      <span class="s4">(</span><span class="s5">&quot;valence&quot;</span><span class="s2">, </span><span class="s4">(</span><span class="s1">s: Song</span><span class="s4">) </span><span class="s2">=&gt; </span><span class="s1">s</span><span class="s2">.</span><span class="s1">valence</span><span class="s4">)</span><span class="s2">,</span>
+      <span class="s4">(</span><span class="s5">&quot;energy&quot;</span><span class="s2">, </span><span class="s4">(</span><span class="s1">s: Song</span><span class="s4">) </span><span class="s2">=&gt; </span><span class="s1">s</span><span class="s2">.</span><span class="s1">energy</span><span class="s4">)</span><span class="s2">,</span>
+      <span class="s4">(</span><span class="s5">&quot;acousticness&quot;</span><span class="s2">, </span><span class="s4">(</span><span class="s1">s: Song</span><span class="s4">) </span><span class="s2">=&gt; </span><span class="s1">s</span><span class="s2">.</span><span class="s1">acousticness</span><span class="s4">)</span><span class="s2">,</span>
+      <span class="s4">(</span><span class="s5">&quot;instrumentalness&quot;</span><span class="s2">, </span><span class="s4">(</span><span class="s1">s: Song</span><span class="s4">) </span><span class="s2">=&gt; </span><span class="s1">s</span><span class="s2">.</span><span class="s1">instrumentalness</span><span class="s4">)</span><span class="s2">,</span>
+      <span class="s4">(</span><span class="s5">&quot;liveness&quot;</span><span class="s2">, </span><span class="s4">(</span><span class="s1">s: Song</span><span class="s4">) </span><span class="s2">=&gt; </span><span class="s1">s</span><span class="s2">.</span><span class="s1">liveness</span><span class="s4">)</span><span class="s2">,</span>
+      <span class="s4">(</span><span class="s5">&quot;speechiness&quot;</span><span class="s2">, </span><span class="s4">(</span><span class="s1">s: Song</span><span class="s4">) </span><span class="s2">=&gt; </span><span class="s1">s</span><span class="s2">.</span><span class="s1">speechiness</span><span class="s4">)</span>
+    <span class="s4">)</span>
+
+    <span class="s1">attributes</span><span class="s2">.</span><span class="s1">map </span><span class="s4">{ </span><span class="s0">case </span><span class="s4">(</span><span class="s1">attributeName</span><span class="s2">, </span><span class="s1">attributeFunc</span><span class="s4">) </span><span class="s2">=&gt;</span>
+      <span class="s0">val </span><span class="s1">topSong </span><span class="s2">= </span><span class="s1">songs</span><span class="s2">.</span><span class="s1">maxBy</span><span class="s4">(</span><span class="s1">attributeFunc</span><span class="s4">)</span>
+      <span class="s4">(</span><span class="s1">attributeName</span><span class="s2">, </span><span class="s1">topSong</span><span class="s2">.</span><span class="s1">released_year</span><span class="s2">, </span><span class="s1">topSong</span><span class="s2">.</span><span class="s1">track</span><span class="s2">, </span><span class="s1">topSong</span><span class="s2">.</span><span class="s1">artist</span><span class="s4">)</span>
+    <span class="s4">}</span>
+  <span class="s4">}</span>
+
+  <span class="s0">def </span><span class="s5">getMostStreamedSongPlatformAndArtistByYear</span><span class="s4">(</span><span class="s1">songs: List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">])</span><span class="s1">: Map</span><span class="s4">[</span><span class="s1">Int</span><span class="s2">, </span><span class="s4">(</span><span class="s1">String</span><span class="s2">, </span><span class="s1">String </span><span class="s2">, </span><span class="s1">String</span><span class="s4">)] </span><span class="s2">= </span><span class="s4">{</span>
+    <span class="s1">songs</span><span class="s2">.</span><span class="s1">groupBy</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">released_year</span><span class="s4">)</span><span class="s2">.</span><span class="s1">map </span><span class="s4">{ </span><span class="s0">case </span><span class="s4">(</span><span class="s1">year</span><span class="s2">, </span><span class="s1">songsInYear</span><span class="s4">) </span><span class="s2">=&gt;</span>
+      <span class="s0">val </span><span class="s1">mostStreamedSong </span><span class="s2">= </span><span class="s1">songsInYear</span><span class="s2">.</span><span class="s1">maxBy</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">streams</span><span class="s4">)</span>
+      <span class="s0">val </span><span class="s1">platform </span><span class="s2">= </span><span class="s0">if </span><span class="s4">(</span><span class="s1">mostStreamedSong</span><span class="s2">.</span><span class="s1">in_spotify_charts &gt; </span><span class="s7">0</span><span class="s4">) </span><span class="s5">&quot;Spotify&quot;</span>
+      <span class="s0">else if </span><span class="s4">(</span><span class="s1">mostStreamedSong</span><span class="s2">.</span><span class="s1">in_apple_charts &gt; </span><span class="s7">0</span><span class="s4">) </span><span class="s5">&quot;Apple Music&quot;</span>
+      <span class="s0">else if </span><span class="s4">(</span><span class="s1">mostStreamedSong</span><span class="s2">.</span><span class="s1">in_deezer_charts &gt; </span><span class="s7">0</span><span class="s4">) </span><span class="s5">&quot;Deezer&quot;</span>
+      <span class="s0">else if </span><span class="s4">(</span><span class="s1">mostStreamedSong</span><span class="s2">.</span><span class="s1">in_shazam_charts &gt; </span><span class="s7">0</span><span class="s4">) </span><span class="s5">&quot;Shazam&quot;</span>
+      <span class="s0">else </span><span class="s5">&quot;Unknown&quot;</span>
+      <span class="s1">year -&gt; </span><span class="s4">(</span><span class="s1">platform</span><span class="s2">, </span><span class="s1">mostStreamedSong</span><span class="s2">.</span><span class="s1">artist </span><span class="s2">, </span><span class="s1">mostStreamedSong</span><span class="s2">.</span><span class="s1">track</span><span class="s4">)</span>
+    <span class="s4">}</span>
+  <span class="s4">}</span>
+
+  <span class="s0">def </span><span class="s5">getPlatformRankingByStreams</span><span class="s4">(</span><span class="s1">songs: List</span><span class="s4">[</span><span class="s1">Song</span><span class="s4">])</span><span class="s1">: List</span><span class="s4">[(</span><span class="s1">String</span><span class="s2">, </span><span class="s1">BigInt</span><span class="s4">)] </span><span class="s2">= </span><span class="s4">{</span>
+    <span class="s0">val </span><span class="s1">platformStreams </span><span class="s2">= </span><span class="s1">songs</span><span class="s2">.</span><span class="s1">groupBy </span><span class="s4">{ </span><span class="s1">song </span><span class="s2">=&gt;</span>
+      <span class="s0">if </span><span class="s4">(</span><span class="s1">song</span><span class="s2">.</span><span class="s1">in_spotify_charts &gt; </span><span class="s7">0</span><span class="s4">) </span><span class="s5">&quot;Spotify&quot;</span>
+      <span class="s0">else if </span><span class="s4">(</span><span class="s1">song</span><span class="s2">.</span><span class="s1">in_apple_charts &gt; </span><span class="s7">0</span><span class="s4">) </span><span class="s5">&quot;Apple Music&quot;</span>
+      <span class="s0">else if </span><span class="s4">(</span><span class="s1">song</span><span class="s2">.</span><span class="s1">in_deezer_charts &gt; </span><span class="s7">0</span><span class="s4">) </span><span class="s5">&quot;Deezer&quot;</span>
+      <span class="s0">else if </span><span class="s4">(</span><span class="s1">song</span><span class="s2">.</span><span class="s1">in_shazam_charts &gt; </span><span class="s7">0</span><span class="s4">) </span><span class="s5">&quot;Shazam&quot;</span>
+      <span class="s0">else </span><span class="s5">&quot;Unknown&quot;</span>
+    <span class="s4">}</span><span class="s2">.</span><span class="s1">view</span><span class="s2">.</span><span class="s1">mapValues</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">map</span><span class="s4">(</span><span class="s1">_</span><span class="s2">.</span><span class="s1">streams</span><span class="s4">)</span><span class="s2">.</span><span class="s1">sum</span><span class="s4">)</span><span class="s2">.</span><span class="s1">toMap</span>
+    <span class="s1">platformStreams</span><span class="s2">.</span><span class="s1">toList</span><span class="s2">.</span><span class="s1">sortBy</span><span class="s4">(</span><span class="s1">-_</span><span class="s2">.</span><span class="s1">_2</span><span class="s4">)</span>
+  <span class="s4">}</span>
+
+
+<span class="s4">}</span>
+
+
+</pre>
+</body>
+</html>

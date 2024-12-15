@@ -109,7 +109,7 @@ object SpotifyDataAnalysis {
         .replaceAll("[^A-Za-z]", " ")
         .toLowerCase()
         .split("\\s+")
-        .filter(_.nonEmpty)
+        //.filter(_.nonEmpty)
         .toList
       )
 
@@ -118,7 +118,7 @@ object SpotifyDataAnalysis {
     /*
       Gets the 4 most frequent words that occur in the titles of a songlist.
      */
-    l.flatMap(_.track.toLowerCase.replaceAll("[^a-z]", " ").split("\\s+").filter(_.nonEmpty))
+    l.flatMap(_.track.toLowerCase.replaceAll("[^a-z]", " ").split("\\s+"))
        .groupBy(identity)
        .view.mapValues(_.size)
        .toMap
@@ -133,14 +133,19 @@ object SpotifyDataAnalysis {
       Integrate a filter predicate that decides whether a word is in the resulting list or not.
       Give back tuples with the word and the number of occurrences.
      */
+    // Extract words from the song title:
+    // 1. Convert to lowercase
+    // 2. Replace non-alphabetic characters with spaces
+    // 3. Split by whitespace into words
+    // 4. Filter out empty words and apply the predicate
 
     l.flatMap(_.track.toLowerCase.replaceAll("[^a-z]", " ").split("\\s+").filter(word => word.nonEmpty && predicate(word)))
-       .groupBy(identity)
+       .groupBy(identity) // Group by word and count occurrences
        .view.mapValues(_.size)
-       .toMap
+       .toMap// Convert to a list of tuples and sort by frequency in descending order
        .toList
        .sortBy(-_._2)
-       .take(20)
+       .take(20)// Take the top 20 most frequent words
 
   def getAllWordsWithIndex(l:List[Song]):Set[(Long,String)] =
     /*
@@ -192,23 +197,25 @@ object SpotifyDataAnalysis {
       the words that occur in the title.
     */
     l.flatMap(song => {
+      // Extract words from the song title:
+      // 1. Replace non-alphabetic characters with spaces
+      // 2. Convert to lowercase
+      // 3. Split by whitespace into words
+      // 4. Convert to a set to remove duplicates
       val titleWords = song.track
         .replaceAll("[^A-Za-z]", " ")
         .toLowerCase
         .split("\\s+")
         .toSet
-        .intersect(words.map(_.toLowerCase).toSet)
-
-      if (titleWords.size >= 2) Some((song.id, song.track, titleWords)) else None
-    }).toSet
+        .intersect(words.map(_.toLowerCase).toSet) // Convert the wordlist to lowercase and to a set
+      if (titleWords.size >= 2) Some((song.id, song.track, titleWords)) else None  // If there are at least two common words, return a tuple with the song ID, title, and common words
+    }).toSet // Convert the result to a set to ensure unique triples
 
 
     /*
-
     Write three own functions that analysis the dataset! Write the functions with some explanations and corresponding tests!
 
      */
-
 
   def getTopSongsByAttributes(songs: List[Song]): List[(String, Int, String, String)] = {
     val attributes = List(
@@ -249,7 +256,6 @@ object SpotifyDataAnalysis {
     }.view.mapValues(_.map(_.streams).sum).toMap
     platformStreams.toList.sortBy(-_._2)
   }
-
 
 }
 

@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>ProblemsLists.scala</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #fe8019;}
+.s1 { color: #fbf1c7;}
+.s2 { color: #ebdbb2;}
+.s3 { color: #fabd2f;}
+.s4 { color: #928374; font-style: italic;}
+.s5 { color: #83786e;}
+.s6 { color: #bdae93;}
+.s7 { color: #d5c4a1;}
+.s8 { color: #b8bb26;}
+.s9 { color: #f8e1aa;}
+.s10 { color: #d3869b;}
+</style>
+</head>
+<body bgcolor="#282828">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ProblemsLists.scala</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">recursions</span>
+
+<span class="s0">import </span><span class="s1">list</span><span class="s2">.</span><span class="s1">implementation</span><span class="s2">.</span><span class="s1">*</span>
+<span class="s0">import </span><span class="s1">list</span><span class="s2">.</span><span class="s1">traits</span><span class="s2">.</span><span class="s1">IntList</span>
+
+<span class="s0">object </span><span class="s3">ProblemsLists </span><span class="s1">:</span>
+
+  <span class="s4">/* 
+   * Use only recursions for your solutions 
+   */</span>
+
+  <span class="s5">/**</span>
+   <span class="s5">* Given a number </span><span class="s6">`</span><span class="s5">i</span><span class="s6">` </span><span class="s5">that should be duplicated a certain number of times,</span>
+   <span class="s5">* returns an IntList that contains the duplicated </span><span class="s6">`</span><span class="s5">i</span><span class="s6">`</span><span class="s5">.</span>
+   <span class="s5">*</span>
+   <span class="s5">* E.g., duplicateNum(4,3) -&gt; SinglyLinkedList(4, 4, 4)</span>
+   <span class="s5">*</span>
+   <span class="s5">* </span><span class="s7">@param i </span><span class="s5">number to duplicate</span>
+   <span class="s5">* </span><span class="s7">@param times </span><span class="s5">number of duplicates</span>
+   <span class="s5">* </span><span class="s7">@return </span><span class="s5">IntList of duplicated numbers</span>
+   <span class="s5">*/</span>
+  <span class="s0">def </span><span class="s8">duplicateNum</span><span class="s9">(</span><span class="s1">i: Int</span><span class="s2">, </span><span class="s1">times: Int</span><span class="s9">)</span><span class="s1">: IntList </span><span class="s2">= </span><span class="s1">times </span><span class="s0">match</span>
+    <span class="s0">case </span><span class="s10">0 </span><span class="s2">=&gt; </span><span class="s1">Empty </span><span class="s4">// Base case: no duplicates needed, return empty list</span>
+    <span class="s0">case </span><span class="s1">_ </span><span class="s2">=&gt;</span>
+      <span class="s4">// Recursive case: add `i` to the list and call duplicateNum with times - 1</span>
+      <span class="s1">Cons</span><span class="s9">(</span><span class="s1">i</span><span class="s2">, </span><span class="s1">duplicateNum</span><span class="s9">(</span><span class="s1">i</span><span class="s2">, </span><span class="s1">times - </span><span class="s10">1</span><span class="s9">))</span>
+
+  <span class="s5">/**</span>
+   <span class="s5">* Given an IntList </span><span class="s6">`</span><span class="s5">l</span><span class="s6">` </span><span class="s5">containing arbitrary numbers and a predicate function Int =&gt; Boolean,</span>
+   <span class="s5">* duplicates all numbers in the list that fulfill the predicate.</span>
+   <span class="s5">* Returns an IntList that contains all duplicated numbers that fulfill the predicate and the</span>
+   <span class="s5">* remaining other numbers in the same order as they occur in the original list.</span>
+   <span class="s5">*</span>
+   <span class="s5">* E.g., duplicateNumbersFulfillingPredicate(x =&gt; x % 2 == 0, SinglyLinkedIntList(1,4,3,5,8))</span>
+   <span class="s5">* -&gt; SinglyLinkedIntList(1, 4, 4, 3, 5, 8, 8)</span>
+   <span class="s5">*</span>
+   <span class="s5">* Use only recursion to solve the problem and none of the higher-order functions.</span>
+   <span class="s5">*</span>
+   <span class="s5">* </span><span class="s7">@param predicate </span><span class="s5">predicate function to determine if a number should be duplicated</span>
+   <span class="s5">* </span><span class="s7">@param l </span><span class="s5">IntList to process</span>
+   <span class="s5">* </span><span class="s7">@return </span><span class="s5">IntList with duplicates and other elements in original order</span>
+   <span class="s5">*/</span>
+  <span class="s0">def </span><span class="s8">duplicateNumbersFulfillingPredicate</span><span class="s9">(</span><span class="s1">predicate: Int </span><span class="s2">=&gt; </span><span class="s1">Boolean</span><span class="s2">, </span><span class="s1">l: IntList</span><span class="s9">)</span><span class="s1">: IntList </span><span class="s2">= </span><span class="s1">l </span><span class="s0">match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">Empty </span><span class="s4">// Base case: empty list has no elements to process</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s9">(</span><span class="s1">head</span><span class="s2">, </span><span class="s1">tail</span><span class="s9">) </span><span class="s2">=&gt;</span>
+      <span class="s4">// Recursive case: check if `head` fulfills the predicate</span>
+      <span class="s0">if </span><span class="s9">(</span><span class="s1">predicate</span><span class="s9">(</span><span class="s1">head</span><span class="s9">))</span>
+        <span class="s4">// If predicate is true, duplicate `head` by adding it twice</span>
+        <span class="s1">Cons</span><span class="s9">(</span><span class="s1">head</span><span class="s2">, </span><span class="s1">Cons</span><span class="s9">(</span><span class="s1">head</span><span class="s2">, </span><span class="s1">duplicateNumbersFulfillingPredicate</span><span class="s9">(</span><span class="s1">predicate</span><span class="s2">, </span><span class="s1">tail</span><span class="s9">)))</span>
+      <span class="s0">else</span>
+        <span class="s4">// If predicate is false, add `head` once and process the tail</span>
+        <span class="s1">Cons</span><span class="s9">(</span><span class="s1">head</span><span class="s2">, </span><span class="s1">duplicateNumbersFulfillingPredicate</span><span class="s9">(</span><span class="s1">predicate</span><span class="s2">, </span><span class="s1">tail</span><span class="s9">))</span>
+
+  <span class="s5">/**</span>
+   <span class="s5">* Given an IntList </span><span class="s6">`</span><span class="s5">l</span><span class="s6">` </span><span class="s5">containing arbitrary numbers, builds all subsets of the list </span><span class="s6">`</span><span class="s5">l</span><span class="s6">`</span><span class="s5">.</span>
+   <span class="s5">* Returns a List of IntList that contains all subsets.</span>
+   <span class="s5">*</span>
+   <span class="s5">* E.g., combinations(SinglyLinkedList(1,2,3)) -&gt; Set(Cons(1, Cons(2, Cons(3, Empty))), Cons(1, Cons(2, Empty)),</span>
+   <span class="s5">* Cons(1, Cons(3, Empty)), Cons(1, Empty), Cons(2, Cons(3, Empty)), Cons(2, Empty), Cons(3, Empty), Empty)</span>
+   <span class="s5">*</span>
+   <span class="s5">* </span><span class="s7">@param l </span><span class="s5">IntList to generate subsets for</span>
+   <span class="s5">* </span><span class="s7">@return </span><span class="s5">List of all subsets as IntLists</span>
+   <span class="s5">*/</span>
+  <span class="s0">def </span><span class="s8">combinations</span><span class="s9">(</span><span class="s1">l: IntList</span><span class="s9">)</span><span class="s1">: List</span><span class="s9">[</span><span class="s1">IntList</span><span class="s9">] </span><span class="s2">= </span><span class="s1">l </span><span class="s0">match</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s2">=&gt; </span><span class="s1">List</span><span class="s9">(</span><span class="s1">Empty</span><span class="s9">) </span><span class="s4">// Base case: the only subset of an empty list is itself</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s9">(</span><span class="s1">head</span><span class="s2">, </span><span class="s1">tail</span><span class="s9">) </span><span class="s2">=&gt;</span>
+      <span class="s4">// Recursive step: get all combinations of the tail</span>
+      <span class="s0">val </span><span class="s1">tailCombinations </span><span class="s2">= </span><span class="s1">combinations</span><span class="s9">(</span><span class="s1">tail</span><span class="s9">)</span>
+      <span class="s4">// Combine each subset of tailCombinations with and without `head`</span>
+      <span class="s1">tailCombinations ++ tailCombinations</span><span class="s2">.</span><span class="s1">map</span><span class="s9">(</span><span class="s1">subset </span><span class="s2">=&gt; </span><span class="s1">Cons</span><span class="s9">(</span><span class="s1">head</span><span class="s2">, </span><span class="s1">subset</span><span class="s9">))</span>
+</pre>
+</body>
+</html>

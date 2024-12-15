@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>NonEmpty.scala</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #fe8019;}
+.s1 { color: #fbf1c7;}
+.s2 { color: #ebdbb2;}
+.s3 { color: #fabd2f;}
+.s4 { color: #f8e1aa;}
+.s5 { color: #b8bb26;}
+.s6 { color: #928374; font-style: italic;}
+.s7 { color: #d3869b;}
+</style>
+</head>
+<body bgcolor="#282828">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+NonEmpty.scala</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">tree</span><span class="s2">.</span><span class="s1">implementation</span>
+
+<span class="s0">import </span><span class="s1">tree</span><span class="s2">.</span><span class="s1">traits</span><span class="s2">.</span><span class="s1">IntTree</span>
+
+<span class="s0">case class </span><span class="s3">NonEmpty</span><span class="s4">(</span><span class="s0">val </span><span class="s1">elem: Int</span><span class="s2">, </span><span class="s1">left: IntTree</span><span class="s2">, </span><span class="s1">right: IntTree</span><span class="s4">) </span><span class="s0">extends </span><span class="s1">BinaryTree :</span>
+
+  <span class="s0">override def </span><span class="s5">isEmpty </span><span class="s2">= </span><span class="s0">false</span>
+
+  <span class="s0">override def </span><span class="s5">root</span><span class="s1">:Int</span><span class="s2">= </span><span class="s1">elem</span>
+
+  <span class="s6">// Recursive contains method to check if the element exists in the tree</span>
+  <span class="s0">override infix def </span><span class="s5">contains</span><span class="s4">(</span><span class="s1">i: Int</span><span class="s4">)</span><span class="s1">: Boolean </span><span class="s2">=</span>
+    <span class="s0">if </span><span class="s4">(</span><span class="s1">i == elem</span><span class="s4">) </span><span class="s0">true</span>
+    <span class="s0">else if </span><span class="s4">(</span><span class="s1">i &lt; elem</span><span class="s4">) </span><span class="s1">left</span><span class="s2">.</span><span class="s1">contains</span><span class="s4">(</span><span class="s1">i</span><span class="s4">)</span>
+    <span class="s0">else </span><span class="s1">right</span><span class="s2">.</span><span class="s1">contains</span><span class="s4">(</span><span class="s1">i</span><span class="s4">)</span>
+
+  <span class="s0">override def </span><span class="s5">insert</span><span class="s4">(</span><span class="s1">i:Int</span><span class="s4">)</span><span class="s1">:IntTree</span><span class="s2">=</span>
+    <span class="s0">if </span><span class="s4">(</span><span class="s1">i &lt; elem</span><span class="s4">) </span><span class="s1">NonEmpty</span><span class="s4">(</span><span class="s1">elem</span><span class="s2">, </span><span class="s1">left insert i</span><span class="s2">, </span><span class="s1">right</span><span class="s4">)</span>
+    <span class="s0">else if </span><span class="s4">(</span><span class="s1">i &gt; elem</span><span class="s4">) </span><span class="s1">NonEmpty</span><span class="s4">(</span><span class="s1">elem</span><span class="s2">, </span><span class="s1">left</span><span class="s2">, </span><span class="s1">right insert i</span><span class="s4">)</span>
+    <span class="s0">else this</span>
+
+  <span class="s6">// Recursive size method to count the number of nodes in the tree</span>
+  <span class="s0">override def </span><span class="s5">size</span><span class="s1">: Int </span><span class="s2">= </span><span class="s7">1 </span><span class="s1">+ left</span><span class="s2">.</span><span class="s1">size + right</span><span class="s2">.</span><span class="s1">size</span>
+
+  <span class="s6">// Recursive height method to find the height of the tree</span>
+  <span class="s0">override def </span><span class="s5">height</span><span class="s1">: Int </span><span class="s2">= </span><span class="s7">1 </span><span class="s1">+ Math</span><span class="s2">.</span><span class="s1">max</span><span class="s4">(</span><span class="s1">left</span><span class="s2">.</span><span class="s1">height</span><span class="s2">, </span><span class="s1">right</span><span class="s2">.</span><span class="s1">height</span><span class="s4">)</span>
+</pre>
+</body>
+</html>

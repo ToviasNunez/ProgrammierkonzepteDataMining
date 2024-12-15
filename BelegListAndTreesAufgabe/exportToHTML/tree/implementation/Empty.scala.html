@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Empty.scala</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #fe8019;}
+.s1 { color: #fbf1c7;}
+.s2 { color: #ebdbb2;}
+.s3 { color: #fabd2f;}
+.s4 { color: #b8bb26;}
+.s5 { color: #f8e1aa;}
+.s6 { color: #d3869b;}
+</style>
+</head>
+<body bgcolor="#282828">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Empty.scala</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">tree</span><span class="s2">.</span><span class="s1">implementation</span>
+
+<span class="s0">import </span><span class="s1">tree</span><span class="s2">.</span><span class="s1">traits</span><span class="s2">.</span><span class="s1">IntTree</span>
+
+<span class="s0">case object </span><span class="s3">Empty </span><span class="s0">extends </span><span class="s1">BinaryTree :</span>
+
+  <span class="s0">override def </span><span class="s4">root</span><span class="s1">: Int </span><span class="s2">= </span><span class="s0">throw new </span><span class="s1">IllegalArgumentException</span><span class="s5">(</span><span class="s4">&quot;root.nil&quot;</span><span class="s5">)</span>
+
+  <span class="s0">override def </span><span class="s4">insert</span><span class="s5">(</span><span class="s1">elem:Int</span><span class="s5">)</span><span class="s1">:IntTree</span><span class="s2">= </span><span class="s1">NonEmpty</span><span class="s5">(</span><span class="s1">elem</span><span class="s2">, </span><span class="s1">Empty</span><span class="s2">, </span><span class="s1">Empty</span><span class="s5">)</span>
+
+  <span class="s0">override def </span><span class="s4">isEmpty </span><span class="s2">= </span><span class="s0">true</span>
+
+  <span class="s0">override def </span><span class="s4">contains</span><span class="s5">(</span><span class="s1">elem: Int</span><span class="s5">)</span><span class="s1">: Boolean </span><span class="s2">= </span><span class="s0">false</span>
+
+  <span class="s0">override def </span><span class="s4">size</span><span class="s1">: Int </span><span class="s2">= </span><span class="s6">0</span>
+
+  <span class="s0">override def </span><span class="s4">height</span><span class="s1">: Int </span><span class="s2">= </span><span class="s6">0</span>
+
+
+</pre>
+</body>
+</html>

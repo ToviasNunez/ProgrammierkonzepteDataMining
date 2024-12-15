@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>LinkedList.sc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #fbf1c7;}
+.s1 { color: #fe8019;}
+.s2 { color: #fabd2f;}
+.s3 { color: #f8e1aa;}
+.s4 { color: #b8bb26;}
+.s5 { color: #ebdbb2;}
+.s6 { color: #d3869b;}
+.s7 { color: #928374; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#282828">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+LinkedList.sc</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">abstract class </span><span class="s2">IntList</span><span class="s3">{</span>
+  <span class="s1">def </span><span class="s4">isEmpty</span><span class="s0">:Boolean</span>
+  <span class="s1">def </span><span class="s4">head</span><span class="s0">:Int</span>
+  <span class="s1">def </span><span class="s4">tail</span><span class="s0">:IntList</span>
+  <span class="s1">def </span><span class="s4">prefix</span><span class="s3">(</span><span class="s0">elem:IntList</span><span class="s3">)</span><span class="s0">:IntList</span>
+  <span class="s1">def </span><span class="s4">flip</span><span class="s0">:IntList</span>
+  <span class="s1">def </span><span class="s4">changeNumber</span><span class="s3">(</span><span class="s0">pred:Int</span><span class="s5">=&gt;</span><span class="s0">Boolean</span><span class="s5">, </span><span class="s0">change: Int</span><span class="s5">=&gt;</span><span class="s0">IntList</span><span class="s3">)</span><span class="s0">:IntList</span>
+
+  <span class="s1">def </span><span class="s4">map</span><span class="s3">(</span><span class="s0">f: Int </span><span class="s5">=&gt; </span><span class="s0">Int</span><span class="s3">)</span><span class="s0">: IntList</span>
+
+  <span class="s1">def </span><span class="s4">filter</span><span class="s3">(</span><span class="s0">p: Int </span><span class="s5">=&gt; </span><span class="s0">Boolean</span><span class="s3">)</span><span class="s0">: IntList</span>
+
+  <span class="s1">def </span><span class="s4">flatMap</span><span class="s3">(</span><span class="s0">f: Int </span><span class="s5">=&gt; </span><span class="s0">IntList</span><span class="s3">)</span><span class="s0">: IntList</span>
+
+  <span class="s1">def </span><span class="s4">foldLeft</span><span class="s3">[</span><span class="s0">B</span><span class="s3">](</span><span class="s0">z: B</span><span class="s3">)(</span><span class="s0">op: </span><span class="s3">(</span><span class="s0">B</span><span class="s5">, </span><span class="s0">Int</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">B</span><span class="s3">)</span><span class="s0">: B</span>
+
+  <span class="s1">def </span><span class="s4">reduce</span><span class="s3">(</span><span class="s0">op: </span><span class="s3">(</span><span class="s0">Int</span><span class="s5">, </span><span class="s0">Int</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">Int</span><span class="s3">)</span><span class="s0">: Int</span>
+
+  <span class="s1">def </span><span class="s4">reverse</span><span class="s0">: IntList</span>
+
+  <span class="s1">def </span><span class="s4">append</span><span class="s3">(</span><span class="s0">list: IntList</span><span class="s3">)</span><span class="s0">: IntList</span>
+
+  <span class="s1">def </span><span class="s4">contains</span><span class="s3">(</span><span class="s0">x: Int</span><span class="s3">)</span><span class="s0">: Boolean</span>
+
+  <span class="s1">def </span><span class="s4">length</span><span class="s0">: Int</span>
+
+  <span class="s1">def </span><span class="s4">take</span><span class="s3">(</span><span class="s0">n: Int</span><span class="s3">)</span><span class="s0">: IntList</span>
+
+  <span class="s1">def </span><span class="s4">drop</span><span class="s3">(</span><span class="s0">n: Int</span><span class="s3">)</span><span class="s0">: IntList</span>
+
+<span class="s3">}</span>
+
+<span class="s1">case object </span><span class="s2">Empty </span><span class="s1">extends </span><span class="s0">IntList</span><span class="s3">{</span>
+  <span class="s1">def </span><span class="s4">isEmpty </span><span class="s5">= </span><span class="s1">true</span>
+  <span class="s1">def </span><span class="s4">head</span><span class="s5">= </span><span class="s1">throw new </span><span class="s0">Error </span><span class="s3">(</span><span class="s4">&quot;List is Empty&quot;</span><span class="s3">)</span>
+  <span class="s1">def </span><span class="s4">tail</span><span class="s5">= </span><span class="s1">throw new </span><span class="s0">Error </span><span class="s3">(</span><span class="s4">&quot;List is Empty&quot;</span><span class="s3">)</span>
+  <span class="s1">def </span><span class="s4">prefix</span><span class="s3">(</span><span class="s0">elem:IntList</span><span class="s3">)</span><span class="s0">:IntList</span><span class="s5">= </span><span class="s0">Empty</span>
+  <span class="s1">def </span><span class="s4">flip</span><span class="s0">:IntList</span><span class="s5">= </span><span class="s0">Empty</span>
+  <span class="s1">def </span><span class="s4">changeNumber</span><span class="s3">(</span><span class="s0">pred:Int</span><span class="s5">=&gt;</span><span class="s0">Boolean</span><span class="s5">, </span><span class="s0">change: Int</span><span class="s5">=&gt;</span><span class="s0">IntList</span><span class="s3">)</span><span class="s0">:IntList</span><span class="s5">= </span><span class="s0">Empty</span>
+
+  <span class="s1">override def </span><span class="s4">map</span><span class="s3">(</span><span class="s0">f: Int </span><span class="s5">=&gt; </span><span class="s0">Int</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s1">this</span>
+
+  <span class="s1">override def </span><span class="s4">filter</span><span class="s3">(</span><span class="s0">p: Int </span><span class="s5">=&gt; </span><span class="s0">Boolean</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s1">this</span>
+
+  <span class="s1">override def </span><span class="s4">flatMap</span><span class="s3">(</span><span class="s0">f: Int </span><span class="s5">=&gt; </span><span class="s0">IntList</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">=  </span><span class="s1">this</span>
+
+  <span class="s1">override def </span><span class="s4">foldLeft</span><span class="s3">[</span><span class="s0">B</span><span class="s3">](</span><span class="s0">z: B</span><span class="s3">)(</span><span class="s0">op: </span><span class="s3">(</span><span class="s0">B</span><span class="s5">, </span><span class="s0">Int</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">B</span><span class="s3">)</span><span class="s0">: B </span><span class="s5">= </span><span class="s0">z</span>
+
+  <span class="s1">override def </span><span class="s4">reduce</span><span class="s3">(</span><span class="s0">op: </span><span class="s3">(</span><span class="s0">Int</span><span class="s5">, </span><span class="s0">Int</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">Int</span><span class="s3">)</span><span class="s0">: Int </span><span class="s5">= </span><span class="s1">throw new </span><span class="s0">UnsupportedOperationException</span><span class="s3">(</span><span class="s4">&quot;Empty list cannot be reduced&quot;</span><span class="s3">)</span>
+
+  <span class="s1">override def </span><span class="s4">reverse</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s1">this</span>
+
+  <span class="s1">override def </span><span class="s4">append</span><span class="s3">(</span><span class="s0">list: IntList</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s0">list</span>
+
+  <span class="s1">override def </span><span class="s4">contains</span><span class="s3">(</span><span class="s0">x: Int</span><span class="s3">)</span><span class="s0">: Boolean </span><span class="s5">= </span><span class="s1">false</span>
+
+  <span class="s1">override def </span><span class="s4">length</span><span class="s0">: Int </span><span class="s5">= </span><span class="s6">0</span>
+
+  <span class="s1">override def </span><span class="s4">take</span><span class="s3">(</span><span class="s0">n: Int</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s1">this</span>
+
+  <span class="s1">override def </span><span class="s4">drop</span><span class="s3">(</span><span class="s0">n: Int</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s1">this</span>
+<span class="s3">}</span>
+
+<span class="s1">case class </span><span class="s2">Cons</span><span class="s3">(</span><span class="s0">head: Int</span><span class="s5">, </span><span class="s0">tail: IntList</span><span class="s3">) </span><span class="s1">extends </span><span class="s0">IntList </span><span class="s3">{</span>
+
+   <span class="s1">def </span><span class="s4">isEmpty</span><span class="s0">: Boolean </span><span class="s5">= </span><span class="s1">true</span>
+
+   <span class="s1">def </span><span class="s4">prefix</span><span class="s3">(</span><span class="s0">elem: IntList</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s0">elem </span><span class="s1">match</span>
+     <span class="s1">case </span><span class="s0">Empty </span><span class="s5">=&gt; </span><span class="s1">this</span>
+     <span class="s1">case </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">h</span><span class="s5">, </span><span class="s0">t</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">h</span><span class="s5">,</span><span class="s0">prefix</span><span class="s3">(</span><span class="s0">t</span><span class="s3">))</span>
+
+   <span class="s1">def </span><span class="s4">flip</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s1">this match</span>
+     <span class="s1">case </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">h</span><span class="s5">,</span><span class="s0">t</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">h</span><span class="s5">,</span><span class="s0">Empty</span><span class="s3">)</span><span class="s5">.</span><span class="s0">prefix</span><span class="s3">(</span><span class="s0">t</span><span class="s5">.</span><span class="s0">flip</span><span class="s3">)</span>
+
+   <span class="s1">def </span><span class="s4">changeNumber</span><span class="s3">(</span><span class="s0">pred: Int </span><span class="s5">=&gt; </span><span class="s0">Boolean</span><span class="s5">, </span><span class="s0">change: Int </span><span class="s5">=&gt; </span><span class="s0">IntList</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s1">this match</span>
+     <span class="s1">case </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">head</span><span class="s5">,</span><span class="s0">tail</span><span class="s3">) </span><span class="s1">if </span><span class="s0">pred</span><span class="s3">(</span><span class="s0">head</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">tail</span><span class="s5">.</span><span class="s0">changeNumber</span><span class="s3">(</span><span class="s0">pred</span><span class="s5">,</span><span class="s0">change</span><span class="s3">)</span><span class="s5">.</span><span class="s0">prefix</span><span class="s3">(</span><span class="s0">change</span><span class="s3">(</span><span class="s0">head</span><span class="s3">))</span>
+     <span class="s1">case </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">head</span><span class="s5">,</span><span class="s0">tail</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">head</span><span class="s5">, </span><span class="s0">tail</span><span class="s5">.</span><span class="s0">changeNumber</span><span class="s3">(</span><span class="s0">pred</span><span class="s5">, </span><span class="s0">change</span><span class="s3">))</span>
+
+  <span class="s1">override def </span><span class="s4">map</span><span class="s3">(</span><span class="s0">f: Int </span><span class="s5">=&gt; </span><span class="s0">Int</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">f</span><span class="s3">(</span><span class="s0">head</span><span class="s3">)</span><span class="s5">,</span><span class="s0">tail</span><span class="s5">.</span><span class="s0">map</span><span class="s3">(</span><span class="s0">f</span><span class="s3">))</span>
+
+  <span class="s1">override def </span><span class="s4">filter</span><span class="s3">(</span><span class="s0">p: Int </span><span class="s5">=&gt; </span><span class="s0">Boolean</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">=</span>
+    <span class="s1">if </span><span class="s3">(</span><span class="s0">p</span><span class="s3">(</span><span class="s0">head</span><span class="s3">)) </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">head</span><span class="s5">, </span><span class="s0">tail</span><span class="s5">.</span><span class="s0">filter</span><span class="s3">(</span><span class="s0">p</span><span class="s3">)) </span><span class="s1">else </span><span class="s0">tail</span><span class="s5">.</span><span class="s0">filter</span><span class="s3">(</span><span class="s0">p</span><span class="s3">)</span>
+
+  <span class="s1">override def </span><span class="s4">flatMap</span><span class="s3">(</span><span class="s0">f: Int </span><span class="s5">=&gt; </span><span class="s0">IntList</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s0">f</span><span class="s3">(</span><span class="s0">head</span><span class="s3">)</span><span class="s5">.</span><span class="s0">append</span><span class="s3">(</span><span class="s0">tail</span><span class="s5">.</span><span class="s0">flatMap</span><span class="s3">(</span><span class="s0">f</span><span class="s3">))</span>
+
+  <span class="s1">override def </span><span class="s4">foldLeft</span><span class="s3">[</span><span class="s0">B</span><span class="s3">](</span><span class="s0">z: B</span><span class="s3">)(</span><span class="s0">op: </span><span class="s3">(</span><span class="s0">B</span><span class="s5">, </span><span class="s0">Int</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">B</span><span class="s3">)</span><span class="s0">: B </span><span class="s5">= </span><span class="s0">tail</span><span class="s5">.</span><span class="s0">foldLeft</span><span class="s3">(</span><span class="s0">op</span><span class="s3">(</span><span class="s0">z</span><span class="s5">, </span><span class="s0">head</span><span class="s3">))(</span><span class="s0">op</span><span class="s3">)</span>
+
+  <span class="s1">override def </span><span class="s4">reduce</span><span class="s3">(</span><span class="s0">op: </span><span class="s3">(</span><span class="s0">Int</span><span class="s5">, </span><span class="s0">Int</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">Int</span><span class="s3">)</span><span class="s0">: Int </span><span class="s5">= </span><span class="s0">tail </span><span class="s1">match</span>
+    <span class="s1">case </span><span class="s0">Empty </span><span class="s5">=&gt; </span><span class="s0">head</span>
+    <span class="s1">case </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">_ </span><span class="s5">,</span><span class="s0">_</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">op</span><span class="s3">(</span><span class="s0">head</span><span class="s5">, </span><span class="s0">tail</span><span class="s5">.</span><span class="s0">reduce</span><span class="s3">(</span><span class="s0">op</span><span class="s3">))</span>
+
+  <span class="s1">override def </span><span class="s4">reverse</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s0">tail</span><span class="s5">.</span><span class="s0">reverse</span><span class="s5">.</span><span class="s0">append</span><span class="s3">(</span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">head</span><span class="s5">,</span><span class="s0">Empty</span><span class="s3">))</span>
+
+  <span class="s1">override def </span><span class="s4">append</span><span class="s3">(</span><span class="s0">list: IntList</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">head</span><span class="s5">, </span><span class="s0">tail</span><span class="s5">.</span><span class="s0">append</span><span class="s3">(</span><span class="s0">list</span><span class="s3">))</span>
+
+  <span class="s1">override def </span><span class="s4">contains</span><span class="s3">(</span><span class="s0">x: Int</span><span class="s3">)</span><span class="s0">: Boolean </span><span class="s5">= </span><span class="s0">head == x || tail</span><span class="s5">.</span><span class="s0">contains</span><span class="s3">(</span><span class="s0">x</span><span class="s3">)</span>
+
+  <span class="s1">override def </span><span class="s4">length</span><span class="s0">: Int </span><span class="s5">= </span><span class="s6">1 </span><span class="s0">+ tail</span><span class="s5">.</span><span class="s0">length</span>
+
+  <span class="s1">override def </span><span class="s4">take</span><span class="s3">(</span><span class="s0">n: Int</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s1">if</span><span class="s3">(</span><span class="s0">n &lt;= </span><span class="s6">0</span><span class="s3">) </span><span class="s0">Empty </span><span class="s1">else </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">head</span><span class="s5">, </span><span class="s0">tail</span><span class="s5">.</span><span class="s0">take</span><span class="s3">(</span><span class="s0">n-</span><span class="s6">1</span><span class="s3">))</span>
+
+  <span class="s1">override def </span><span class="s4">drop</span><span class="s3">(</span><span class="s0">n: Int</span><span class="s3">)</span><span class="s0">: IntList </span><span class="s5">= </span><span class="s1">if</span><span class="s3">(</span><span class="s0">n&gt;</span><span class="s6">0</span><span class="s3">) </span><span class="s0">tail</span><span class="s5">.</span><span class="s0">drop</span><span class="s3">(</span><span class="s0">n-</span><span class="s6">1</span><span class="s3">) </span><span class="s1">else this</span>
+<span class="s3">}</span>
+<span class="s1">var </span><span class="s0">list </span><span class="s5">= </span><span class="s0">Cons</span><span class="s3">(</span><span class="s6">1</span><span class="s5">, </span><span class="s0">Cons</span><span class="s3">(</span><span class="s6">2</span><span class="s5">, </span><span class="s0">Cons</span><span class="s3">(</span><span class="s6">3</span><span class="s5">, </span><span class="s0">Empty</span><span class="s3">)))</span>
+<span class="s7">// 1. is Empty , check if the list os empty EXAMPLE list.isEmpty will return TRUE if the list is empty and  false otherwise</span>
+<span class="s0">list</span><span class="s5">.</span><span class="s0">isEmpty</span>
+
+<span class="s7">// 2. head: return the first element of this list, EXAMPLE list.head will give the first element</span>
+
+<span class="s0">list</span><span class="s5">.</span><span class="s0">head</span>
+<span class="s7">// 3 tail return the remainder of the list excluding the first element</span>
+<span class="s0">list</span><span class="s5">.</span><span class="s0">tail</span>
+<span class="s7">// 4. prefix  add element (or another list ) to the front of the list</span>
+<span class="s1">val </span><span class="s0">list_1 </span><span class="s5">= </span><span class="s0">list</span><span class="s5">.</span><span class="s0">prefix</span><span class="s3">(</span><span class="s0">Cons</span><span class="s3">(</span><span class="s6">4</span><span class="s5">,</span><span class="s0">Empty</span><span class="s3">))</span>
+<span class="s7">// 5. flip : Reverse the order of element in the list</span>
+<span class="s0">list_1</span><span class="s5">.</span><span class="s0">flip</span>
+<span class="s7">// 6. changeNumber : Modifies the element of the list hased on a predicate. if the predicate is tru, then the element is transformed</span>
+<span class="s0">list_1</span><span class="s5">.</span><span class="s0">changeNumber</span><span class="s3">(</span><span class="s0">_ % </span><span class="s6">2 </span><span class="s0">== </span><span class="s6">0</span><span class="s5">, </span><span class="s0">element </span><span class="s5">=&gt; </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">element</span><span class="s5">, </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">element</span><span class="s5">,</span><span class="s0">Empty</span><span class="s3">)))</span>
+
+
+<span class="s7">// Operational in the list</span>
+
+<span class="s7">// 7.  map : applies a function to each element of the list, returning a new list with the transformation elements</span>
+<span class="s0">list_1</span><span class="s5">.</span><span class="s0">map</span><span class="s3">(</span><span class="s0">x </span><span class="s5">=&gt; </span><span class="s0">x * </span><span class="s6">2</span><span class="s3">)</span>
+
+<span class="s7">// 8. filter: func applies a predicate to each elem of the list and includes those elem that satisfy the predicate in the new list</span>
+<span class="s0">list_1</span><span class="s5">.</span><span class="s0">filter</span><span class="s3">(</span><span class="s0">_ &gt; </span><span class="s6">2</span><span class="s3">)</span>
+
+<span class="s7">// 9.flatMap . the func is similar to map , but each elem is transformed into a collection, the result is a flattened list of collection</span>
+<span class="s0">list_1</span><span class="s5">.</span><span class="s0">flatMap</span><span class="s3">(</span><span class="s0">x </span><span class="s5">=&gt; </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">x</span><span class="s5">, </span><span class="s0">Cons</span><span class="s3">(</span><span class="s0">x+</span><span class="s6">1</span><span class="s5">, </span><span class="s0">Empty</span><span class="s3">)))</span>
+
+<span class="s7">// 10. foldLeft: func recursively combines the elem of the list a give func starting with an initial value</span>
+<span class="s0">list_1</span><span class="s5">.</span><span class="s0">foldLeft</span><span class="s3">(</span><span class="s6">0</span><span class="s3">)(</span><span class="s0">_ + _</span><span class="s3">)</span>
+
+<span class="s7">// 11. reduce: similar to foldLeft, but not require an initial value, it reduces the list to single value by applying a func</span>
+<span class="s0">list_1</span><span class="s5">.</span><span class="s0">reduce</span><span class="s3">(</span><span class="s0">_+_</span><span class="s3">)</span>
+
+<span class="s7">// 12. reverse: func reverse the order of the elem in this list</span>
+<span class="s0">list_1</span><span class="s5">.</span><span class="s0">reverse</span>
+
+<span class="s7">//13. append : the func concatenates two linked lists</span>
+<span class="s1">val </span><span class="s0">list4 </span><span class="s5">= </span><span class="s0">Cons</span><span class="s3">(</span><span class="s6">5</span><span class="s5">, </span><span class="s0">Cons</span><span class="s3">(</span><span class="s6">6</span><span class="s5">, </span><span class="s0">Empty</span><span class="s3">))</span>
+<span class="s1">val </span><span class="s0">list_5 </span><span class="s5">= </span><span class="s0">list_1</span><span class="s5">.</span><span class="s0">append</span><span class="s3">(</span><span class="s0">list4</span><span class="s3">)</span>
+
+<span class="s7">//14 contains: func checks if a specific elem exists in the list</span>
+<span class="s0">list_1</span><span class="s5">.</span><span class="s0">contains</span><span class="s3">(</span><span class="s6">2</span><span class="s3">)</span>
+<span class="s7">// 15. length : func computes the length (number od elem) in the lis</span>
+<span class="s0">list_5</span><span class="s5">.</span><span class="s0">length</span>
+
+
+<span class="s7">//16. take: func takes the firs n elem from the list</span>
+<span class="s0">list_5</span><span class="s5">.</span><span class="s0">take</span><span class="s3">(</span><span class="s6">2</span><span class="s3">)</span>
+
+<span class="s7">//17. drop</span>
+
+</pre>
+</body>
+</html>
