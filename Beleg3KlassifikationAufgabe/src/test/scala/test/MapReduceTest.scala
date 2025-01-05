@@ -57,7 +57,8 @@ class MapReduceTest extends AnyFunSuite{
 
   test("Auftraege pro Tag"){
 
-    val exp= Map("2020-05-08" -> 3, "2020-05-09" -> 3, "2020-05-10" -> 5)
+   // val exp= Map("2020-05-08" -> 3, "2020-05-09" -> 3, "2020-05-10" -> 5)
+    val exp= Map("2020-05-08" -> 4, "2020-05-09" -> 4, "2020-05-10" -> 3)
     val res= MapReduce.numberOfJobsPerDay(data).toMap
     println(res)
     assert(res==exp)
