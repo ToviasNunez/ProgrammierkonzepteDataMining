@@ -11,7 +11,8 @@ object NaiveBayes {
    * @return A Map with the attribute name as the key and the number of distinct
    *         values as the value
    */
-  def countAttributeValues(data:List[Map[String, Any]], attribList:String): Map[Any,Int]= ???
+  def countAttributeValues(data:List[Map[String, Any]], attribList:String): Map[Any,Int]=
+    data.groupBy(_(attribList)).view.mapValues(_.size).toMap
 
   /**
    * Extracts all attribute names that occur in a data set
@@ -19,7 +20,7 @@ object NaiveBayes {
    * @param data    Data Set to be searched
    * @return A List of the attribute names that appear in the data set
    */
-  def getAttributes(data:List[Map[String, Any]]):Set[String]= ???
+  def getAttributes(data:List[Map[String, Any]]):Set[String]= data.flatMap(_.keys).toSet
 
   /**
    * Extracts all attribute values that occur in a data set.
@@ -43,7 +44,8 @@ object NaiveBayes {
    * @return A Map that consists of all classes (as key) and their corresponding prior propabilities.
    *
    */
-  def calcPriorPropabilities(data:List[Map[String, Any]], classAttrib:String):Map[Any,Double]= ???
+  def calcPriorPropabilities(data:List[Map[String, Any]], classAttrib:String):Map[Any,Double]=
+    countAttributeValues(data,classAttrib).view.mapValues(_.toDouble/data.size).toMap
 
   /**
    * This function should count for each class and attribute how often an
@@ -61,8 +63,15 @@ object NaiveBayes {
    *
    */
   def calcAttribValuesForEachClass(data:List[Map[String, Any]], classAttrib:String):
-  Map[Any, Set[(String, Map[Any, Int])]] = ???
-
+  Map[Any, Set[(String, Map[Any, Int])]] = {
+    data.groupBy(_(classAttrib)).view.mapValues { records =>
+      val attributes = getAttributes(data) - classAttrib
+      attributes.map { att =>
+        val valueCounts = records.groupBy(_(att)).view.mapValues(_.size).toMap
+        (att, valueCounts)
+      }.toSet
+    }.toMap
+  }
   /**
    * This function should calculate the conditional propabilities for each class and attribute.
    * It takes the number of occurences of each attribute value for each class
@@ -79,7 +88,17 @@ object NaiveBayes {
    *         conditional propability stored in a Map(second element).
    */
   def calcConditionalPropabilitiesForEachClass(data: Map[Any, Set[(String, Map[Any, Int])]],classCounts:Map[Any,Int]):
-  Map[Any,Set[(String, Map[Any, Double])]] = ???
+  Map[Any,Set[(String, Map[Any, Double])]] = {
+      data.map{
+        case( classKey, attrSet) =>
+          val total = classCounts(classKey).toDouble
+          classKey -> attrSet.map {
+            case (att, valueCounts) =>
+              (att,valueCounts.map { case(value,count) => value -> (count.toDouble/total)
+              })
+          }
+      }
+  }
 
   /**
    * This function should calculate the class propability values for each class.
@@ -96,14 +115,23 @@ object NaiveBayes {
    * @return A Map that consists of all classes (as key) and their corresponding propability
    */
   def calcClassValuesForPrediction(record:Map[String,Any], conditionalProps: Map[Any,Set[(String, Map[Any, Double])]],
-                                   priorProps:Map[Any,Double]):Map[Any,Double]= ???
+                                   priorProps:Map[Any,Double]):Map[Any,Double]= {
+    conditionalProps.map {
+      case (classKey, attrSet) =>
+        classKey -> attrSet.foldLeft(1.0) {
+          case (acc, (att, valueCounts)) =>
+            val value = record(att)
+            valueCounts.getOrElse(value, 0.0) * acc
+        } * priorProps(classKey)
+    }
+  }
   /**
    * This function finds the class with the highest propability
    *
    * @param classProps  Map that contains the class (key) and the corresponding propability
    * @return The class wit the highest propability
    */
-  def findBestFittingClass(classProps:Map[Any,Double]):Any= ???
+  def findBestFittingClass(classProps:Map[Any,Double]):Any= classProps.maxBy(_._2)._1
 
   /**
    * This function builds the model. It is represented as a function that maps a data record
@@ -152,10 +180,24 @@ object NaiveBayes {
    *         that contains all attributes with their name (first element) and the corresponding
    *         conditional propability stored in a map(second element).
    */
-  def calcConditionalPropabilitiesForEachClassWithSmoothing
-  (data: Map[Any, Set[(String, Map[Any, Int])]],  attValues:Map[String,Set[Any]],
-   classCounts:Map[Any,Int]):
-  Map[Any,Set[(String, Map[Any, Double])]] = ???
+  def calcConditionalPropabilitiesForEachClassWithSmoothing(
+  data: Map[Any, Set[(String, Map[Any, Int])]], 
+  attValues: Map[String, Set[Any]], 
+  classCounts: Map[Any, Int]
+): Map[Any, Set[(String, Map[Any, Double])]] = {
+
+  data.map { case (classKey, attrSet) =>
+    val total = classCounts(classKey).toDouble
+    classKey -> attrSet.map { case (att, valueCounts) =>
+      val valueCount = valueCounts.map { case (value, count) => value -> ((count + 1).toDouble / (total + attValues(att).size)) }
+      val missingValues = attValues(att) -- valueCount.keys
+      val smoothedValueCounts = missingValues.foldLeft(valueCount) { case (acc, value) =>
+        acc + (value -> (1.0 / (total + attValues(att).size)))
+      }
+      (att, smoothedValueCounts)
+    }
+  }
+}
 
   /**
    * This function builds the model using add one smoothing.
