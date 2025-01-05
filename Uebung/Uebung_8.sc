@@ -1,3 +1,13 @@
+
+/*Aufgabe 1: Gegeben sei die folgende Liste, die ausdrückt, welche Programmiersprachen,
+welche Programmiersprachen welche Paradigmen unterstützen:
+val Paradigmen=List(("erlang", "funktional"), ("erlang", "logisch"), ("prolog", "logisch"),
+("scala", "funktional"), ("scala", "objektorientiert"), ("scala", "logisch"),
+("java","objektorientiert"))
+Erstellen Sie die folgenden Listen über die for-Schleife sowie über die Funktionen map,
+flatMap und filter:*/
+
+
 val Paradigmen=List(("erlang", "funktional"), ("erlang", "logisch"), ("prolog", "logisch"),
   ("scala", "funktional"), ("scala", "objektorientiert"), ("scala", "logisch"),
   ("java","objektorientiert"))

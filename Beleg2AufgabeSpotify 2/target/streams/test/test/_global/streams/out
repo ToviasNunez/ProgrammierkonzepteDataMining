@@ -1,0 +1,45 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for org.scalatest.tools.Framework produced 2 initial tasks for 2 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(spotify.SpotifyUtilsTest, sbt.ForkMain$SubclassFingerscan@3796751b, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSpotifyUtilsTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read Song Data[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read Song Data 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read Song Data 3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read Song Data 4[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read Song Data 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Read all Songs[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 6 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(spotify.SpotifyDataAnalysisTest, sbt.ForkMain$SubclassFingerscan@67b64c45, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSpotifyDataAnalysisTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Get most successful song[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test getNameAndNumberOfTheArtistWithMostSongsInList[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test getArtistWithMostStreams[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Get min/max/avg-BPM[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Get Percental Modes by Month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test Word Extraction 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test Word Extraction 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- get All Words Extraction[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- count all Words in song titles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- The 4 most frequent words in title[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- The 20 most frequent words in title without stopwords[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- The 20 most frequent words in title with wordlist and stopwords[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- get All Words Extraction with Indizees[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- create Inverse Indizees[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test or Conjunction 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test or Conjunction 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test or Conjunction 3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Find Songs with more than two words from wordlist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test and Conjunction 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test and Conjunction 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test and Conjunction 3[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 21 events.[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 1 second, 359 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 27[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 27, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	spotify.SpotifyUtilsTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	spotify.SpotifyDataAnalysisTest[0m

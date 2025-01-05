@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>Klausurvorbereitung.sc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #fe8019;}
+.s1 { color: #fbf1c7;}
+.s2 { color: #fabd2f;}
+.s3 { color: #f8e1aa;}
+.s4 { color: #b8bb26;}
+.s5 { color: #ebdbb2;}
+.s6 { color: #928374; font-style: italic;}
+.s7 { color: #d3869b;}
+</style>
+</head>
+<body bgcolor="#282828">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Klausurvorbereitung.sc</font>
+</center></td></tr></table>
+<pre><span class="s0">abstract class </span><span class="s2">IntList</span><span class="s3">{</span>
+  <span class="s0">def </span><span class="s4">isEmpty</span><span class="s1">:Boolean</span>
+  <span class="s0">def </span><span class="s4">head</span><span class="s1">:Int</span>
+  <span class="s0">def </span><span class="s4">tail</span><span class="s1">:IntList</span>
+  <span class="s0">def </span><span class="s4">prefix</span><span class="s3">(</span><span class="s1">elem:IntList</span><span class="s3">)</span><span class="s1">:IntList</span>
+  <span class="s0">def </span><span class="s4">flip</span><span class="s1">:IntList</span>
+  <span class="s0">def </span><span class="s4">changeNumber</span><span class="s3">(</span><span class="s1">pred:Int</span><span class="s5">=&gt;</span><span class="s1">Boolean</span><span class="s5">, </span><span class="s1">change: Int</span><span class="s5">=&gt;</span><span class="s1">IntList</span><span class="s3">)</span><span class="s1">:IntList</span>
+<span class="s3">}</span>
+<span class="s0">case object </span><span class="s2">Empty </span><span class="s0">extends </span><span class="s1">IntList</span><span class="s3">{</span>
+  <span class="s0">def </span><span class="s4">isEmpty </span><span class="s5">= </span><span class="s0">true</span>
+  <span class="s0">def </span><span class="s4">head</span><span class="s5">= </span><span class="s0">throw new </span><span class="s1">Error </span><span class="s3">(</span><span class="s4">&quot;List is Empty&quot;</span><span class="s3">)</span>
+  <span class="s0">def </span><span class="s4">tail</span><span class="s5">= </span><span class="s0">throw new </span><span class="s1">Error </span><span class="s3">(</span><span class="s4">&quot;List is Empty&quot;</span><span class="s3">)</span>
+  <span class="s0">def </span><span class="s4">prefix</span><span class="s3">(</span><span class="s1">elem:IntList</span><span class="s3">)</span><span class="s1">:IntList</span><span class="s5">= </span><span class="s1">Empty</span>
+  <span class="s0">def </span><span class="s4">flip</span><span class="s1">:IntList</span><span class="s5">= </span><span class="s1">Empty</span>
+  <span class="s0">def </span><span class="s4">changeNumber</span><span class="s3">(</span><span class="s1">pred:Int</span><span class="s5">=&gt;</span><span class="s1">Boolean</span><span class="s5">, </span><span class="s1">change: Int</span><span class="s5">=&gt;</span><span class="s1">IntList</span><span class="s3">)</span><span class="s1">:IntList</span><span class="s5">= </span><span class="s1">Empty</span>
+<span class="s3">}</span>
+<span class="s0">case class </span><span class="s2">Cons</span><span class="s3">(</span><span class="s1">head:Int</span><span class="s5">, </span><span class="s1">tail:IntList</span><span class="s3">) </span><span class="s0">extends </span><span class="s1">IntList</span><span class="s3">{</span>
+  <span class="s0">def </span><span class="s4">isEmpty</span><span class="s5">= </span><span class="s0">false</span>
+  <span class="s0">def </span><span class="s4">prefix</span><span class="s3">(</span><span class="s1">elem:IntList</span><span class="s3">)</span><span class="s1">:IntList</span><span class="s5">= </span><span class="s1">elem </span><span class="s0">match </span><span class="s3">{</span>
+    <span class="s0">case </span><span class="s1">Empty </span><span class="s5">=&gt; </span><span class="s0">this</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">h</span><span class="s5">,</span><span class="s1">t</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">h</span><span class="s5">, </span><span class="s1">prefix</span><span class="s3">(</span><span class="s1">t</span><span class="s3">))</span>
+  <span class="s3">}</span>
+  <span class="s6">//a) Implementieren Sie die Funktion flip, die die Liste von Zahlen umdreht.</span>
+  <span class="s0">def </span><span class="s4">flip</span><span class="s1">:IntList </span><span class="s5">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">h</span><span class="s5">,</span><span class="s1">t</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">h</span><span class="s5">,</span><span class="s1">Empty</span><span class="s3">)</span><span class="s5">.</span><span class="s1">prefix</span><span class="s3">(</span><span class="s1">t</span><span class="s5">.</span><span class="s1">flip</span><span class="s3">)</span>
+<span class="s6">/*b) Entwickeln Sie die Funktion changeNumber mit der folgenden Signatur: 
+def changeNumber(pred:Int=&gt;Boolean, change: Int=&gt;IntList):IntList. Sie soll die Liste von 
+vorne nach hinten durchlaufen und bei jedem Element überprüfen, ob das übergebene 
+Prädikat pred erfüllt ist. Ist das Prädikat nicht erfüllt, soll das aktuelle Element in die 
+Ergebnisliste übernommen werden, ist es erfüllt, soll nicht das Element übernommen 
+werden sondern das Ergebnis der Anwendung der übergebenen Funktion change auf das 
+Element. Ergebnis ist also ebenfalls eine IntList: z.B. 
+Cons(1,Cons(2,Cons(3,Empty))).changeNumber(_%2==0, x=&gt;Cons(x,Cons(x,Empty))) 
+wird 
+zu Cons(1,Cons(2,Cons(2, Cons(3,Empty)))). 
+Implementieren Sie die Funktion so, dass die Liste nicht umgedreht wird muss! Wird eine 
+leere Liste übergeben, so soll eine leere Liste herauskommen. Fomulieren Sie die 
+Funktion ausschließlich als Rekursion und wenden Sie keine Higher Order Functions wie 
+filter, map oder flatMap an.*/</span>
+
+  <span class="s0">def </span><span class="s4">changeNumber</span><span class="s3">(</span><span class="s1">pred:Int</span><span class="s5">=&gt;</span><span class="s1">Boolean</span><span class="s5">, </span><span class="s1">change: Int</span><span class="s5">=&gt;</span><span class="s1">IntList</span><span class="s3">)</span><span class="s1">:IntList </span><span class="s5">= </span><span class="s0">this match</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">h</span><span class="s5">,</span><span class="s1">Empty</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s0">if </span><span class="s3">(</span><span class="s1">pred</span><span class="s3">(</span><span class="s1">h</span><span class="s3">)) </span><span class="s1">change</span><span class="s3">(</span><span class="s1">h</span><span class="s3">) </span><span class="s0">else </span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">h</span><span class="s5">,</span><span class="s1">Empty</span><span class="s3">)</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">h</span><span class="s5">,</span><span class="s1">t</span><span class="s3">) </span><span class="s0">if </span><span class="s1">pred</span><span class="s3">(</span><span class="s1">h</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s1">t</span><span class="s5">.</span><span class="s1">changeNumber</span><span class="s3">(</span><span class="s1">pred</span><span class="s5">,</span><span class="s1">change</span><span class="s3">)</span><span class="s5">.</span><span class="s1">prefix</span><span class="s3">(</span><span class="s1">change</span><span class="s3">(</span><span class="s1">h</span><span class="s3">))</span>
+    <span class="s0">case </span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">h</span><span class="s5">,</span><span class="s1">t</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">h</span><span class="s5">,</span><span class="s1">t</span><span class="s5">.</span><span class="s1">changeNumber</span><span class="s3">(</span><span class="s1">pred</span><span class="s5">,</span><span class="s1">change</span><span class="s3">))</span>
+<span class="s3">}</span>
+
+<span class="s0">val </span><span class="s1">list </span><span class="s5">= </span><span class="s1">Cons</span><span class="s3">(</span><span class="s7">1</span><span class="s5">,</span><span class="s1">Cons</span><span class="s3">(</span><span class="s7">2</span><span class="s5">,</span><span class="s1">Cons</span><span class="s3">(</span><span class="s7">3</span><span class="s5">,</span><span class="s1">Empty</span><span class="s3">)))</span>
+<span class="s0">val </span><span class="s1">list2 </span><span class="s5">= </span><span class="s1">list</span><span class="s5">.</span><span class="s1">prefix</span><span class="s3">(</span><span class="s1">Cons</span><span class="s3">(</span><span class="s7">4</span><span class="s5">,</span><span class="s1">Cons</span><span class="s3">(</span><span class="s7">5</span><span class="s5">,</span><span class="s1">Empty</span><span class="s3">))) </span><span class="s6">// Cons(4,Cons(5,Cons(1,Cons(2,Cons(3,Empty))))</span>
+<span class="s1">list2</span><span class="s5">.</span><span class="s1">flip</span>
+
+<span class="s1">list2</span><span class="s5">.</span><span class="s1">changeNumber</span><span class="s3">(</span><span class="s1">_%</span><span class="s7">2</span><span class="s1">==</span><span class="s7">0</span><span class="s5">, </span><span class="s1">x</span><span class="s5">=&gt;</span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">x</span><span class="s5">,</span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">x</span><span class="s5">,</span><span class="s1">Empty</span><span class="s3">)))</span>
+
+<span class="s0">val </span><span class="s1">list3 </span><span class="s5">= </span><span class="s1">Cons</span><span class="s3">(</span><span class="s7">0</span><span class="s5">,</span><span class="s1">Empty</span><span class="s3">)</span>
+<span class="s1">list3</span><span class="s5">.</span><span class="s1">changeNumber</span><span class="s3">(</span><span class="s1">_%</span><span class="s7">2</span><span class="s1">==</span><span class="s7">0</span><span class="s5">, </span><span class="s1">x</span><span class="s5">=&gt;</span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">x</span><span class="s5">,</span><span class="s1">Cons</span><span class="s3">(</span><span class="s1">x</span><span class="s5">,</span><span class="s1">Empty</span><span class="s3">)))</span>
+
+<span class="s6">/* 
+* In Entenhausen wollen nach der üppigen Weihnachtszeit, einige Bewohner ihr Gewicht 
+reduzieren, in dem Sie dIhre Kalorienaufnahme pro Tag verringern. Dazu führen sie ein 
+Tagebuch, bei dem sie aufschreiben, zu welcher Mahlzeit sie wie viele Kalorien zu sich 
+genommen haben. Der entstandene Datensatz hat die folgende Struktur: 
+* 
+* */</span>
+
+<span class="s0">val </span><span class="s1">calories: List</span><span class="s3">[(</span><span class="s1">String</span><span class="s5">, </span><span class="s1">String</span><span class="s5">, </span><span class="s1">List</span><span class="s3">[(</span><span class="s1">String</span><span class="s5">, </span><span class="s1">Int</span><span class="s3">)])] </span><span class="s5">=</span>
+  <span class="s1">List</span><span class="s3">((</span><span class="s4">&quot;Donald Duck&quot;</span><span class="s5">, </span><span class="s4">&quot;2022-01-01&quot;</span><span class="s5">,</span><span class="s1">List</span><span class="s3">((</span><span class="s4">&quot;Frühstück&quot;</span><span class="s5">,</span><span class="s7">800</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Mittag&quot;</span><span class="s5">, </span><span class="s7">700</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">,</span><span class="s7">200</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Abendbrot&quot;</span><span class="s5">, </span><span class="s7">500</span><span class="s3">)))</span><span class="s5">,</span>
+    <span class="s3">(</span><span class="s4">&quot;Donald Duck&quot;</span><span class="s5">, </span><span class="s4">&quot;2022-01-02&quot;</span><span class="s5">,</span><span class="s1">List</span><span class="s3">((</span><span class="s4">&quot;Frühstück&quot;</span><span class="s5">,</span><span class="s7">700</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Mittag&quot;</span><span class="s5">, </span><span class="s7">650</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Abendbrot&quot;</span><span class="s5">, </span><span class="s7">520</span><span class="s3">)))</span><span class="s5">,</span>
+    <span class="s3">(</span><span class="s4">&quot;Donald Duck&quot;</span><span class="s5">, </span><span class="s4">&quot;2022-01-03&quot;</span><span class="s5">,</span><span class="s1">List</span><span class="s3">((</span><span class="s4">&quot;Frühstück&quot;</span><span class="s5">,</span><span class="s7">800</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Mittag&quot;</span><span class="s5">, </span><span class="s7">700</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">,</span><span class="s7">200</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Abendbrot&quot;</span><span class="s5">, </span><span class="s7">500</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">,</span><span class="s7">150</span><span class="s3">)))</span><span class="s5">,</span>
+    <span class="s3">(</span><span class="s4">&quot;Donald Duck&quot;</span><span class="s5">, </span><span class="s4">&quot;2022-01-04&quot;</span><span class="s5">,</span><span class="s1">List</span><span class="s3">((</span><span class="s4">&quot;Frühstück&quot;</span><span class="s5">,</span><span class="s7">850</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Mittag&quot;</span><span class="s5">, </span><span class="s7">900</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">,</span><span class="s7">500</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">, </span><span class="s7">400</span><span class="s3">)))</span><span class="s5">,</span>
+    <span class="s3">(</span><span class="s4">&quot;Donald Duck&quot;</span><span class="s5">, </span><span class="s4">&quot;2022-01-05&quot;</span><span class="s5">,</span><span class="s1">List</span><span class="s3">((</span><span class="s4">&quot;Frühstück&quot;</span><span class="s5">,</span><span class="s7">600</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Mittag&quot;</span><span class="s5">, </span><span class="s7">700</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">,</span><span class="s7">200</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Abendbrot&quot;</span><span class="s5">, </span><span class="s7">100</span><span class="s3">)))</span><span class="s5">,</span>
+    <span class="s3">(</span><span class="s4">&quot;Dagobert Duck&quot;</span><span class="s5">, </span><span class="s4">&quot;2022-01-01&quot;</span><span class="s5">,</span><span class="s1">List</span><span class="s3">((</span><span class="s4">&quot;Frühstück&quot;</span><span class="s5">,</span><span class="s7">300</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Mittag&quot;</span><span class="s5">, </span><span class="s7">500</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">,</span><span class="s7">100</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Abendbrot&quot;</span><span class="s5">, </span><span class="s7">200</span><span class="s3">)))</span><span class="s5">,</span>
+    <span class="s3">(</span><span class="s4">&quot;Dagobert Duck&quot;</span><span class="s5">, </span><span class="s4">&quot;2022-01-02&quot;</span><span class="s5">, </span><span class="s1">List</span><span class="s3">( (</span><span class="s4">&quot;Frühstück&quot;</span><span class="s5">,</span><span class="s7">200</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Mittag&quot;</span><span class="s5">, </span><span class="s7">300</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">,</span><span class="s7">400</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Abendbrot&quot;</span><span class="s5">, </span><span class="s7">200</span><span class="s3">)))</span><span class="s5">,</span>
+    <span class="s3">(</span><span class="s4">&quot;Dagobert Duck&quot;</span><span class="s5">, </span><span class="s4">&quot;2022-01-03&quot;</span><span class="s5">,</span><span class="s1">List</span><span class="s3">((</span><span class="s4">&quot;Frühstück&quot;</span><span class="s5">,</span><span class="s7">800</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Mittag&quot;</span><span class="s5">, </span><span class="s7">700</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">,</span><span class="s7">200</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">, </span><span class="s7">200</span><span class="s3">)))</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Dagobert Duck&quot;</span><span class="s5">,</span>
+  <span class="s4">&quot;2022-01-04&quot;</span><span class="s5">,</span><span class="s1">List</span><span class="s3">((</span><span class="s4">&quot;Frühstück&quot;</span><span class="s5">,</span><span class="s7">200</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Mittag&quot;</span><span class="s5">, </span><span class="s7">300</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">,</span><span class="s7">200</span><span class="s3">)</span><span class="s5">,</span>
+  <span class="s3">(</span><span class="s4">&quot;Snack&quot;</span><span class="s5">, </span><span class="s7">500</span><span class="s3">)))</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Dagobert Duck&quot;</span><span class="s5">, </span><span class="s4">&quot;2022-01-05&quot;</span><span class="s5">,</span><span class="s1">List</span><span class="s3">((</span><span class="s4">&quot;Frühstück&quot;</span><span class="s5">,</span><span class="s7">200</span><span class="s3">)</span><span class="s5">,</span>
+  <span class="s3">(</span><span class="s4">&quot;Mittag&quot;</span><span class="s5">, </span><span class="s7">700</span><span class="s3">)</span><span class="s5">, </span><span class="s3">(</span><span class="s4">&quot;Abendbrot&quot;</span><span class="s5">, </span><span class="s7">500</span><span class="s3">))))</span>
+
+
+<span class="s6">/* 
+* Für jeden Tag gibt es einen Eintrag der folgenden Struktur: (Person, Tag, Liste der 
+Mahlzeiten). Die Liste der Mahlzeiten besteht aus Tupeln mit den Namen der Mahlzeit 
+(Frühstück, Mittag, Abendbrot, Snack) sowie der aufgenommenen Kalorien. 
+Schreiben Sie folgende Funktionen zur Extraktion von Informationen. Für die 
+Implementierung können sie die folgenden Scala List/Map-Funktionen nutzen: 
+def map[B](f: (A) ⇒ B): List[B] 
+def filter(p: (A) ⇒ Boolean): List[A] 
+def flatMap[B](f: (A) ⇒ GenTraversableOnce[B]): List[B] 
+def foldLeft[B](z: B)(op: (B, A) ⇒ B): B 
+def fold[A1 &gt;: A](z: A1)(op: (A1, A1) ⇒ A1): A1 
+def reduce[A1 &gt;: A](op: (A1, A1) ⇒ A1): A1 
+Benutzen Sie keine Elemente der imperativen Programmierung wie veränderliche 
+Variablen! 
+a) Schreiben Sie eine Funktion dayWithMaxCalories(l:List[(String, String, 
+List[(String, Int)])]):(String,String,Int), die ermittelt, von wem an welchem 
+Tag die maximale Tagesmenge an Kalorien aufgenommen wurden. Ergebnis soll ein Tripel 
+sein, dessen erstes Element der Name, das Zweite der Tag und das Dritte die 
+Tageskalorienzahl ist. Gibt es mehrere Einträge mit der gleichen maximalen 
+Tageskalorienzahl, so kann eine beliebige zurück gegeben werden. 
+*/</span>
+
+<span class="s1">calories</span><span class="s5">.</span><span class="s1">map</span><span class="s3">(</span><span class="s1">x </span><span class="s5">=&gt; </span><span class="s3">(</span><span class="s1">x</span><span class="s5">.</span><span class="s1">_1</span><span class="s5">, </span><span class="s1">x</span><span class="s5">.</span><span class="s1">_2</span><span class="s5">, </span><span class="s1">x</span><span class="s5">.</span><span class="s1">_3</span><span class="s5">.</span><span class="s1">map</span><span class="s3">(</span><span class="s1">_</span><span class="s5">.</span><span class="s1">_2</span><span class="s3">)</span><span class="s5">.</span><span class="s1">sum</span><span class="s3">))</span><span class="s5">.</span><span class="s1">maxBy</span><span class="s3">(</span><span class="s1">_</span><span class="s5">.</span><span class="s1">_3</span><span class="s3">)</span>
+
+<span class="s0">def </span><span class="s4">dayWithMaxCalories</span><span class="s3">(</span><span class="s1">l: List</span><span class="s3">[(</span><span class="s1">String</span><span class="s5">, </span><span class="s1">String</span><span class="s5">, </span><span class="s1">List</span><span class="s3">[(</span><span class="s1">String</span><span class="s5">, </span><span class="s1">Int</span><span class="s3">)])])</span><span class="s1">: </span><span class="s3">(</span><span class="s1">String</span><span class="s5">, </span><span class="s1">String</span><span class="s5">, </span><span class="s1">Int</span><span class="s3">) </span><span class="s5">=</span>
+   <span class="s1">l</span><span class="s5">.</span><span class="s1">map</span><span class="s3">(</span><span class="s1">x </span><span class="s5">=&gt; </span><span class="s3">(</span><span class="s1">x</span><span class="s5">.</span><span class="s1">_1</span><span class="s5">, </span><span class="s1">x</span><span class="s5">.</span><span class="s1">_2</span><span class="s5">, </span><span class="s1">x</span><span class="s5">.</span><span class="s1">_3</span><span class="s5">.</span><span class="s1">map</span><span class="s3">(</span><span class="s1">_</span><span class="s5">.</span><span class="s1">_2</span><span class="s3">)</span><span class="s5">.</span><span class="s1">sum</span><span class="s3">))</span><span class="s5">.</span><span class="s1">maxBy</span><span class="s3">(</span><span class="s1">_</span><span class="s5">.</span><span class="s1">_3</span><span class="s3">)</span>
+
+
+<span class="s1">dayWithMaxCalories</span><span class="s3">(</span><span class="s1">calories</span><span class="s3">)</span>
+
+<span class="s6">/*b) Schreiben Sie die Funktion caloriesByMeal(l:List[(String, String, 
+List[(String, Int)])]):Map[String,Int]. Sie soll berechnen, wie viel Kalorien 
+insgesamt von allen bei den einzelnen angegebenen Mahlzeiten aufgenommen werden. 
+Ergebnis soll eine Map sein, dessen Schlüssel die Mahlzeit und dessen Wert die Kalorien 
+sind. Verwenden Sie nicht den Gruppierungsoperator für die Berechnung sondern 
+aggregieren Sie die Map über fold oder foldLeft.*/</span>
+
+<span class="s0">def </span><span class="s4">caloriesByMeal</span><span class="s3">(</span><span class="s1">l: List</span><span class="s3">[(</span><span class="s1">String</span><span class="s5">, </span><span class="s1">String</span><span class="s5">, </span><span class="s1">List</span><span class="s3">[(</span><span class="s1">String</span><span class="s5">, </span><span class="s1">Int</span><span class="s3">)])])</span><span class="s1">: Map</span><span class="s3">[</span><span class="s1">String</span><span class="s5">, </span><span class="s1">Int</span><span class="s3">] </span><span class="s5">=</span>
+  <span class="s1">l</span><span class="s5">.</span><span class="s1">foldLeft</span><span class="s3">(</span><span class="s1">Map</span><span class="s3">[</span><span class="s1">String</span><span class="s5">, </span><span class="s1">Int</span><span class="s3">]())((</span><span class="s1">acc</span><span class="s5">, </span><span class="s1">x</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s1">x</span><span class="s5">.</span><span class="s1">_3</span><span class="s5">.</span><span class="s1">foldLeft</span><span class="s3">(</span><span class="s1">acc</span><span class="s3">)((</span><span class="s1">acc2</span><span class="s5">, </span><span class="s1">y</span><span class="s3">) </span><span class="s5">=&gt; </span><span class="s1">acc2 + </span><span class="s3">(</span><span class="s1">y</span><span class="s5">.</span><span class="s1">_1 -&gt; </span><span class="s3">(</span><span class="s1">acc2</span><span class="s5">.</span><span class="s1">getOrElse</span><span class="s3">(</span><span class="s1">y</span><span class="s5">.</span><span class="s1">_1</span><span class="s5">, </span><span class="s7">0</span><span class="s3">) </span><span class="s1">+ y</span><span class="s5">.</span><span class="s1">_2</span><span class="s3">))))</span>
+
+<span class="s1">caloriesByMeal</span><span class="s3">(</span><span class="s1">calories</span><span class="s3">)</span>
+
+<span class="s0">def </span><span class="s4">caloriesByMeal_v1</span><span class="s3">(</span><span class="s1">l: List</span><span class="s3">[(</span><span class="s1">String</span><span class="s5">, </span><span class="s1">String</span><span class="s5">, </span><span class="s1">List</span><span class="s3">[(</span><span class="s1">String</span><span class="s5">, </span><span class="s1">Int</span><span class="s3">)])])</span><span class="s1">: Map</span><span class="s3">[</span><span class="s1">String</span><span class="s5">, </span><span class="s1">Int</span><span class="s3">] </span><span class="s5">= </span><span class="s3">{</span>
+  <span class="s1">l</span><span class="s5">.</span><span class="s1">foldLeft</span><span class="s3">(</span><span class="s1">Map</span><span class="s3">[</span><span class="s1">String</span><span class="s5">, </span><span class="s1">Int</span><span class="s3">]()) { (</span><span class="s1">acc</span><span class="s5">,</span><span class="s1">entry</span><span class="s3">) </span><span class="s5">=&gt;</span>
+    <span class="s1">entry</span><span class="s5">.</span><span class="s1">_3</span><span class="s5">.</span><span class="s1">foldLeft</span><span class="s3">(</span><span class="s1">acc</span><span class="s3">) { (</span><span class="s1">mealAcc</span><span class="s5">, </span><span class="s1">meal</span><span class="s3">) </span><span class="s5">=&gt;</span>
+      <span class="s1">mealAcc + </span><span class="s3">(</span><span class="s1">meal</span><span class="s5">.</span><span class="s1">_1 -&gt; </span><span class="s3">(</span><span class="s1">mealAcc</span><span class="s5">.</span><span class="s1">getOrElse</span><span class="s3">(</span><span class="s1">meal</span><span class="s5">.</span><span class="s1">_1</span><span class="s5">,</span><span class="s7">0</span><span class="s3">) </span><span class="s1">+ meal</span><span class="s5">.</span><span class="s1">_2</span><span class="s3">))</span>
+    <span class="s3">}</span>
+  <span class="s3">}</span>
+<span class="s3">}</span>
+
+<span class="s1">caloriesByMeal_v1</span><span class="s3">(</span><span class="s1">calories</span><span class="s3">)</span>
+
+<span class="s6">/* 
+* c) Schreiben Sie die Funktion caloriesByPerson(l:List[(String, String, 
+List[(String, Int)])]):Map[String,Int]. Sie soll berechnen, wie viel Kalorien 
+insgesamt von den einzelnen Personen aufgenommen wurden. Ergebnis soll eine Map 
+sein, dessen Schlüssel die Mahlzeit und dessen Wert die Kalorien sind. Verwenden Sie 
+nicht den Gruppierungsoperator für die Berechnung sondern aggregieren Sie die Map 
+über fold oder foldLeft.*/</span>
+
+<span class="s0">def </span><span class="s4">caloriesByPerson</span><span class="s3">(</span><span class="s1">l:List</span><span class="s3">[(</span><span class="s1">String</span><span class="s5">, </span><span class="s1">String</span><span class="s5">, </span><span class="s1">List</span><span class="s3">[(</span><span class="s1">String</span><span class="s5">, </span><span class="s1">Int</span><span class="s3">)])])</span><span class="s1">:Map</span><span class="s3">[</span><span class="s1">String</span><span class="s5">,</span><span class="s1">Int</span><span class="s3">] </span><span class="s5">= </span><span class="s3">{</span>
+  <span class="s1">l</span><span class="s5">.</span><span class="s1">foldLeft</span><span class="s3">(</span><span class="s1">Map</span><span class="s3">[</span><span class="s1">String</span><span class="s5">, </span><span class="s1">Int</span><span class="s3">]()) { (</span><span class="s1">acc</span><span class="s5">, </span><span class="s1">entry</span><span class="s3">) </span><span class="s5">=&gt;</span>
+    <span class="s1">acc + </span><span class="s3">(</span><span class="s1">entry</span><span class="s5">.</span><span class="s1">_1 -&gt; </span><span class="s3">(</span><span class="s1">acc</span><span class="s5">.</span><span class="s1">getOrElse</span><span class="s3">(</span><span class="s1">entry</span><span class="s5">.</span><span class="s1">_1</span><span class="s5">, </span><span class="s7">0</span><span class="s3">) </span><span class="s1">+ entry</span><span class="s5">.</span><span class="s1">_3</span><span class="s5">.</span><span class="s1">map</span><span class="s3">(</span><span class="s1">_</span><span class="s5">.</span><span class="s1">_2</span><span class="s3">)</span><span class="s5">.</span><span class="s1">sum</span><span class="s3">))</span>
+  <span class="s3">}</span>
+<span class="s3">}</span>
+<span class="s1">caloriesByPerson</span><span class="s3">(</span><span class="s1">calories</span><span class="s3">)</span>
+
+<span class="s6">/* 
+* Gegeben sei die folgende Map[String,List[Int]]: 
+val m= Map(1-&gt;List(2,3,4,5), 2-&gt;List(1,2,3), 3→List(4,5)) 
+Berechnen Sie für alle map-Einträge die Durchschnittswerte der Listen. Verwenden Sie 
+dafür die map-Funktion. 
+* */</span>
+
+<span class="s0">val </span><span class="s1">m </span><span class="s5">= </span><span class="s1">Map</span><span class="s3">(</span><span class="s7">1 </span><span class="s1">-&gt; List</span><span class="s3">(</span><span class="s7">2</span><span class="s5">, </span><span class="s7">3</span><span class="s5">, </span><span class="s7">4</span><span class="s5">, </span><span class="s7">5</span><span class="s3">)</span><span class="s5">, </span><span class="s7">2 </span><span class="s1">-&gt; List</span><span class="s3">(</span><span class="s7">1</span><span class="s5">, </span><span class="s7">2</span><span class="s5">, </span><span class="s7">3</span><span class="s3">)</span><span class="s5">, </span><span class="s7">3 </span><span class="s1">-&gt; List</span><span class="s3">(</span><span class="s7">4</span><span class="s5">, </span><span class="s7">5</span><span class="s3">))</span>
+
+<span class="s0">val </span><span class="s1">averageMap </span><span class="s5">= </span><span class="s1">m</span><span class="s5">.</span><span class="s1">map </span><span class="s3">{ </span><span class="s0">case </span><span class="s3">(</span><span class="s1">key</span><span class="s5">, </span><span class="s1">values</span><span class="s3">) </span><span class="s5">=&gt;</span>
+  <span class="s0">val </span><span class="s1">average </span><span class="s5">= </span><span class="s1">values</span><span class="s5">.</span><span class="s1">sum</span><span class="s5">.</span><span class="s1">toDouble / values</span><span class="s5">.</span><span class="s1">size</span>
+  <span class="s1">key -&gt; average</span>
+<span class="s3">}</span></pre>
+</body>
+</html>

@@ -1,0 +1,59 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Beleg2AufgabeSpotify/target/scala-3.5.1/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$$anon$1.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$$anon$1.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Song.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UtilsSpotifyData$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonUtils$$anon$1.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SpotifyDataAnalysis$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/toviasnunezborrero/Documents/GitHub/ProgrammierkonzepteDataMining/Beleg2AufgabeSpotify/target/scala-3.5.1/classes.bak[0m

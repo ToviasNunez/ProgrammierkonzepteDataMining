@@ -48,7 +48,7 @@ class SpotifyDataAnalysisTest extends AnyFunSuite with BeforeAndAfterAll {
     val result= SpotifyDataAnalysis.getMinAndMaxAndAvgBPM(songs)
     assert(math.abs(result._3-122.54039874081847)<epsilon)
     assert (result._2==206 && result._1==65)
-
+   // func impl incorrect
   test("Get Percental Modes by Month") :
     val expected= List((6, 0.5), (2, 0.4918032786885246), (5, 0.4765625), (1, 0.4701492537313433))
     val result= SpotifyDataAnalysis.getThe4MonthWithMostMinorSongs(songs)
@@ -65,15 +65,15 @@ class SpotifyDataAnalysisTest extends AnyFunSuite with BeforeAndAfterAll {
     assert(r.length === 15)
     assert(r.sorted === words_s2)
 
+  // func impl worked for this
   test("get All Words Extraction") :
-
     val test_list= List(song1,song2)
     val result = SpotifyDataAnalysis.getAllWords(test_list)
     assert(result.length === 24)
     assert(result.sorted === wordlist)
 
+  // func impl worked for this
   test("count all Words in song titles") :
-
     val result = SpotifyDataAnalysis.getAllWords(songs)
     assert(result.length === 2954)
 
@@ -158,9 +158,38 @@ class SpotifyDataAnalysisTest extends AnyFunSuite with BeforeAndAfterAll {
       assert(result === Set(1, 2))
 
 
+  // func correct implement for this one
   test("test and Conjunction 3") :
 
       val invInd = SpotifyDataAnalysis.createInverseIndex(SpotifyDataAnalysis.getAllWordsWithIndex(List(song1,song2)))
       val result = SpotifyDataAnalysis.andConjunction(List("this", "hello"), invInd)
       assert(result === Set())
+
+  // my 3 functions are tested
+
+  test("getTopSongsByAttributes should return the correct top songs for each attribute"):
+    val result = SpotifyDataAnalysis.getTopSongsByAttributes(songs)
+    val expected = List(
+      ("danceability", 2021, "Peru", "Ed Sheeran, Fireboy DML"),
+      ("valence", 2021, "Peru", "Ed Sheeran, Fireboy DML"),
+      ("energy", 2022, "I'm Good (Blue)", "Bebe Rexha, David Guetta"),
+      ("acousticness", 2015, "The Night We Met", "Lord Huron"),
+      ("instrumentalness", 2015, "Alien Blues", "Vundabar"),
+      ("liveness", 2021, "Vai Lï¿½ï¿½ Em Casa ", "Marï¿½ï¿½lia Mendonï¿½ï¿½a, George Henrique &"),
+      ("speechiness", 2023, "Cartï¿½ï¿½o B", "MC Caverinha, KayBlack"))
+
+    assert(result == expected)
+
+
+  test("getPlatformRankingByStreams should return the correct ranking of platforms by total streams") :
+      val result = SpotifyDataAnalysis.getPlatformRankingByStreams(songs)
+      assert(result == List(("Spotify", 340422907106L), ("Apple Music", 134764284785L), ("Unknown", 11165118320L), ("Shazam", 2585002277L), ("Deezer", 521516053)))
+
+  test("getMostStreamedSongPlatformAndArtist should return the correct platform and artist for the given year") :
+     val result = SpotifyDataAnalysis.getMostStreamedSongPlatformAndArtistByYear(songs)
+     assert(result(2023) == ("Spotify", "Miley Cyrus" ,"Flowers"))
+     assert(result(2022) == ("Spotify", "Harry Styles" ,"As It Was"))
+     assert(result(2019) == ("Spotify", "The Weeknd" ,"Blinding Lights"))
+
 }
+

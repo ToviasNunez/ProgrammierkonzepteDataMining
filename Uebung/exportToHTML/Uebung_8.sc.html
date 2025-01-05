@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Uebung_8.sc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #fbf1c7;}
+.s1 { color: #928374; font-style: italic;}
+.s2 { color: #fe8019;}
+.s3 { color: #ebdbb2;}
+.s4 { color: #f8e1aa;}
+.s5 { color: #b8bb26;}
+.s6 { color: #d3869b;}
+</style>
+</head>
+<body bgcolor="#282828">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Uebung_8.sc</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">/*Aufgabe 1: Gegeben sei die folgende Liste, die ausdrückt, welche Programmiersprachen, 
+welche Programmiersprachen welche Paradigmen unterstützen: 
+val Paradigmen=List((&quot;erlang&quot;, &quot;funktional&quot;), (&quot;erlang&quot;, &quot;logisch&quot;), (&quot;prolog&quot;, &quot;logisch&quot;), 
+(&quot;scala&quot;, &quot;funktional&quot;), (&quot;scala&quot;, &quot;objektorientiert&quot;), (&quot;scala&quot;, &quot;logisch&quot;), 
+(&quot;java&quot;,&quot;objektorientiert&quot;)) 
+Erstellen Sie die folgenden Listen über die for-Schleife sowie über die Funktionen map, 
+flatMap und filter:*/</span>
+
+
+<span class="s2">val </span><span class="s0">Paradigmen</span><span class="s3">=</span><span class="s0">List</span><span class="s4">((</span><span class="s5">&quot;erlang&quot;</span><span class="s3">, </span><span class="s5">&quot;funktional&quot;</span><span class="s4">)</span><span class="s3">, </span><span class="s4">(</span><span class="s5">&quot;erlang&quot;</span><span class="s3">, </span><span class="s5">&quot;logisch&quot;</span><span class="s4">)</span><span class="s3">, </span><span class="s4">(</span><span class="s5">&quot;prolog&quot;</span><span class="s3">, </span><span class="s5">&quot;logisch&quot;</span><span class="s4">)</span><span class="s3">,</span>
+  <span class="s4">(</span><span class="s5">&quot;scala&quot;</span><span class="s3">, </span><span class="s5">&quot;funktional&quot;</span><span class="s4">)</span><span class="s3">, </span><span class="s4">(</span><span class="s5">&quot;scala&quot;</span><span class="s3">, </span><span class="s5">&quot;objektorientiert&quot;</span><span class="s4">)</span><span class="s3">, </span><span class="s4">(</span><span class="s5">&quot;scala&quot;</span><span class="s3">, </span><span class="s5">&quot;logisch&quot;</span><span class="s4">)</span><span class="s3">,</span>
+  <span class="s4">(</span><span class="s5">&quot;java&quot;</span><span class="s3">,</span><span class="s5">&quot;objektorientiert&quot;</span><span class="s4">))</span>
+
+
+<span class="s1">// a) Eine Liste aller Programmiersprachen, die objektorientiert sind</span>
+
+<span class="s0">Paradigmen</span><span class="s3">.</span><span class="s0">filter</span><span class="s4">{</span><span class="s2">case</span><span class="s4">(</span><span class="s0">_</span><span class="s3">,</span><span class="s0">paradigma</span><span class="s4">) </span><span class="s3">=&gt; </span><span class="s0">paradigma == </span><span class="s5">&quot;objektorientiert&quot;</span><span class="s4">}</span><span class="s3">.</span><span class="s0">map</span><span class="s4">{</span><span class="s2">case </span><span class="s4">(</span><span class="s0">sprache</span><span class="s3">,</span><span class="s0">_</span><span class="s4">) </span><span class="s3">=&gt; </span><span class="s0">sprache</span><span class="s4">}</span>
+
+<span class="s1">//b) Eine Liste aller Paradigmen der Sprachen erlang und java.</span>
+<span class="s0">Paradigmen</span><span class="s3">.</span><span class="s0">filter</span><span class="s4">(</span><span class="s0">p </span><span class="s3">=&gt; </span><span class="s0">p</span><span class="s3">.</span><span class="s0">_1 == </span><span class="s5">&quot;erlang&quot; </span><span class="s0">|| p</span><span class="s3">.</span><span class="s0">_1 ==</span><span class="s5">&quot;java&quot;</span><span class="s4">)</span><span class="s3">.</span><span class="s0">map</span><span class="s4">(</span><span class="s0">_</span><span class="s3">.</span><span class="s0">_2</span><span class="s4">)</span>
+
+<span class="s1">//c) Eine Liste aller Programmiersprachen, die mehr als ein Paradigma beinhaltet.</span>
+<span class="s0">Paradigmen</span><span class="s3">.</span><span class="s0">groupBy</span><span class="s4">(</span><span class="s0">_</span><span class="s3">.</span><span class="s0">_1</span><span class="s4">)</span><span class="s3">.</span><span class="s0">filter</span><span class="s4">(</span><span class="s0">_</span><span class="s3">.</span><span class="s0">_2</span><span class="s3">.</span><span class="s0">size &gt; </span><span class="s6">1</span><span class="s4">)</span><span class="s3">.</span><span class="s0">keys</span>
+
+<span class="s1">//d) Eine Liste von Tupeln, die als erstes Element die Programmiersprache enthält und als zweites Element eine Liste der Paradigmen.</span>
+
+<span class="s0">Paradigmen</span><span class="s3">.</span><span class="s0">groupBy</span><span class="s4">(</span><span class="s0">_</span><span class="s3">.</span><span class="s0">_1</span><span class="s4">)</span><span class="s1">// first elem program name</span>
+  <span class="s3">.</span><span class="s0">map</span><span class="s4">{</span><span class="s2">case</span><span class="s4">(</span><span class="s0">sprache</span><span class="s3">,</span><span class="s0">paradigmen</span><span class="s4">) </span><span class="s1">// tupeln (program name: paradigmen)</span>
+  <span class="s3">=&gt; </span><span class="s4">(</span><span class="s0">sprache</span><span class="s3">,</span><span class="s0">paradigmen</span><span class="s3">.</span><span class="s0">map</span><span class="s4">(</span><span class="s0">_</span><span class="s3">.</span><span class="s0">_2</span><span class="s4">)</span><span class="s3">.</span><span class="s0">distinct</span><span class="s4">)} </span><span class="s1">// tupeln (name , list from the paradigmen )</span></pre>
+</body>
+</html>
