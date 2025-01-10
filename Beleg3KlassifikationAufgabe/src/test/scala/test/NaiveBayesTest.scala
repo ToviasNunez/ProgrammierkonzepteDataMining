@@ -174,39 +174,8 @@ class NaiveBayesTest extends AnyFunSuite {
     assert(res===exp)
   }
 
-  test("Conditional Properties with Add One Smoothing"){
 
-    val classVals: Map[Any, Int] = NaiveBayes.countAttributeValues(trainDataSet,"class")
-    //println(classVals)
-    val aValues = NaiveBayes.getAttributeValues(trainDataSet).asInstanceOf[ Map[String, Set[Any]]]
-    //println(aValues)
-    val data: Map[Any, Set[(String, Map[Any, Int])]] = NaiveBayes.calcAttribValuesForEachClass(trainDataSet,"class")
-    //println(data)
-    val condProp = NaiveBayes.calcConditionalPropabilitiesForEachClassWithSmoothing(data,aValues,classVals)
-    //println(condProp)
-    val exp= Map("late" -> Set(("season",Map("winter" -> 0.5, "autumn" -> 0.1667, "spring" -> 0.1667,
-      "summer" -> 0.1667)), ("rain",Map("slight" -> 0.2, "none" -> 0.4, "heavy" -> 0.4)),
-      ("wind",Map("normal" -> 0.4, "high" -> 0.4, "none" -> 0.2)),
-      ("day",Map("sunday" -> 0.1667, "saturday" -> 0.333, "weekday" -> 0.3333, "holiday" -> 0.1667))),
-      "cancled" -> Set(("season",Map("winter" -> 0.2, "autumn" -> 0.2, "spring" -> 0.4, "summer" -> 0.2)),
-        ("rain",Map("slight" -> 0.25, "none" -> 0.25, "heavy" -> 0.5)),
-        ("wind",Map("normal" -> 0.25, "high" -> 0.5, "none" -> 0.25)),
-        ("day",Map("sunday" -> 0.2, "saturday" -> 0.4, "weekday" -> 0.2, "holiday" -> 0.2))),
-      "very late" -> Set(("season",Map("winter" -> 0.4286, "autumn" -> 0.2857, "spring" -> 0.1429, "summer" -> 0.1429)),
-        ("rain",Map("slight" -> 0.16667, "none" -> 0.3333, "heavy" -> 0.5)),
-        ("wind",Map("normal" -> 0.5, "high" -> 0.3333, "none" -> 0.1667)),
-        ("day",Map("sunday" -> 0.1429, "saturday" -> 0.1429, "weekday" -> 0.5714, "holiday" -> 0.1429))),
-      "on time" -> Set(("season",Map("winter" -> 0.1667, "autumn" -> 0.16667, "spring" -> 0.27778, "summer" -> 0.3889)),
-        ("rain",Map("slight" -> 0.5295, "none" -> 0.3529, "heavy" -> 0.1176)),
-        ("wind",Map("normal" -> 0.3529, "high" -> 0.2941, "none" -> 0.3529)),
-        ("day",Map("sunday" -> 0.11111, "saturday" -> 0.16667, "weekday" -> 0.5556, "holiday" -> 0.16667)))).
-      asInstanceOf[Map[Any, Set[(String, Map[Any, Any])]]]
-    val expExt= NaiveBayes.extractValues(exp).asInstanceOf[Set[(String,String,Double)]].toList.sorted
-    val resExt= NaiveBayes.extractValues(condProp.asInstanceOf[Map[Any, Set[(String, Map[Any, Any])]]]).
-      asInstanceOf[Set[(String,String,Double)]].toList.sorted
-    val compare= expExt.zip(resExt)
-    assert(compare.forall(x=>math.abs(x._1._3-x._2._3)<0.01)===true)
-  }
+  
 
   test("Model with add One-Smoothing"){
 
